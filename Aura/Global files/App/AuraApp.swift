@@ -24,11 +24,21 @@ struct AuraApp: App {
     
     @UIApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
     let persistenceController = PersistenceController.shared
+    
+    @StateObject private var loginVM = LoginScreenViewModel()
 
     var body: some Scene {
-        WindowGroup {
-            MainScreen()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+       
+            WindowGroup {
+                NavigationStack{
+                
+                if loginVM.isAuthorized{
+                    MainScreen(loginVM: loginVM)
+                    
+                }else {
+                    LoginScreen()
+                }
+            }
         }
     }
 }
