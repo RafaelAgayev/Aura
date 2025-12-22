@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  MainScreen.swift
 //  Aura
 //
 //  Created by Rafael Agayev on 22.12.25.
@@ -8,7 +8,7 @@
 import SwiftUI
 import CoreData
 
-struct ContentView: View {
+struct MainScreen: View {
     @Environment(\.managedObjectContext) private var viewContext
 
     @FetchRequest(
@@ -82,5 +82,5 @@ private let itemFormatter: DateFormatter = {
 }()
 
 #Preview {
-    ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+    MainScreen().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
 }
