@@ -1,8 +1,29 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "Enter email" : {
+
+    },
+    "Hello world" : {
+
+    },
     "Key" : {
       "extractionState" : "manual"
+    },
+    "Password" : {
+
+    },
+    "Please sign in" : {
+
+    },
+    "Register" : {
+
+    },
+    "Sign in" : {
+
+    },
+    "Welcome to Aura" : {
+
     }
   },
   "version" : "1.1"
