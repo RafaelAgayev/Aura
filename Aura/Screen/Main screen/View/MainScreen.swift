@@ -12,10 +12,22 @@ struct MainScreen: View {
     
     let loginVM: LoginScreenViewModel
     
+    @State private var isPressed: Bool = false
+    
     var body: some View {
-        
-        VStack{
-            Text("Hello world")
+        ScrollView{
+            VStack(alignment: .leading, spacing: 24){
+                MainScreenHeader(loginVM: loginVM)
+                
+                DashboardSection()
+                
+                    .scaleEffect(isPressed ? 0.97 : 1)
+                    .foregroundStyle(.primary)
+                
+            }
+
+            .padding()
+            
         }
         .navigationBarBackButtonHidden()
         .toolbar {
@@ -30,7 +42,7 @@ struct MainScreen: View {
                 loginVM.logoutUser()
             }label: {
                 Image(systemName: "arrowshape.turn.up.backward.2")
-                    .fontModifier(size: 17, weight: .semibold, foregroundColor: .colorAccent)
+                    .fontModifier(size: 17, weight: .semibold, foregroundColor: .colorBlack)
             }
         }
     }

@@ -1,0 +1,82 @@
+//
+//  DashboardSection.swift
+//  Aura
+//
+//  Created by Rafael Agayev on 23.12.25.
+//
+
+import SwiftUI
+
+struct DashboardSection: View {
+    
+    @State private var showCamera = false
+    
+    @State private var capturedImage: UIImage?
+    
+    @State private var showCameraAlert = false
+    
+    var body: some View {
+        
+        LazyVGrid(columns: [
+            GridItem(.flexible()),
+            GridItem(.flexible())
+        ], spacing: 16
+        ){
+                DashBoard(
+                    title: "Mood",
+                    subtitle: "How do you feel?",
+                    icon: "face.smiling"
+                )
+                .onTapGesture{
+                    showCamera = true
+                }
+            
+            NavigationLink{
+                HealthScreen()
+            }label:{
+                DashBoard(
+                    title: "Health",
+                    subtitle: "Daily status",
+                    icon: "heart.text.square"
+                )
+            }
+            
+            NavigationLink{
+                HistoryScreen()
+            }label:{
+                DashBoard(
+                    title: "History",
+                    subtitle: "Your activity",
+                    icon: "clock.arrow.circlepath"
+                )
+            }
+            NavigationLink{
+                ProfileScreen()
+            }label:{
+                DashBoard(
+                    title: "Profile",
+                    subtitle: "Your info",
+                    icon: "person.crop.circle"
+                )
+            }
+        }
+        .navigationDestination(isPresented: $showCamera) {
+            CameraPicker { image in
+                capturedImage = image
+            }
+            .ignoresSafeArea()
+        }
+        .alert("Mood scan", isPresented: $showCameraAlert) {
+            Button("Start") {
+                showCamera = true
+            }
+            Button("Cancel", role: .cancel) {}
+        }message:{
+            Text("We'll your analyze with camera")
+        }
+    }
+}
+
+#Preview {
+    DashboardSection()
+}

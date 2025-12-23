@@ -1,14 +1,35 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "Cancel" : {
+
+    },
     "Enter email" : {
 
     },
-    "Hello world" : {
+    "Enter name" : {
+
+    },
+    "Health" : {
+
+    },
+    "Hello, World, Profile!" : {
+
+    },
+    "History" : {
 
     },
     "Key" : {
       "extractionState" : "manual"
+    },
+    "Let’s check how you’re doing today" : {
+
+    },
+    "Mood" : {
+
+    },
+    "Mood scan" : {
+
     },
     "Password" : {
 
@@ -20,6 +41,15 @@
 
     },
     "Sign in" : {
+
+    },
+    "Start" : {
+
+    },
+    "We'll your analyze with camera" : {
+
+    },
+    "Welcome back %@ 👋" : {
 
     },
     "Welcome to Aura" : {

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 import FirebaseAuth
 internal import Combine
 
@@ -22,6 +23,8 @@ class LoginScreenViewModel: ObservableObject{
     @Published var alertMessage: String = ""
     
     @Published var showAlert: Bool = false
+    
+    @AppStorage("user_name") var name: String = ""
     
     @Published var showPassword: Bool = false
     
@@ -43,34 +46,36 @@ class LoginScreenViewModel: ObservableObject{
         }
     }
     
-    
-    func createUser(){
+    func createUser() {
         Auth.auth().createUser(withEmail: email, password: password) { [weak self] result, error in
-            guard let self else { return }
-            
-            DispatchQueue.main.async{
-                if let error = error{
+            guard let self else {return}
+            DispatchQueue.main.async {
+                
+                if let error = error {
+                    
                     self.alertMessage = error.localizedDescription
                     self.showAlert = true
-                }else if let user = result?.user {
-                    self.email = user.email ?? ""
+                } else if let user = result?.user {
                     self.user = user
+                    self.email = user.email ?? ""
                     self.isAuthorized = true
                 }
             }
         }
     }
     
-    func signInUser(){
+    func signInUser() {
         Auth.auth().signIn(withEmail: email, password: password) { [weak self] result, error in
-           
-            DispatchQueue.main.async{
-                if let error = error{
+            DispatchQueue.main.async {
+                
+                if let error = error {
+                    
                     self?.alertMessage = error.localizedDescription
                     self?.showAlert = true
-                }else if let user = result?.user {
-                    self?.email = user.email ?? ""
+                } else if let user = result?.user {
+                   
                     self?.user = user
+                    self?.email = user.email ?? ""
                     self?.isAuthorized = true
                 }
             }
