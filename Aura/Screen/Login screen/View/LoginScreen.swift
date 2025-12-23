@@ -13,9 +13,10 @@ struct LoginScreen: View {
     
     var body: some View {
         VStack(spacing: 12){
-            LoginTextUp(
+            LoginSection(
                 email: $loginVM.email,
                 password: $loginVM.password,
+                name: $loginVM.name,
                 showPassword: $loginVM.showPassword,
                 onSignIn: {
                     loginVM.signInUser()

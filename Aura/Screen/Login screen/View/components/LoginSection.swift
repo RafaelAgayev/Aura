@@ -1,5 +1,5 @@
 //
-//  LoginTextUp.swift
+//  LoginSection.swift
 //  Aura
 //
 //  Created by Rafael Agayev on 22.12.25.
@@ -7,11 +7,13 @@
 
 import SwiftUI
 
-struct LoginTextUp: View {
+struct LoginSection: View {
     
     @Binding var email: String
     
     @Binding var password: String
+    
+    @Binding var name: String
     
     @Binding var showPassword: Bool
     
@@ -35,6 +37,13 @@ struct LoginTextUp: View {
                 .fontModifier(size: 16, weight: .medium, foregroundColor: .colorGray)
             
             VStack(spacing: 8){
+                
+                TextField("Enter name", text: $name)
+                    .inputModifier()
+                    .textInputAutocapitalization(.never)
+                    .keyboardType(.asciiCapable)
+                    .textContentType(.oneTimeCode)
+                    .focused($focused, equals: .name)
                 
                     TextField("Enter email", text: $email)
                         .inputModifier()
@@ -98,9 +107,9 @@ struct LoginTextUp: View {
     }
 }
 
-extension LoginTextUp{
+extension LoginSection{
     enum Focused{
-        case email, password
+        case email, password, name
     }
 }
 
