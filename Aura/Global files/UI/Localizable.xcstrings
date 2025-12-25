@@ -1,6 +1,18 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "%@" : {
+
+    },
+    "• Try getting 30 minutes of fresh air\n• Consider a short meditation\n• Drink more water today" : {
+
+    },
+    "AI Health Insight" : {
+
+    },
+    "AI Suggestions" : {
+
+    },
     "Cancel" : {
 
     },
@@ -46,9 +58,6 @@
     "Face ID" : {
 
     },
-    "Health" : {
-
-    },
     "History" : {
 
     },
@@ -59,6 +68,9 @@
 
     },
     "Light" : {
+
+    },
+    "Mood History" : {
 
     },
     "Mood scan" : {
@@ -79,6 +91,12 @@
     "Save" : {
 
     },
+    "Scan now" : {
+
+    },
+    "Scan your face and get insights about your mood and energy." : {
+
+    },
     "Selection theme" : {
 
     },
@@ -95,6 +113,9 @@
 
     },
     "Terms and Conditions" : {
+
+    },
+    "Today's insight" : {
 
     },
     "Version: 1.0.1" : {
