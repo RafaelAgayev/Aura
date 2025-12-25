@@ -15,6 +15,8 @@ struct DashboardSection: View {
     
     @State private var showCameraAlert = false
     
+    let loginVM: LoginScreenViewModel
+    
     var body: some View {
         
         LazyVGrid(columns: [
@@ -51,7 +53,7 @@ struct DashboardSection: View {
                 )
             }
             NavigationLink{
-                ProfileScreen()
+                ProfileScreen(loginVM: loginVM)
             }label:{
                 DashBoard(
                     title: "Profile",
@@ -77,6 +79,6 @@ struct DashboardSection: View {
     }
 }
 
-#Preview {
-    DashboardSection()
-}
+//#Preview {
+//    DashboardSection()
+//}

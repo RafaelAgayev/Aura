@@ -4,16 +4,49 @@
     "Cancel" : {
 
     },
+    "Change password" : {
+
+    },
+    "Dark" : {
+
+    },
+    "E-mail: %@" : {
+
+    },
+    "Edit" : {
+
+    },
+    "Edit email" : {
+
+    },
+    "Edit name" : {
+
+    },
+    "Edit password" : {
+
+    },
+    "Enable notification" : {
+
+    },
     "Enter email" : {
 
     },
     "Enter name" : {
 
     },
-    "Health" : {
+    "Enter new name" : {
 
     },
-    "Hello, World, Profile!" : {
+    "Enter new password " : {
+
+    },
+    "Enter your email" : {
+
+    },
+    "Face ID" : {
+
+    },
+    "Health" : {
 
     },
     "History" : {
@@ -25,10 +58,13 @@
     "Let’s check how you’re doing today" : {
 
     },
-    "Mood" : {
+    "Light" : {
 
     },
     "Mood scan" : {
+
+    },
+    "Name: %@" : {
 
     },
     "Password" : {
@@ -40,10 +76,28 @@
     "Register" : {
 
     },
+    "Save" : {
+
+    },
+    "Selection theme" : {
+
+    },
     "Sign in" : {
 
     },
     "Start" : {
+
+    },
+    "Support" : {
+
+    },
+    "System" : {
+
+    },
+    "Terms and Conditions" : {
+
+    },
+    "Version: 1.0.1" : {
 
     },
     "We'll your analyze with camera" : {
@@ -53,6 +107,15 @@
 
     },
     "Welcome to Aura" : {
+
+    },
+    "You can edit your password" : {
+
+    },
+    "You can update your display name" : {
+
+    },
+    "You can update your email" : {
 
     }
   },

@@ -12,11 +12,11 @@ struct MainScreenHeader: View {
     let loginVM: LoginScreenViewModel
     var body: some View {
         VStack(alignment: .leading, spacing: 6){
-            Text("Welcome back \(loginVM.userName) 👋")
-                .fontModifier(size: 10, weight: .medium, foregroundColor: .colorBlack)
+            Text("Welcome back \(loginVM.name) 👋")
+                .fontModifier(size: 10, weight: .medium, foregroundColor: .primary)
             
             Text("Let’s check how you’re doing today")
-                .foregroundStyle(.secondary)
+                .foregroundStyle(.primary)
         }
     }
 }

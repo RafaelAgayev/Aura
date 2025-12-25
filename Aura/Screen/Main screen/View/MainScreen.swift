@@ -19,7 +19,7 @@ struct MainScreen: View {
             VStack(alignment: .leading, spacing: 24){
                 MainScreenHeader(loginVM: loginVM)
                 
-                DashboardSection()
+                DashboardSection(loginVM: loginVM)
                 
                     .scaleEffect(isPressed ? 0.97 : 1)
                     .foregroundStyle(.primary)
