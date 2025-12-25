@@ -25,6 +25,19 @@ struct AuraApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
     let persistenceController = PersistenceController.shared
     
+    private var colorScheme: ColorScheme? {
+           switch AppTheme(rawValue: theme) {
+           case .light:
+               return .light
+           case .dark:
+               return .dark
+           default:
+               return nil
+           }
+       }
+    
+    @AppStorage("app_theme") private var theme: Int = AppTheme.system.rawValue
+    
     @StateObject private var loginVM = LoginScreenViewModel()
 
     var body: some Scene {
@@ -34,9 +47,11 @@ struct AuraApp: App {
                 
                 if loginVM.isAuthorized{
                     MainScreen(loginVM: loginVM)
+                        .preferredColorScheme(colorScheme)
                     
                 }else {
                     LoginScreen()
+                        .preferredColorScheme(colorScheme)
                 }
             }
         }
