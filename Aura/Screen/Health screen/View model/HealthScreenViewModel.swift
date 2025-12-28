@@ -9,6 +9,7 @@ import Foundation
 internal import Combine
 import Vision
 import UIKit
+import CoreData
 
 class HealthScreenViewModel: ObservableObject{
     
@@ -17,6 +18,15 @@ class HealthScreenViewModel: ObservableObject{
     @Published var todayInsight: String = "You look tired more than yesterday"
     
     @Published var scan: ScanState = .idle
+    
+    private let historyVM: HistoryViewModel
+
+       init(historyVM: HistoryViewModel) {
+           self.historyVM = historyVM
+       }
+    
+    @Published var isAnimate = false
+
     
     enum ScanState{
         case idle
@@ -60,7 +70,7 @@ class HealthScreenViewModel: ObservableObject{
         )
     ]
     
-    func analyzeFace(_ image: UIImage) {
+    func analyzeFace(_ image: UIImage) async {
         guard let cgImage = image.cgImage else { return }
         
         scan = .scanning
@@ -129,13 +139,23 @@ class HealthScreenViewModel: ObservableObject{
     }
 
     func generateInsight(score: Int) {
+        let insight: String
+
         switch score {
         case 0:
-            todayInsight = "You look energetic today 💪"
+            insight = "You look energetic today 💪"
         case 1:
-            todayInsight = "You seem a bit tired today 😌"
+            insight = "You seem a bit tired today 😌"
         default:
-            todayInsight = "You look more tired than yesterday 😴"
+            insight = "You look more tired than yesterday 😴"
         }
+
+        todayInsight = insight
+
+        historyVM.add(
+            type: "Health Scan",
+            title: "Face Analysis",
+            subtitle: insight
+        )
     }
 }

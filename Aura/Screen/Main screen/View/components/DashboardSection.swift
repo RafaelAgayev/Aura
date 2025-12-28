@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CoreData
 
 struct DashboardSection: View {
     
@@ -16,6 +17,15 @@ struct DashboardSection: View {
     @State private var showCameraAlert = false
     
     let loginVM: LoginScreenViewModel
+    
+    @StateObject private var historyVM: HistoryViewModel
+    
+    init(historyVM: HistoryViewModel, loginVM: LoginScreenViewModel) {
+        _historyVM = StateObject(wrappedValue: historyVM)
+        self.loginVM = loginVM
+    }
+    
+    
     
     var body: some View {
         
@@ -44,7 +54,7 @@ struct DashboardSection: View {
             }
             
             NavigationLink{
-                HistoryScreen()
+                HistoryScreen(historyVM: historyVM)
             }label:{
                 DashBoard(
                     title: "History",

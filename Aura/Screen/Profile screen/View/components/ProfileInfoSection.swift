@@ -27,8 +27,15 @@ struct ProfileInfoSection: View {
                 }label:{
                     Text("Edit")
                 }
-                .buttonStyle(.borderedProminent)
-                .tint(.accentColor)
+                .padding()
+                .foregroundStyle(.colorWhite)
+                .background(
+                    Color.colorAccent
+    
+                        .frame(width: 80,height: 30)
+                        .blur(radius: 2)
+                        .roundedCorners(cornerRadius: 12)
+                )
         }
         .padding()
         .alert("Edit email", isPresented: $showEditAlert, actions: {

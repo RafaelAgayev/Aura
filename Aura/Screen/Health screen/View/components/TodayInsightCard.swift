@@ -19,6 +19,7 @@ struct TodayInsightCard: View {
             
             Text(text)
                 .font(.subheadline)
+                .padding()
         }
         .padding()
     }
