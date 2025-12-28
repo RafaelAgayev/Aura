@@ -14,42 +14,50 @@ struct ProfileScreen: View {
     @Environment(\.dismiss) private var dismiss
     
     var body: some View {
-        ScrollView{
-            VStack(alignment: .leading, spacing: 8) {
-                
-                ProfileScreenHeader(loginVM: loginVM)
-                
-                ProfileInfoSection(loginVM: loginVM)
-                
-                PreferencesSection()
-                
-                SecuritySection(loginVM: loginVM)
-                
-                AboutSection()
-            }
-        }
-        .background(
+        ZStack{
             RoundedRectangle(cornerRadius: 12)
                 .fill(.ultraThickMaterial)
-        )
-        .padding(.vertical, 10)
-        .padding(.horizontal, 12)
-        .navigationBarBackButtonHidden()
-        .toolbar {
-            toolbar
+                .ignoresSafeArea()
+            ScrollView{
+                VStack(alignment: .leading, spacing: 8) {
+                    
+                    content
+                }
+            }
+           
+            .padding(.vertical, 10)
+            .padding(.horizontal, 12)
+            .navigationBarBackButtonHidden()
+            .toolbar {
+                toolbar
+            }
+        }
+    }
+    private var content: some View{
+        Group{
+            ProfileScreenHeader(loginVM: loginVM)
+            
+            ProfileInfoSection(loginVM: loginVM)
+            
+            PreferencesSection()
+            
+            SecuritySection(loginVM: loginVM)
+            
+            AboutSection()
         }
     }
     
     @ToolbarContentBuilder
     private var toolbar: some ToolbarContent{
         
-        ToolbarItem(placement: .topBarLeading) {
+        ToolbarItem(placement: .navigationBarLeading) {
             Button{
                 dismiss()
             }label:{
                 Image(systemName: "chevron.left")
                     .foregroundStyle(.primary)
             }
+            .accessibilityLabel("Back")
         }
     }
 }

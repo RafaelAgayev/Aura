@@ -9,8 +9,8 @@ import SwiftUI
 
 struct HealthStatsCard: View {
     
-    @StateObject private var healthVM = HealthScreenViewModel()
-    
+    @ObservedObject var healthVM: HealthScreenViewModel
+
     @State private var isSelected = false
     
     var body: some View {
@@ -31,10 +31,12 @@ struct HealthStatsCard: View {
             VStack(alignment: .leading, spacing: 12) {
                 Text(selectedStat.title)
                     .font(.headline)
+                   
                 
                 Text(selectedStat.detail)
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
+                    
             }
             .padding()
             .background(
@@ -42,11 +44,12 @@ struct HealthStatsCard: View {
                     .fill(Color(.systemGray6))
             )
             .transition(.move(edge: .bottom).combined(with: .opacity))
+            .animation(.easeInOut, value: selectedStat)
             
         }
     }
 }
 
-#Preview {
-    HealthStatsCard()
-}
+//#Preview {
+//    HealthStatsCard()
+//}

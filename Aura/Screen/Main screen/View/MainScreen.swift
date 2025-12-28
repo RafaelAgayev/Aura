@@ -14,12 +14,20 @@ struct MainScreen: View {
     
     @State private var isPressed: Bool = false
     
+    @StateObject private var historyVM: HistoryViewModel
+    
+    init(historyVM: HistoryViewModel, loginVM: LoginScreenViewModel) {
+        _historyVM = StateObject(wrappedValue: historyVM)
+        self.loginVM = loginVM
+    }
+    
+    
     var body: some View {
         ScrollView{
             VStack(alignment: .leading, spacing: 24){
                 MainScreenHeader(loginVM: loginVM)
                 
-                DashboardSection(loginVM: loginVM)
+                DashboardSection(historyVM: historyVM, loginVM: loginVM)
                 
                     .scaleEffect(isPressed ? 0.97 : 1)
                     .foregroundStyle(.primary)

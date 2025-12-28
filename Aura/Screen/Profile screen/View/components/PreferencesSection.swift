@@ -30,7 +30,7 @@ struct PreferencesSection: View {
                     .tag(AppTheme.system.rawValue)
                 
             }
-            .foregroundStyle(.primary)
+            .foregroundStyle(.colorBlack)
             .pickerStyle(.navigationLink)
         }
         .padding()

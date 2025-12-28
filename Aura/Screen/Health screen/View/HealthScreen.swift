@@ -6,41 +6,70 @@
 //
 
 import SwiftUI
+import CoreData
 
 struct HealthScreen: View {
-        
+    
+    @Environment(\.managedObjectContext) private var context
+    
     @Environment(\.dismiss) private var dismiss
+
+    @StateObject private var historyVM: HistoryViewModel
+    
+    @StateObject private var vm: HealthScreenViewModel
+
+    init() {
+        let context = PersistenceController.shared.container.viewContext
+        let historyVM = HistoryViewModel(context: context)
         
-    @StateObject private var vm = HealthScreenViewModel()
+        _historyVM = StateObject(wrappedValue: historyVM)
+        _vm = StateObject(wrappedValue: HealthScreenViewModel(historyVM: historyVM))
+    }
     
     var body: some View {
         
         ScrollView{
-            
-            VStack(alignment: .leading, spacing: 24) {
-                
-                HealthHeader(showCamera: $vm.showCamera)
-                
-                TodayInsightCard(text: vm.todayInsight)
-                
-                HealthStatsCard()
-                
-                AISuggestionsSection()
-                
-                MoodHistorySection()
-                
-            }
+            content
         }
 
         .navigationDestination(isPresented: $vm.showCamera) {
             CameraPicker { image in
-                vm.analyzeFace(image)
+                Task{
+                    await vm.analyzeFace(image)
+                }
             }
             .ignoresSafeArea()
         }
         .navigationBarBackButtonHidden()
         .toolbar {
             toolbar
+        }
+    }
+    
+    private var content: some View{
+        VStack(alignment: .leading, spacing: 24) {
+            
+            HealthHeader(showCamera: $vm.showCamera)
+            
+            TodayInsightCard(text: vm.todayInsight)
+            
+            HealthStatsCard(healthVM: vm)
+            
+            AISuggestionsSection()
+            
+            MoodHistorySection(healthVM: vm)
+            
+            NavigationLink{
+                HistoryScreen(historyVM: historyVM)
+            } label: {
+                Text("View History")
+                    .foregroundStyle(.colorWhite)
+                    .frame(maxWidth: .infinity)
+                    .padding()
+                    .background(Color.accentColor)
+                    .roundedCorners(cornerRadius: 12)
+            }
+            .padding(.top, 12)
         }
     }
     @ToolbarContentBuilder
@@ -56,6 +85,6 @@ struct HealthScreen: View {
     }
 }
 
-#Preview {
-    HealthScreen()
-}
+//#Preview {
+//    HealthScreen()
+//}
