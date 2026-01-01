@@ -49,7 +49,9 @@ struct SecuritySection: View {
                     Text("Edit")
                 }
                 Button("Cancel", role: .cancel) {}
-            }, message: { Text("You can edit your password")})
+            }, message: {
+                Text("You can edit your password")
+            })
             
             Toggle("Face ID", isOn: $useFaceID)
         }
