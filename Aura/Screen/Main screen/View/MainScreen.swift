@@ -28,13 +28,12 @@ struct MainScreen: View {
                 MainScreenHeader(loginVM: loginVM)
                 
                 DashboardSection(historyVM: historyVM, loginVM: loginVM)
-                
-                    .scaleEffect(isPressed ? 0.97 : 1)
-                    .foregroundStyle(.primary)
-                
             }
 
             .padding()
+            
+        }
+        .refreshable {
             
         }
         .navigationBarBackButtonHidden()
@@ -55,7 +54,3 @@ struct MainScreen: View {
         }
     }
 }
-
-//#Preview {
-//    MainScreen()
-//}

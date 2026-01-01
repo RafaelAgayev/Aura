@@ -43,7 +43,7 @@ struct HealthStatsCard: View {
                 RoundedRectangle(cornerRadius: 12)
                     .fill(Color(.systemGray6))
             )
-            .transition(.move(edge: .bottom).combined(with: .opacity))
+            .transition(.move(edge: .leading).combined(with: .opacity))
             .animation(.easeInOut, value: selectedStat)
             
         }

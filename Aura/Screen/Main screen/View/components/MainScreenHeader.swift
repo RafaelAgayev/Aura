@@ -10,6 +10,7 @@ import SwiftUI
 struct MainScreenHeader: View {
     
     let loginVM: LoginScreenViewModel
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 6){
             Text("Welcome back \(loginVM.name) 👋")

@@ -13,15 +13,6 @@ struct MoodHistorySection: View {
     
     let healthVM: HealthScreenViewModel
     
-    let moods: [(emoji: String, description: String)] = [
-        ("😄", "Happy"),
-        ("🙂‍↔️", "Content"),
-        ("😔", "Sad"),
-        ("🤒", "Sick"),
-        ("🥳", "Get party"),
-        ("🤑", "Rich")
-    ]
-    
     var body: some View {
         
         VStack(alignment: .leading, spacing: 12){
@@ -29,7 +20,7 @@ struct MoodHistorySection: View {
                 .font(.headline)
             
             HStack(spacing: 12){
-                ForEach(moods, id: \.description){ mood in
+                ForEach(healthVM.moods, id: \.description){ mood in
                     Button{
                         withAnimation(.spring){
                             selectedMood = mood.description
@@ -53,8 +44,14 @@ struct MoodHistorySection: View {
             if !selectedMood.isEmpty{
                 Text("\(selectedMood)")
                     .font(.headline)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(.colorWhite)
                     .padding(.horizontal, 12)
+                    .background(
+                        Color.colorGray
+                            .roundedCorners(cornerRadius: 8)
+                            .frame(maxWidth: .infinity)
+                            .frame(height: 22)
+                    )
             }
         }
         .transition(.move(edge: .bottom))

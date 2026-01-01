@@ -21,10 +21,11 @@ struct DashBoard: View {
             
             Text(title)
                 .font(.headline)
+                .foregroundStyle(.colorBlack)
             
             Text(subtitle)
                 .font(.caption)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(.colorBlack.opacity(0.78))
         }
         .padding()
         .frame(maxWidth: .infinity, minHeight: 120)
@@ -32,6 +33,7 @@ struct DashBoard: View {
             RoundedRectangle(cornerRadius: 16)
                 .fill(Color(.systemGray6))
         )
+        .shadow(color: .colorBlack.opacity(0.33), radius: 3, x: 0, y: 2)
     }
 }
 

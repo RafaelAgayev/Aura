@@ -98,7 +98,16 @@ class HealthScreenViewModel: ObservableObject{
         let handler = VNImageRequestHandler(cgImage: cgImage)
         try? handler.perform([request])
     }
-
+    
+    let moods: [(emoji: String, description: String)] = [
+        ("😄", "Happy"),
+        ("🙂‍↔️", "Content"),
+        ("😔", "Sad"),
+        ("🤒", "Sick"),
+        ("🥳", "Get party"),
+        ("🤑", "Rich")
+    ]
+    
     func analyzeLandmarks(_ face: VNFaceObservation) {
         guard let landmarks = face.landmarks else { return }
 

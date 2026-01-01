@@ -30,7 +30,26 @@ struct HealthScreen: View {
         
         ScrollView{
             content
+            
         }
+        
+        NavigationLink{
+            HistoryScreen(historyVM: historyVM)
+        } label: {
+            Text("View History")
+                .fontModifier(size: 17, weight: .semibold, foregroundColor: .colorWhite)
+                
+                .frame(width: 200, height: 30)
+                .padding()
+                .background(
+                    Color.colorAccent
+                        .roundedCorners(cornerRadius: 15)
+                        .shadow(radius: 2.33)
+                )
+               
+        }
+        .padding(.top, 12)
+        .padding(.leading, 18)
 
         .navigationDestination(isPresented: $vm.showCamera) {
             CameraPicker { image in
@@ -58,18 +77,6 @@ struct HealthScreen: View {
             AISuggestionsSection()
             
             MoodHistorySection(healthVM: vm)
-            
-            NavigationLink{
-                HistoryScreen(historyVM: historyVM)
-            } label: {
-                Text("View History")
-                    .foregroundStyle(.colorWhite)
-                    .frame(maxWidth: .infinity)
-                    .padding()
-                    .background(Color.accentColor)
-                    .roundedCorners(cornerRadius: 12)
-            }
-            .padding(.top, 12)
         }
     }
     @ToolbarContentBuilder
