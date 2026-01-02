@@ -20,6 +20,7 @@ struct HistoryRow: View {
             Text(item.subtitle ?? "no subtitle")
                 .font(.subheadline)
                 .foregroundStyle(.secondary)
+                .fontModifier(size: 15, weight: .semibold, foregroundColor: .colorBlack)
             if let date = item.date{
                 Text(date.formatted(date: .abbreviated, time: .shortened))
                     .font(.headline)

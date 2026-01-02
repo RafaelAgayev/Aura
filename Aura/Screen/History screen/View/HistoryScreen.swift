@@ -10,17 +10,10 @@ import CoreData
 
 struct HistoryScreen: View {
   
-    
-    @Environment(\.managedObjectContext) private var context
-    
-    @StateObject private var vm: HistoryViewModel
+    @ObservedObject var vm: HistoryViewModel
     
     @Environment(\.dismiss) private var dismiss
 
-    init(historyVM: HistoryViewModel) {
-        _vm = StateObject(wrappedValue: historyVM)
-    }
-    
     var body: some View {
         List{
             ForEach(vm.items, id: \.objectID){ items in
