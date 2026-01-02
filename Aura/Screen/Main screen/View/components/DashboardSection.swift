@@ -34,14 +34,14 @@ struct DashboardSection: View {
             GridItem(.flexible())
         ], spacing: 16
         ){
-                DashBoard(
-                    title: "Mood",
-                    subtitle: "How do you feel?",
-                    icon: "face.smiling"
-                )
-                .onTapGesture{
-                    showCamera = true
-                }
+            DashBoard(
+                title: "Mood",
+                subtitle: "How do you feel?",
+                icon: "face.smiling"
+            )
+            .onTapGesture{
+                showCamera = true
+            }
             
             NavigationLink{
                 HealthScreen()
@@ -54,7 +54,7 @@ struct DashboardSection: View {
             }
             
             NavigationLink{
-                HistoryScreen(historyVM: historyVM)
+                HistoryScreen(vm: historyVM)
             }label:{
                 DashBoard(
                     title: "History",
@@ -71,20 +71,31 @@ struct DashboardSection: View {
                     icon: "person.crop.circle"
                 )
             }
-        }
-        .navigationDestination(isPresented: $showCamera) {
-            CameraPicker { image in
-                capturedImage = image
+            
+            NavigationLink{
+                ReminderScreen()
+            }label:{
+              
+                DashBoard(
+                    title: "Reminder",
+                    subtitle: "Scan your today mood",
+                    icon: "bell"
+                )
             }
-            .ignoresSafeArea()
-        }
-        .alert("Mood scan", isPresented: $showCameraAlert) {
-            Button("Start") {
-                showCamera = true
+            .navigationDestination(isPresented: $showCamera) {
+                CameraPicker { image in
+                    capturedImage = image
+                }
+                .ignoresSafeArea()
             }
-            Button("Cancel", role: .cancel) {}
-        }message:{
-            Text("We'll your analyze with camera")
+            .alert("Mood scan", isPresented: $showCameraAlert) {
+                Button("Start") {
+                    showCamera = true
+                }
+                Button("Cancel", role: .cancel) {}
+            }message:{
+                Text("We'll your analyze with camera")
+            }
         }
     }
 }

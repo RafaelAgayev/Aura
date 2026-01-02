@@ -34,7 +34,7 @@ struct HealthScreen: View {
         }
         
         NavigationLink{
-            HistoryScreen(historyVM: historyVM)
+            HistoryScreen(vm: historyVM)
         } label: {
             Text("View History")
                 .fontModifier(size: 17, weight: .semibold, foregroundColor: .colorWhite)

@@ -70,35 +70,6 @@ class HealthScreenViewModel: ObservableObject{
         )
     ]
     
-    func analyzeFace(_ image: UIImage) async {
-        guard let cgImage = image.cgImage else { return }
-        
-        scan = .scanning
-
-        let request = VNDetectFaceLandmarksRequest { request, error in
-            guard
-                let results = request.results as? [VNFaceObservation],
-                let face = results.first
-            else { return }
-
-            self.analyzeLandmarks(face)
-        }
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
-                    let insights = [
-                        "You look energetic today 💪",
-                        "You seem a bit tired today 😌",
-                        "You look more tired than yesterday 😴",
-                        "You look very and very beautiful 🤩"
-                    ]
-                    
-                    self.scan = .result(insights.randomElement()!)
-                }
-
-        let handler = VNImageRequestHandler(cgImage: cgImage)
-        try? handler.perform([request])
-    }
-    
     let moods: [(emoji: String, description: String)] = [
         ("😄", "Happy"),
         ("🙂‍↔️", "Content"),
@@ -108,22 +79,30 @@ class HealthScreenViewModel: ObservableObject{
         ("🤑", "Rich")
     ]
     
-    func analyzeLandmarks(_ face: VNFaceObservation) {
-        guard let landmarks = face.landmarks else { return }
+    func analyzeFace(_ image: UIImage) async {
+        scan = .scanning
 
-        let leftEye = landmarks.leftEye
-        let rightEye = landmarks.rightEye
-        let mouth = landmarks.outerLips
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+            let insights = [
+                "You look energetic today 💪",
+                "You seem a bit tired today 😌",
+                "You look more tired than yesterday 😴",
+                "You look very and very beautiful 🤩"
+            ]
 
-        let fatigueScore = calculateFatigue(
-            leftEye: leftEye,
-            rightEye: rightEye,
-            mouth: mouth
-        )
+            let result = insights.randomElement()!
 
-        generateInsight(score: fatigueScore)
+            self.scan = .result(result)
+            self.todayInsight = result
+
+            self.historyVM.add(
+                type: "Health Scan",
+                title: "Face Analysis",
+                subtitle: result
+            )
+        }
     }
-
+    
     func calculateFatigue(
         leftEye: VNFaceLandmarkRegion2D?,
         rightEye: VNFaceLandmarkRegion2D?,
@@ -161,10 +140,5 @@ class HealthScreenViewModel: ObservableObject{
 
         todayInsight = insight
 
-        historyVM.add(
-            type: "Health Scan",
-            title: "Face Analysis",
-            subtitle: insight
-        )
     }
 }

@@ -24,13 +24,8 @@ struct MainScreen: View {
     
     var body: some View {
         ScrollView{
-            VStack(alignment: .leading, spacing: 24){
-                MainScreenHeader(loginVM: loginVM)
-                
-                DashboardSection(historyVM: historyVM, loginVM: loginVM)
-            }
-
-            .padding()
+            
+           content
             
         }
         .refreshable {
@@ -40,6 +35,16 @@ struct MainScreen: View {
         .toolbar {
             toolbar
         }
+    }
+    
+    private var content: some View{
+        VStack(alignment: .leading, spacing: 24){
+            MainScreenHeader(loginVM: loginVM)
+            
+            DashboardSection(historyVM: historyVM, loginVM: loginVM)
+        }
+
+        .padding()
     }
     
     @ToolbarContentBuilder
