@@ -25,8 +25,10 @@ struct DashboardSection: View {
         self.loginVM = loginVM
     }
     
+    @Environment(\.showLoading) private var showLoading
     
-    
+    @Environment(\.hideLoading) private var hideLoading
+
     var body: some View {
         
         LazyVGrid(columns: [
@@ -40,17 +42,34 @@ struct DashboardSection: View {
                 icon: "face.smiling"
             )
             .onTapGesture{
-                showCamera = true
+                showLoading()
+                
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.4){
+                    showCamera = true
+                    
+                }
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.6){
+                    hideLoading()
+                }
             }
+           
             
             NavigationLink{
                 HealthScreen()
+                    
             }label:{
                 DashBoard(
                     title: "Health",
                     subtitle: "Daily status",
                     icon: "heart.text.square"
                 )
+                .onChange(of: historyVM.isLoading) { _, newValue in
+                    if newValue{
+                        showLoading()
+                    }else{
+                        hideLoading()
+                    }
+                }
             }
             
             NavigationLink{

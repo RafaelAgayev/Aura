@@ -12,23 +12,26 @@ import UserNotifications
 import CoreData
 
 @available(iOS 18.0, *)
-class ReminderViewModel: ObservableObject{
+class ReminderViewModel: BaseViewModel{
     
     @AppStorage("reminder_enabled") var isEnabled: Bool =  false {
         didSet {
             if isEnabled {
-                historyVM?.add(
-                    type: "Reminder",
-                    title: "Reminder enabled",
-                    subtitle: "You will get daily notifications at \(reminderTime.formatted(date: .omitted, time: .shortened))"
-                )
+                
+                    historyVM?.add(
+                        type: "Reminder",
+                        title: "Reminder enabled",
+                        subtitle: "You will get daily notifications at \(reminderTime.formatted(date: .omitted, time: .shortened))"
+                    )
+                
             } else {
-                historyVM?.add(
-                    type: "Reminder",
-                    title: "Reminder disabled",
-                    subtitle: "You won't get daily notifications"
-                )
-                disableReminder()
+                
+                     historyVM?.add(
+                        type: "Reminder",
+                        title: "Reminder disabled",
+                        subtitle: "You won't get daily notifications"
+                    )
+                    disableReminder()
             }
         }
     }
@@ -36,11 +39,13 @@ class ReminderViewModel: ObservableObject{
     
     @AppStorage("reminder_repeat") var repeatDaily: Bool = true {
         didSet {
-            historyVM?.add(
-                type: "Reminder",
-                title: "Repeat changed",
-                subtitle: repeatDaily ? "Repeats daily" : "Repeats only once"
-            )
+            
+                 historyVM?.add(
+                    type: "Reminder",
+                    title: "Repeat changed",
+                    subtitle: repeatDaily ? "Repeats daily" : "Repeats only once"
+                )
+            
         }
     }
     
@@ -60,7 +65,7 @@ class ReminderViewModel: ObservableObject{
         content.body = "Don't forget to check your health today  💕"
         content.sound = .default
         
-        var date = Calendar.current.dateComponents(
+        let date = Calendar.current.dateComponents(
             [.hour, .minute],
             from: reminderTime
         )

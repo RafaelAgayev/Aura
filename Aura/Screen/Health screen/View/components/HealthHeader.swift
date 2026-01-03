@@ -10,6 +10,14 @@ import SwiftUI
 struct HealthHeader: View {
     
     @Binding var showCamera: Bool
+    
+    let vm: HealthScreenViewModel
+    
+    @Environment(\.showLoading) private var showLoading
+    
+    @Environment(\.hideLoading) private var hideLoading
+
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 12){
             
@@ -42,6 +50,13 @@ struct HealthHeader: View {
                 .roundedCorners(cornerRadius: 14)
             }
             
+        }
+        .onChange(of: vm.isLoading){ oldValue, newValue in
+            if newValue{
+                showLoading()
+            }else {
+                hideLoading()
+            }
         }
         .padding()
     }

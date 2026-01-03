@@ -13,6 +13,10 @@ struct HealthStatsCard: View {
 
     @State private var isSelected = false
     
+    @Environment(\.showLoading) private var showLoading
+    
+    @Environment(\.hideLoading) private var hideLoading
+    
     var body: some View {
         LazyVGrid(columns: [
             GridItem(.flexible()),
@@ -44,6 +48,13 @@ struct HealthStatsCard: View {
                     .fill(Color(.systemGray6))
             )
             .transition(.move(edge: .leading).combined(with: .opacity))
+            .onChange(of: healthVM.isLoading) { _, newValue in
+                if newValue{
+                    showLoading()
+                }else {
+                    hideLoading()
+                }
+            }
             .animation(.easeInOut, value: selectedStat)
             
         }

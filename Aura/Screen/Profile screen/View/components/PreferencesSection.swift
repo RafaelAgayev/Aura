@@ -36,7 +36,8 @@ struct PreferencesSection: View {
                 
             }
             .onChange(of: theme) { oldValue, newValue in
-                onChange?("New theme is:", theme.description)
+                
+                     onChange?("New theme is:", theme.description)
             }
             .foregroundStyle(.colorBlack)
             .pickerStyle(.navigationLink)

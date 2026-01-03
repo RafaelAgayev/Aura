@@ -17,6 +17,10 @@ struct HealthScreen: View {
     @StateObject private var historyVM: HistoryViewModel
     
     @StateObject private var vm: HealthScreenViewModel
+    
+    @Environment(\.showLoading) private var showLoading
+    
+    @Environment(\.hideLoading) private var hideLoading
 
     init() {
         let context = PersistenceController.shared.container.viewContext
@@ -59,6 +63,13 @@ struct HealthScreen: View {
             }
             .ignoresSafeArea()
         }
+        .onChange(of: vm.isLoading) { _, isLoading in
+            if isLoading{
+                showLoading()
+            }else{
+                hideLoading()
+            }
+        }
         .navigationBarBackButtonHidden()
         .toolbar {
             toolbar
@@ -67,8 +78,7 @@ struct HealthScreen: View {
     
     private var content: some View{
         VStack(alignment: .leading, spacing: 24) {
-            
-            HealthHeader(showCamera: $vm.showCamera)
+            HealthHeader(showCamera: $vm.showCamera, vm: vm)
             
             TodayInsightCard(text: vm.todayInsight)
             

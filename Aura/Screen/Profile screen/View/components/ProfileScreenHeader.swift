@@ -28,12 +28,13 @@ struct ProfileScreenHeader: View {
                     .fontModifier(size: 15, weight: .semibold, foregroundColor: .primary)
             }
             Spacer()
-            Button("Edit"){
+            Button{
                 newName = loginVM.name
                 showEditAlert = true
                 
+            }label: {
+                Text("Edit")
             }
-            .padding()
             .foregroundStyle(.colorWhite)
             .background(
                 Color.colorAccent
@@ -49,8 +50,8 @@ struct ProfileScreenHeader: View {
             TextField("Enter new name", text: $newName)
             Button("Save"){
                 loginVM.name = newName
-                onChange?("New name is updated", newName)
                 
+                    onChange?("New name is updated", newName)
             }
             Button("Cancel", role: .cancel){ }
         }, message: { Text("You can update your display name")

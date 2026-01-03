@@ -10,34 +10,36 @@ import SwiftUI
 import CoreData
 internal import Combine
 
-class HistoryViewModel: ObservableObject{
+@MainActor
+class HistoryViewModel: BaseViewModel {
     
     @Published var items: [HistoryEntity] = []
     
     private let context: NSManagedObjectContext
     
-    init(context: NSManagedObjectContext){
+    init(context: NSManagedObjectContext) {
         self.context = context
-        fetch()
+        super.init()
     }
     
-    func fetch() {
-        let request: NSFetchRequest<HistoryEntity> = HistoryEntity.fetchRequest()
-        request.sortDescriptors = [NSSortDescriptor(key: "date", ascending: false)]
-        
-        do {
-            items = try context.fetch(request)
-        } catch {
-            print("Fetch error:", error)
-            items = []
+    func fetch(){
+        Task{
+            do {
+                try await withLoading {
+                    let request: NSFetchRequest<HistoryEntity> = HistoryEntity.fetchRequest()
+                    request.sortDescriptors = [
+                        NSSortDescriptor(key: "date", ascending: false)
+                    ]
+                    items = try context.fetch(request)
+                }
+            } catch {
+                print("Fetch error:", error)
+                items = []
+            }
         }
     }
     
-    func add(
-        type: String,
-        title: String,
-        subtitle: String
-    ){
+    func add(type: String, title: String, subtitle: String) {
         let item = HistoryEntity(context: context)
         item.id = UUID()
         item.title = title
@@ -48,20 +50,23 @@ class HistoryViewModel: ObservableObject{
         save()
     }
     
-    func delete(_ item: HistoryEntity){
+    func delete(_ item: HistoryEntity)  {
         context.delete(item)
         save()
     }
     
-    private func save(){
-        do{
-            try context.save()
-            fetch()
-        }catch{
-            print("Save error -->", error.localizedDescription)
+    private func save() {
+        Task{
+            do {
+                try await withLoading {
+                    try context.save()
+                    fetch()
+                }
+            } catch {
+                print("Save error -->", error.localizedDescription)
+            }
         }
-
-        
     }
 }
+
 

@@ -9,7 +9,9 @@ import Foundation
 import SwiftUI
 internal import Combine
 
-class MainScreenViewModel: ObservableObject {
+class MainScreenViewModel: BaseViewModel {
    
     @AppStorage("language") private var language = "az"
+    
+    
 }

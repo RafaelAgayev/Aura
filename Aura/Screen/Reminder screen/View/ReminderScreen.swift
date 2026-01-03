@@ -18,6 +18,10 @@ struct ReminderScreen: View {
             _vm = StateObject(wrappedValue: ReminderViewModel(historyVM: historyVM))
         }
     
+    @Environment(\.showLoading) private var showLoading
+    
+    @Environment(\.hideLoading) private var hideLoading
+    
     var body: some View {
         content
     }
@@ -48,6 +52,9 @@ struct ReminderScreen: View {
             if !vm.isEnabled{
                 vm.disableReminder()
             }
+        }
+        .onChange(of: vm.isLoading) { _, isLoading in
+            isLoading ? showLoading() : hideLoading()
         }
         .navigationBarBackButtonHidden()
         .toolbar {

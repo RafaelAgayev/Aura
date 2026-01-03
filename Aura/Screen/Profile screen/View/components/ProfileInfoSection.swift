@@ -15,11 +15,11 @@ struct ProfileInfoSection: View {
     
     @State private var newEmail: String = ""
     
-    var onChange: ((String, String) -> Void)? = nil
+    var onChange: ((String, String) ->  Void)? = nil
     
     var body: some View {
             HStack{
-            Text("E-mail: \(loginVM.email)")
+            Text("E-mail:\n \(loginVM.email)")
                 
             Spacer()
                 
@@ -29,7 +29,6 @@ struct ProfileInfoSection: View {
                 }label:{
                     Text("Edit")
                 }
-                .padding()
                 .foregroundStyle(.colorWhite)
                 .background(
                     Color.colorAccent
@@ -43,8 +42,11 @@ struct ProfileInfoSection: View {
         .alert("Edit email", isPresented: $showEditAlert, actions: {
             TextField("Enter your email", text: $newEmail)
             Button{
-                loginVM.email = newEmail
-                onChange?("New email updated", newEmail)
+               
+                    loginVM.email = newEmail
+                Task{
+                    onChange?("New email updated", newEmail)
+                }
             }label:{
                 Text("Save")
             }
