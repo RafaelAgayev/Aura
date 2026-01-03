@@ -44,6 +44,9 @@ struct AuraApp: App {
     @StateObject private var loginVM = LoginScreenViewModel()
     
     @StateObject private var historyVM = HistoryViewModel(context: PersistenceController.shared.container.viewContext)
+    
+    @State private var loadingCount: Int = 0
+    
     var body: some Scene {
        
         WindowGroup {
@@ -58,9 +61,22 @@ struct AuraApp: App {
                     LoginScreen()
                         .preferredColorScheme(colorScheme)
                         .environment(\.managedObjectContext, persistence.container.viewContext)
+                        
                 }
             }
             .environment(\.locale, Locale(identifier: language))
+            .environment(\.showLoading) {
+                loadingCount += 1
+            }
+            .environment(\.hideLoading){
+                loadingCount -= 1
+            }
+            .overlay(alignment: .center) {
+                if loadingCount > 0 {
+                    LoadingView()
+                }
+            }
+           
         }
     }
 }

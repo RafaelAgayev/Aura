@@ -10,15 +10,31 @@ import SwiftUI
 internal import Combine
 import CoreData
 
-class ProfileViewModel: ObservableObject{
-    
-    private let historyVM: HistoryViewModel?
-    
-    init(historyVM: HistoryViewModel? = nil) {
+
+class ProfileViewModel: BaseViewModel {
+
+    private let historyVM: HistoryViewModel
+
+    init(historyVM: HistoryViewModel) {
         self.historyVM = historyVM
+        super.init()
     }
-    
-    func save(){
-        
+
+    func profileChanged(
+        section: String,
+        description: String
+    ) async {
+
+        try? await withLoading {
+
+            try await Task.sleep(nanoseconds: 600_000_000)
+
+            historyVM.add(
+                type: "Profile",
+                title: section,
+                subtitle: description
+            )
+        }
     }
 }
+

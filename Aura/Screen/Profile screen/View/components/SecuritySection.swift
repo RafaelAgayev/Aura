@@ -33,7 +33,7 @@ struct SecuritySection: View {
                 }label:{
                     Text("Edit")
                 }
-                .padding()
+              
                 .foregroundStyle(.colorWhite)
                 .background(
                     Color.colorAccent
@@ -48,7 +48,9 @@ struct SecuritySection: View {
                 
                 Button{
                     loginVM.password = newPassword
+                    Task{
                     onChange?("Password updated: \(newPassword)")
+                    }
                 }label:{
                     Text("Edit")
                 }
@@ -59,8 +61,8 @@ struct SecuritySection: View {
             
             Toggle("Face ID", isOn: $useFaceID)
                 .onChange(of: useFaceID) { oldValue, newValue in
+                    
                     onChange?("FaceID: \(newValue ? "enabled" : "disabled")")
-
                 }
         }
         .padding()

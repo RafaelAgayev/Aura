@@ -2,7 +2,14 @@
   "sourceLanguage" : "en",
   "strings" : {
     "%@" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
+        }
+      }
     },
     "• Try getting 30 minutes of fresh air\n• Consider a short meditation\n• Drink more water today" : {
       "localizations" : {
@@ -35,7 +42,7 @@
       }
     },
     "Back" : {
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "az" : {
           "stringUnit" : {
@@ -85,7 +92,11 @@
         }
       }
     },
+    "E-mail:\n %@" : {
+
+    },
     "E-mail: %@" : {
+      "extractionState" : "stale",
       "localizations" : {
         "az" : {
           "stringUnit" : {
@@ -262,6 +273,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "İşıqlı"
+          }
+        }
+      }
+    },
+    "Loading..." : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yüklənir…"
           }
         }
       }

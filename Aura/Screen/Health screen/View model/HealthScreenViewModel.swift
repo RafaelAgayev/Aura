@@ -11,7 +11,7 @@ import Vision
 import UIKit
 import CoreData
 
-class HealthScreenViewModel: ObservableObject{
+class HealthScreenViewModel: BaseViewModel{
     
     @Published var showCamera = false
 
@@ -80,26 +80,28 @@ class HealthScreenViewModel: ObservableObject{
     ]
     
     func analyzeFace(_ image: UIImage) async {
+        await withLoading{
         scan = .scanning
-
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
-            let insights = [
-                "You look energetic today 💪",
-                "You seem a bit tired today 😌",
-                "You look more tired than yesterday 😴",
-                "You look very and very beautiful 🤩"
-            ]
-
-            let result = insights.randomElement()!
-
-            self.scan = .result(result)
-            self.todayInsight = result
-
-            self.historyVM.add(
-                type: "Health Scan",
-                title: "Face Analysis",
-                subtitle: result
-            )
+        
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                let insights = [
+                    "You look energetic today 💪",
+                    "You seem a bit tired today 😌",
+                    "You look more tired than yesterday 😴",
+                    "You look very and very beautiful 🤩"
+                ]
+                
+                let result = insights.randomElement()!
+                
+                self.scan = .result(result)
+                self.todayInsight = result
+                
+                self.historyVM.add(
+                    type: "Health Scan",
+                    title: "Face Analysis",
+                    subtitle: result
+                )
+            }
         }
     }
     
@@ -127,18 +129,24 @@ class HealthScreenViewModel: ObservableObject{
     }
 
     func generateInsight(score: Int) {
-        let insight: String
-
-        switch score {
-        case 0:
-            insight = "You look energetic today 💪"
-        case 1:
-            insight = "You seem a bit tired today 😌"
-        default:
-            insight = "You look more tired than yesterday 😴"
+        Task{
+           
+                 await withLoading{
+                    
+                    
+                    let insight: String
+                    
+                    switch score {
+                    case 0:
+                        insight = "You look energetic today 💪"
+                    case 1:
+                        insight = "You seem a bit tired today 😌"
+                    default:
+                        insight = "You look more tired than yesterday 😴"
+                    }
+                    
+                    todayInsight = insight
+                }
+            }
         }
-
-        todayInsight = insight
-
-    }
 }

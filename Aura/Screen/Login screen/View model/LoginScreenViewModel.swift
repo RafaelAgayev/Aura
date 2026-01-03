@@ -10,7 +10,7 @@ import SwiftUI
 import FirebaseAuth
 internal import Combine
 
-class LoginScreenViewModel: ObservableObject{
+class LoginScreenViewModel: BaseViewModel{
     
     @Published var email: String = ""
     
@@ -28,7 +28,8 @@ class LoginScreenViewModel: ObservableObject{
     
     @Published var showPassword: Bool = false
     
-    init(){
+    override init(){
+        super.init()
         self.user = Auth.auth().currentUser
         if self.user != nil {
             
@@ -47,51 +48,66 @@ class LoginScreenViewModel: ObservableObject{
     }
     
     func createUser() {
-        Auth.auth().createUser(withEmail: email, password: password) { [weak self] result, error in
-            guard let self else {return}
-            DispatchQueue.main.async {
+        Task{
+            await withLoading{
                 
-                if let error = error {
-                    
-                    self.alertMessage = error.localizedDescription
-                    self.showAlert = true
-                } else if let user = result?.user {
-                    self.user = user
-                    self.email = user.email ?? ""
-                    self.isAuthorized = true
+                Auth.auth().createUser(withEmail: email, password: password) { [weak self] result, error in
+                    guard let self else {return}
+                    DispatchQueue.main.async {
+                        
+                        if let error = error {
+                            
+                            self.alertMessage = error.localizedDescription
+                            self.showAlert = true
+                        } else if let user = result?.user {
+                            self.user = user
+                            self.email = user.email ?? ""
+                            self.isAuthorized = true
+                        }
+                    }
                 }
             }
         }
     }
     
     func signInUser() {
-        Auth.auth().signIn(withEmail: email, password: password) { [weak self] result, error in
-            DispatchQueue.main.async {
+        Task{
+            await withLoading{
                 
-                if let error = error {
-                    
-                    self?.alertMessage = error.localizedDescription
-                    self?.showAlert = true
-                } else if let user = result?.user {
-                   
-                    self?.user = user
-                    self?.email = user.email ?? ""
-                    self?.isAuthorized = true
+                Auth.auth().signIn(withEmail: email, password: password) { [weak self] result, error in
+                    DispatchQueue.main.async {
+                        
+                        if let error = error {
+                            
+                            self?.alertMessage = error.localizedDescription
+                            self?.showAlert = true
+                        } else if let user = result?.user {
+                            
+                            self?.user = user
+                            self?.email = user.email ?? ""
+                            self?.isAuthorized = true
+                        }
+                    }
                 }
             }
         }
     }
     
     func logoutUser(){
-        do{
-            try Auth.auth().signOut()
-            self.user = nil
-            self.isAuthorized = false
-            print("Logout successful")
-        }catch{
-            print("Logout failed: \(error.localizedDescription)")
-            self.alertMessage = error.localizedDescription
-            self.showAlert = true
+        Task{
+            
+            do{
+               try await withLoading{
+                    try Auth.auth().signOut()
+                    self.user = nil
+                    self.isAuthorized = false
+                    print("Logout successful")
+                }
+            }catch{
+                print("Logout failed: \(error.localizedDescription)")
+                self.alertMessage = error.localizedDescription
+                self.showAlert = true
+            }
         }
     }
 }

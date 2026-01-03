@@ -13,6 +13,10 @@ struct HistoryScreen: View {
     @ObservedObject var vm: HistoryViewModel
     
     @Environment(\.dismiss) private var dismiss
+    
+    @Environment(\.showLoading) private var showLoading
+    
+    @Environment(\.hideLoading) private var hideLoading
 
     var body: some View {
         List{
@@ -24,16 +28,24 @@ struct HistoryScreen: View {
             .onDelete { indexSet in
                 for index in indexSet {
                     let item = vm.items[index]
-                    vm.delete(item)
+                   
+                        vm.delete(item)
                 }
             }
         }
-        .refreshable {
-            
+        .onAppear{
+            vm.fetch()
         }
         .navigationBarBackButtonHidden()
         .toolbar {
             toolbar
+        }
+        .onChange(of: vm.isLoading) { _, isLoading in
+            if isLoading{
+                showLoading()
+            }else {
+                hideLoading()
+            }
         }
         
     }

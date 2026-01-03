@@ -23,6 +23,10 @@ struct MainScreen: View {
         self.loginVM = loginVM
     }
     
+    @Environment(\.showLoading) private var showLoading
+    
+    @Environment(\.hideLoading) private var hideLoading
+    
     
     var body: some View {
         ScrollView{
@@ -40,6 +44,10 @@ struct MainScreen: View {
         .onAppear{
             
         }
+        .onChange(of: vm.isLoading) { _, isLoading in
+            isLoading ? showLoading() : hideLoading()
+        }
+        
     }
     
     private var content: some View{

@@ -16,9 +16,17 @@ struct ProfileScreen: View {
     @StateObject private var historyVM: HistoryViewModel
     
     init(loginVM: LoginScreenViewModel, historyVM: HistoryViewModel) {
-           self.loginVM = loginVM
-           _historyVM = StateObject(wrappedValue: historyVM)
-       }
+        self.loginVM = loginVM
+        _historyVM = StateObject(wrappedValue: historyVM)
+        _profileVM = StateObject(
+            wrappedValue: ProfileViewModel(historyVM: historyVM)
+        )
+    }
+    @StateObject private var profileVM: ProfileViewModel
+    
+    @Environment(\.showLoading) private var showLoading
+    
+    @Environment(\.hideLoading) private var hideLoading
     
     var body: some View {
         ZStack{
@@ -37,6 +45,9 @@ struct ProfileScreen: View {
             .navigationBarBackButtonHidden()
             .toolbar {
                 toolbar
+            }
+            .onChange(of: profileVM.isLoading) { _, isLoading in
+                isLoading ? showLoading() : hideLoading()
             }
         }
     }
