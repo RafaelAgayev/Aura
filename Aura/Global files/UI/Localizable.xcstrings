@@ -92,8 +92,35 @@
         }
       }
     },
+    "Delete" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Silmək"
+          }
+        }
+      }
+    },
+    "Delete history?" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tarixçədən silmək istədiyinə əminsən ?"
+          }
+        }
+      }
+    },
     "E-mail:\n %@" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "E-mail: %@"
+          }
+        }
+      }
     },
     "E-mail: %@" : {
       "extractionState" : "stale",
@@ -463,6 +490,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Qaydalar və Şərtlər"
+          }
+        }
+      }
+    },
+    "This action is undone" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu hərəkət edilmədi."
           }
         }
       }
