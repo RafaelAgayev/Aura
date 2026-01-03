@@ -17,6 +17,8 @@ struct SecuritySection: View {
     
     @State private var newPassword = ""
     
+    var onChange: ((String) -> Void)? = nil
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
             HStack{
@@ -27,6 +29,7 @@ struct SecuritySection: View {
                 Button{
                     newPassword = loginVM.password
                     showEditPassword = true
+                    
                 }label:{
                     Text("Edit")
                 }
@@ -35,7 +38,7 @@ struct SecuritySection: View {
                 .background(
                     Color.colorAccent
     
-                        .frame(width: 80,height: 30)
+                        .frame(width: 90,height: 30)
                         .blur(radius: 2)
                         .roundedCorners(cornerRadius: 12)
                 )
@@ -45,6 +48,7 @@ struct SecuritySection: View {
                 
                 Button{
                     loginVM.password = newPassword
+                    onChange?("Password updated: \(newPassword)")
                 }label:{
                     Text("Edit")
                 }
@@ -54,6 +58,10 @@ struct SecuritySection: View {
             })
             
             Toggle("Face ID", isOn: $useFaceID)
+                .onChange(of: useFaceID) { oldValue, newValue in
+                    onChange?("FaceID: \(newValue ? "enabled" : "disabled")")
+
+                }
         }
         .padding()
     }

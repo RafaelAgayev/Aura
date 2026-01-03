@@ -18,13 +18,18 @@ struct HistoryScreen: View {
         List{
             ForEach(vm.items, id: \.objectID){ items in
                 HistoryRow(item: items)
+                   
             }
+            
             .onDelete { indexSet in
                 for index in indexSet {
                     let item = vm.items[index]
                     vm.delete(item)
                 }
             }
+        }
+        .refreshable {
+            
         }
         .navigationBarBackButtonHidden()
         .toolbar {

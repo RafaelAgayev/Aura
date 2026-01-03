@@ -5,142 +5,477 @@
 
     },
     "• Try getting 30 minutes of fresh air\n• Consider a short meditation\n• Drink more water today" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 30 dəqiqə təmiz havada vaxt keçirməyə çalış\n• Qısa bir meditasiya etməyi düşün\n• Bu gün daha çox su iç 💧"
+          }
+        }
+      }
     },
     "AI Health Insight" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AI Sağlamlıq Tövsiyəsi"
+          }
+        }
+      }
     },
     "AI Suggestions" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "süni intellekt tərəfindən verilən təkliflər"
+          }
+        }
+      }
     },
     "Back" : {
-
+      "extractionState" : "stale",
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geri"
+          }
+        }
+      }
     },
     "Cancel" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ləğv et"
+          }
+        }
+      }
     },
     "Change password" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şifrəni dəyiş"
+          }
+        }
+      }
     },
     "Daily" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gündəlik"
+          }
+        }
+      }
     },
     "Dark" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Qaranlıq"
+          }
+        }
+      }
     },
     "E-mail: %@" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "E-mail: %@"
+          }
+        }
+      }
     },
     "Edit" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Düzəltmək"
+          }
+        }
+      }
     },
     "Edit email" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Email’i dəyiş"
+          }
+        }
+      }
     },
     "Edit name" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adını dəyiş"
+          }
+        }
+      }
     },
     "Edit password" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şifrəni dəyiş"
+          }
+        }
+      }
     },
     "Enable notification" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bildirişləri aç"
+          }
+        }
+      }
     },
     "Enable reminder" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xatırlatmanı aç"
+          }
+        }
+      }
     },
     "Enter email" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "email’i daxil edin"
+          }
+        }
+      }
     },
     "Enter name" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "adınızı daxil edin"
+          }
+        }
+      }
     },
     "Enter new name" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "yeni adınızı daxil edin"
+          }
+        }
+      }
     },
     "Enter new password " : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "yeni şifrə daxil edin"
+          }
+        }
+      }
     },
     "Enter your email" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "e-mail’inizi daxil edin"
+          }
+        }
+      }
     },
     "Face ID" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Üz tanıma ilə giriş edin"
+          }
+        }
+      }
     },
     "Get daily" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gündəliyi əldə edin"
+          }
+        }
+      }
     },
     "Get daily reminders to check your mood and health." : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gündəlik olaraq əhvalını və sağlamlığını yoxlamaq üçün xatırlatmalar al."
+          }
+        }
+      }
     },
     "Key" : {
-      "extractionState" : "manual"
+      "extractionState" : "manual",
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Açar"
+          }
+        }
+      }
     },
     "Let’s check how you’re doing today" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bugün nələr etdiyinizə baxın"
+          }
+        }
+      }
     },
     "Light" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İşıqlı"
+          }
+        }
+      }
     },
     "Mood History" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Əhval tarixçəsi"
+          }
+        }
+      }
     },
     "Mood scan" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Əhval skan et"
+          }
+        }
+      }
     },
     "Name: %@" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ad: %@"
+          }
+        }
+      }
     },
     "Password" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şifrə"
+          }
+        }
+      }
     },
     "Please sign in" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lütfən giriş edin"
+          }
+        }
+      }
     },
     "Register" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Qeydiyyat"
+          }
+        }
+      }
     },
     "Reminder time" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xatırlatma vaxtı"
+          }
+        }
+      }
     },
     "Repeat" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Təkrarlanma"
+          }
+        }
+      }
     },
     "Save" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yazmaq"
+          }
+        }
+      }
     },
     "Save reminder" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xatırlatmanı qeydiyyata al"
+          }
+        }
+      }
     },
     "Scan now" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skan et indi"
+          }
+        }
+      }
     },
     "Scan your face and get insights about your mood and energy." : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Üzünü skan et və əhvalınla enerji səviyyən haqqında məlumat al."
+          }
+        }
+      }
     },
     "Selection theme" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Temani seç"
+          }
+        }
+      }
     },
     "Sign in" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giriş et"
+          }
+        }
+      }
     },
     "Start" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Başlamaq"
+          }
+        }
+      }
     },
     "Support" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dəstək"
+          }
+        }
+      }
     },
     "System" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sistem"
+          }
+        }
+      }
     },
     "Terms and Conditions" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Qaydalar və Şərtlər"
+          }
+        }
+      }
     },
     "Time" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vaxt"
+          }
+        }
+      }
+    },
+    "Tired" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yorğun"
+          }
+        }
+      }
     },
     "Today's insight" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bugünkü Tövsiyə"
+          }
+        }
+      }
     },
     "Version: 1.0.1" : {
       "localizations" : {
@@ -153,25 +488,74 @@
       }
     },
     "View History" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Görünüş tarixçəsi"
+          }
+        }
+      }
     },
     "We'll your analyze with camera" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Biz səni kamera ile analiz edəcəyik"
+          }
+        }
+      }
     },
     "Welcome back %@ 👋" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Təkrar xoş gəldiniz %@ 👋"
+          }
+        }
+      }
     },
     "Welcome to Aura" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aura’ya xoş gəlmişsiniz"
+          }
+        }
+      }
     },
     "You can edit your password" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siz öz şifrənizi dəyişə bilərsiniz"
+          }
+        }
+      }
     },
     "You can update your display name" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siz öz adınızı dəyişə bilərsiniz"
+          }
+        }
+      }
     },
     "You can update your email" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siz öz e-mailinizi dəyişə bilərsiniz"
+          }
+        }
+      }
     }
   },
   "version" : "1.1"

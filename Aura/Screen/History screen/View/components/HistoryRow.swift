@@ -16,15 +16,14 @@ struct HistoryRow: View {
         VStack(alignment: .leading, spacing: 5){
             Text(item.title ?? "no title")
                 .font(.headline)
+                .foregroundStyle(.primary)
             
             Text(item.subtitle ?? "no subtitle")
-                .font(.subheadline)
-                .foregroundStyle(.secondary)
-                .fontModifier(size: 15, weight: .semibold, foregroundColor: .colorBlack)
+                .fontModifier(size: 15, weight: .semibold, foregroundColor: .primary)
             if let date = item.date{
                 Text(date.formatted(date: .abbreviated, time: .shortened))
-                    .font(.headline)
-                    .foregroundStyle(.colorGray)
+                    .font(.subheadline)
+                    .foregroundStyle(.primary)
             }
         }
         .padding(.vertical, 4)

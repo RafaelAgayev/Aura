@@ -63,7 +63,7 @@ struct DashboardSection: View {
                 )
             }
             NavigationLink{
-                ProfileScreen(loginVM: loginVM)
+                ProfileScreen(loginVM: loginVM, historyVM: historyVM)
             }label:{
                 DashBoard(
                     title: "Profile",
@@ -73,7 +73,9 @@ struct DashboardSection: View {
             }
             
             NavigationLink{
-                ReminderScreen()
+                if #available(iOS 18.0, *) {
+                    ReminderScreen(historyVM: historyVM)
+                } 
             }label:{
               
                 DashBoard(

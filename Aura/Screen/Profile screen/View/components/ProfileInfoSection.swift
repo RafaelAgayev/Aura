@@ -15,6 +15,8 @@ struct ProfileInfoSection: View {
     
     @State private var newEmail: String = ""
     
+    var onChange: ((String, String) -> Void)? = nil
+    
     var body: some View {
             HStack{
             Text("E-mail: \(loginVM.email)")
@@ -32,7 +34,7 @@ struct ProfileInfoSection: View {
                 .background(
                     Color.colorAccent
     
-                        .frame(width: 80,height: 30)
+                        .frame(width: 90,height: 30)
                         .blur(radius: 2)
                         .roundedCorners(cornerRadius: 12)
                 )
@@ -42,6 +44,7 @@ struct ProfileInfoSection: View {
             TextField("Enter your email", text: $newEmail)
             Button{
                 loginVM.email = newEmail
+                onChange?("New email updated", newEmail)
             }label:{
                 Text("Save")
             }

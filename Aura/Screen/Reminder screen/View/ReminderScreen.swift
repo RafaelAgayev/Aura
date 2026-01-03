@@ -7,11 +7,16 @@
 
 import SwiftUI
 
+@available(iOS 18.0, *)
 struct ReminderScreen: View {
     
-    @StateObject private var vm = ReminderViewModel()
-    
+    @StateObject private var vm: ReminderViewModel
+        
     @Environment(\.dismiss) private var dismiss
+    
+    init(historyVM: HistoryViewModel) {
+            _vm = StateObject(wrappedValue: ReminderViewModel(historyVM: historyVM))
+        }
     
     var body: some View {
         content
@@ -28,9 +33,10 @@ struct ReminderScreen: View {
                 
                 ReminderToggleSection(isEnabled: $vm.isEnabled)
                 
-                ReminderTimeSection(isEnabled: $vm.isEnabled, reminderTime: $vm.reminderTime)
-                
+                ReminderTimeSection(isEnabled: $vm.isEnabled, reminderTime: $vm.tempTime)
+                   
                 SaveSection(onSave: {
+                    vm.reminderTime = vm.tempTime
                     vm.save()
                     dismiss()
                 }
@@ -38,9 +44,18 @@ struct ReminderScreen: View {
             }
             .formStyle(.grouped)
         }
+        .onChange(of: vm.isEnabled) {
+            if !vm.isEnabled{
+                vm.disableReminder()
+            }
+        }
         .navigationBarBackButtonHidden()
         .toolbar {
             toolbar
+        }
+        .onAppear{
+            vm.requestPermission()
+            vm.tempTime = vm.reminderTime
         }
     }
     
@@ -55,8 +70,4 @@ struct ReminderScreen: View {
             }
         }
     }
-}
-
-#Preview {
-    ReminderScreen()
 }
