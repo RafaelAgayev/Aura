@@ -16,6 +16,8 @@ struct MainScreen: View {
     
     @StateObject private var historyVM: HistoryViewModel
     
+    @StateObject private var vm = MainScreenViewModel()
+    
     init(historyVM: HistoryViewModel, loginVM: LoginScreenViewModel) {
         _historyVM = StateObject(wrappedValue: historyVM)
         self.loginVM = loginVM
@@ -34,6 +36,9 @@ struct MainScreen: View {
         .navigationBarBackButtonHidden()
         .toolbar {
             toolbar
+        }
+        .onAppear{
+            
         }
     }
     

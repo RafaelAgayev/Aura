@@ -23,6 +23,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 struct AuraApp: App {
     
     @UIApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
+    
     let persistence = PersistenceController.shared
     
     private var colorScheme: ColorScheme? {
@@ -36,6 +37,8 @@ struct AuraApp: App {
            }
        }
     
+    @AppStorage("language") private var language = "az"
+    
     @AppStorage("app_theme") private var theme: Int = AppTheme.system.rawValue
     
     @StateObject private var loginVM = LoginScreenViewModel()
@@ -43,8 +46,8 @@ struct AuraApp: App {
     @StateObject private var historyVM = HistoryViewModel(context: PersistenceController.shared.container.viewContext)
     var body: some Scene {
        
-            WindowGroup {
-                NavigationStack{
+        WindowGroup {
+            NavigationStack{
                 
                 if loginVM.isAuthorized{
                     MainScreen(historyVM: historyVM, loginVM: loginVM)
@@ -57,6 +60,7 @@ struct AuraApp: App {
                         .environment(\.managedObjectContext, persistence.container.viewContext)
                 }
             }
+            .environment(\.locale, Locale(identifier: language))
         }
     }
 }

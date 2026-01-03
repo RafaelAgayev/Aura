@@ -13,6 +13,8 @@ struct PreferencesSection: View {
         
     @AppStorage("app_theme") private var theme: Int = AppTheme.system.rawValue
     
+    var onChange: ((String, String) -> Void)? = nil
+    
     var body: some View {
         
         VStack(alignment: .leading, spacing: 18) {
@@ -22,13 +24,19 @@ struct PreferencesSection: View {
                 
                 Text("Light")
                     .tag(AppTheme.light.rawValue)
+                    .foregroundStyle(.primary)
                 
                 Text("Dark")
                     .tag(AppTheme.dark.rawValue)
+                    .foregroundStyle(.primary)
                 
                 Text("System")
                     .tag(AppTheme.system.rawValue)
+                    .foregroundStyle(.primary)
                 
+            }
+            .onChange(of: theme) { oldValue, newValue in
+                onChange?("New theme is:", theme.description)
             }
             .foregroundStyle(.colorBlack)
             .pickerStyle(.navigationLink)

@@ -13,6 +13,13 @@ struct ProfileScreen: View {
     
     @Environment(\.dismiss) private var dismiss
     
+    @StateObject private var historyVM: HistoryViewModel
+    
+    init(loginVM: LoginScreenViewModel, historyVM: HistoryViewModel) {
+           self.loginVM = loginVM
+           _historyVM = StateObject(wrappedValue: historyVM)
+       }
+    
     var body: some View {
         ZStack{
             RoundedRectangle(cornerRadius: 12)
@@ -35,13 +42,38 @@ struct ProfileScreen: View {
     }
     private var content: some View{
         Group{
-            ProfileScreenHeader(loginVM: loginVM)
+            ProfileScreenHeader(loginVM: loginVM, onChange: { _, value in
+                historyVM.add(
+                    type: "Profile",
+                    title: "Header",
+                    subtitle: "New name is: \(value)"
+                )
+            })
             
-            ProfileInfoSection(loginVM: loginVM)
+            ProfileInfoSection(loginVM: loginVM,
+                               onChange: { _, value in
+                historyVM.add(
+                    type: "Profile",
+                    title: "Info updated",
+                    subtitle: "New email updated: \(value)"
+                )
+            })
             
-            PreferencesSection()
+            PreferencesSection(onChange: { _, value in
+                historyVM.add(
+                    type: "Profile",
+                    title: "Preferences",
+                    subtitle: "App theme is: \(value)"
+                )
+            })
             
-            SecuritySection(loginVM: loginVM)
+            SecuritySection(loginVM: loginVM, onChange: { change in
+                historyVM.add(
+                    type: "Profile",
+                    title: "Security",
+                    subtitle: "Password updated: \(change)"
+                )
+            })
             
             AboutSection()
         }
@@ -57,7 +89,7 @@ struct ProfileScreen: View {
                 Image(systemName: "chevron.left")
                     .foregroundStyle(.primary)
             }
-            .accessibilityLabel("Back")
+            
         }
     }
 }

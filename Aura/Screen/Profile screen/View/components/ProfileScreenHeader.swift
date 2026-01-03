@@ -14,6 +14,8 @@ struct ProfileScreenHeader: View {
     
     @State private var showEditAlert = false
     
+    var onChange: ((String, String) -> Void)? = nil
+    
     @State private var newName: String = ""
     var body: some View {
         HStack{
@@ -29,13 +31,14 @@ struct ProfileScreenHeader: View {
             Button("Edit"){
                 newName = loginVM.name
                 showEditAlert = true
+                
             }
             .padding()
             .foregroundStyle(.colorWhite)
             .background(
                 Color.colorAccent
 
-                    .frame(width: 80,height: 30)
+                    .frame(width: 90,height: 30)
                     .blur(radius: 2)
                     .roundedCorners(cornerRadius: 12)
             )
@@ -46,6 +49,8 @@ struct ProfileScreenHeader: View {
             TextField("Enter new name", text: $newName)
             Button("Save"){
                 loginVM.name = newName
+                onChange?("New name is updated", newName)
+                
             }
             Button("Cancel", role: .cancel){ }
         }, message: { Text("You can update your display name")

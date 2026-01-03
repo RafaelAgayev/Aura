@@ -14,18 +14,21 @@ struct DashBoard: View {
     
     let icon: String
     
+    private let isDarked = false
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
             Image(systemName: icon)
-                .fontModifier(size: 28, weight: .medium, foregroundColor: .colorBlue)
+                .fontModifier(size: 28, weight: .semibold, foregroundColor: isDarked ? .colorBlack : .colorWhite)
             
             Text(title)
                 .font(.headline)
-                .foregroundStyle(.colorBlack)
+              
+                .fontModifier(size: 20, weight: .medium, foregroundColor: .primary)
             
             Text(subtitle)
                 .font(.caption)
-                .foregroundStyle(.colorBlack.opacity(0.78))
+                .fontModifier(size: 15, weight: .semibold, foregroundColor: .primary.opacity(0.78))
         }
         .padding()
         .frame(maxWidth: .infinity, minHeight: 120)
@@ -33,7 +36,7 @@ struct DashBoard: View {
             RoundedRectangle(cornerRadius: 16)
                 .fill(Color(.systemGray6))
         )
-        .shadow(color: .colorBlack.opacity(0.33), radius: 3, x: 0, y: 2)
+        .shadow(color: .primary.opacity(0.33), radius: 3, x: 0, y: 2)
     }
 }
 
