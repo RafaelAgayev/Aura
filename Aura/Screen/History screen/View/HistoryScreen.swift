@@ -21,7 +21,15 @@ struct HistoryScreen: View {
     var body: some View {
         List{
             ForEach(vm.items, id: \.objectID){ items in
-                HistoryRow(item: items)
+                
+                NavigationLink{
+                    DetailsScreen(
+                        onDelete: { vm.delete(items)
+                        }, item: items)
+                
+                }label:{
+                    HistoryRow(item: items)
+                }
                    
             }
             
