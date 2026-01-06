@@ -18,32 +18,32 @@ struct ProfileInfoSection: View {
     var onChange: ((String, String) ->  Void)? = nil
     
     var body: some View {
-            HStack{
+        HStack{
             Text("E-mail:\n \(loginVM.email)")
-                
+            
             Spacer()
+            
+            Button{
+                newEmail = loginVM.email
+                showEditAlert = true
+            }label:{
+                Text("Edit")
+            }
+            .foregroundStyle(.colorWhite)
+            .background(
+                Color.colorAccent
                 
-                Button{
-                    newEmail = loginVM.email
-                    showEditAlert = true
-                }label:{
-                    Text("Edit")
-                }
-                .foregroundStyle(.colorWhite)
-                .background(
-                    Color.colorAccent
-    
-                        .frame(width: 90,height: 30)
-                        .blur(radius: 2)
-                        .roundedCorners(cornerRadius: 12)
-                )
+                    .frame(width: 90,height: 30)
+                    .blur(radius: 2)
+                    .roundedCorners(cornerRadius: 12)
+            )
         }
         .padding()
         .alert("Edit email", isPresented: $showEditAlert, actions: {
             TextField("Enter your email", text: $newEmail)
             Button{
-               
-                    loginVM.email = newEmail
+                
+                loginVM.email = newEmail
                 Task{
                     onChange?("New email updated", newEmail)
                 }
@@ -51,7 +51,8 @@ struct ProfileInfoSection: View {
                 Text("Save")
             }
             Button("Cancel", role: .cancel) {}
-        }, message: { Text("You can update your email")} )
+        }, message: { Text("You can update your email")
+        } )
         
     }
 }

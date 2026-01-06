@@ -13,7 +13,6 @@ struct ActionsScreen: View {
     
     @State private var navigateInteraction: InteractionsSection.NavigateLink?
     
-
     var body: some View {
 
             ZStack {
@@ -116,6 +115,3 @@ struct ActionsScreen: View {
 }
 
 
-#Preview {
-    ActionsScreen()
-}
