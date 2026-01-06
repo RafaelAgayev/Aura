@@ -103,6 +103,23 @@ struct DashboardSection: View {
                     icon: "bell"
                 )
             }
+            
+            NavigationLink{
+                ActionsScreen()
+            }label:{
+                DashBoard(
+                    title: "Actions",
+                    subtitle: "You can watch actions",
+                    icon: "waveform.path.ecg"
+                )
+                .onChange(of: historyVM.isLoading) { _, newValue in
+                    if newValue{
+                        showLoading()
+                    }else{
+                        hideLoading()
+                    }
+                }
+            }
             .navigationDestination(isPresented: $showCamera) {
                 CameraPicker { image in
                     capturedImage = image

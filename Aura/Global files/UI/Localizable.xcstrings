@@ -1,6 +1,9 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "     View and manage your interactions, content\nand account activity. " : {
+
+    },
     "%@" : {
       "localizations" : {
         "az" : {
@@ -21,6 +24,9 @@
         }
       }
     },
+    "Account history screen" : {
+
+    },
     "AI Health Insight" : {
       "localizations" : {
         "az" : {
@@ -40,6 +46,9 @@
           }
         }
       }
+    },
+    "Archived" : {
+
     },
     "Back" : {
       "extractionState" : "manual",
@@ -71,6 +80,12 @@
           }
         }
       }
+    },
+    "Commentario smndmn" : {
+
+    },
+    "Content you shared" : {
+
     },
     "Daily" : {
       "localizations" : {
@@ -112,18 +127,13 @@
         }
       }
     },
-    "E-mail:\n %@" : {
-      "localizations" : {
-        "az" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "E-mail: %@"
-          }
-        }
-      }
+    "delete screen in now" : {
+
     },
-    "E-mail: %@" : {
-      "extractionState" : "stale",
+    "dldmmdmd" : {
+
+    },
+    "E-mail:\n %@" : {
       "localizations" : {
         "az" : {
           "stringUnit" : {
@@ -273,6 +283,24 @@
         }
       }
     },
+    "hello liked 👍🏻" : {
+
+    },
+    "hello reels" : {
+
+    },
+    "hightlights" : {
+
+    },
+    "How to use Aura" : {
+
+    },
+    "Interactions" : {
+
+    },
+    "Interested screen" : {
+
+    },
     "Key" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -283,6 +311,9 @@
           }
         }
       }
+    },
+    "Learn more" : {
+
     },
     "Let’s check how you’re doing today" : {
       "localizations" : {
@@ -303,6 +334,9 @@
           }
         }
       }
+    },
+    "link history screen" : {
+
     },
     "Loading..." : {
       "localizations" : {
@@ -344,6 +378,12 @@
         }
       }
     },
+    "not interested aura" : {
+
+    },
+    "One place to manage\nyour activity" : {
+
+    },
     "Password" : {
       "localizations" : {
         "az" : {
@@ -363,6 +403,9 @@
           }
         }
       }
+    },
+    "recent searches screen" : {
+
     },
     "Register" : {
       "localizations" : {
@@ -384,6 +427,9 @@
         }
       }
     },
+    "Removed and archived content" : {
+
+    },
     "Repeat" : {
       "localizations" : {
         "az" : {
@@ -393,6 +439,12 @@
           }
         }
       }
+    },
+    "Repostandito" : {
+
+    },
+    "Reviews screen" : {
+
     },
     "Save" : {
       "localizations" : {
@@ -464,6 +516,12 @@
         }
       }
     },
+    "sticker response screen" : {
+
+    },
+    "Suggested content" : {
+
+    },
     "Support" : {
       "localizations" : {
         "az" : {
@@ -483,6 +541,9 @@
           }
         }
       }
+    },
+    "tags commentitado" : {
+
     },
     "Terms and Conditions" : {
       "localizations" : {
@@ -513,6 +574,9 @@
           }
         }
       }
+    },
+    "time spent screen" : {
+
     },
     "Tired" : {
       "extractionState" : "manual",
@@ -554,6 +618,9 @@
           }
         }
       }
+    },
+    "Watch history screen" : {
+
     },
     "We'll your analyze with camera" : {
       "localizations" : {
@@ -614,6 +681,9 @@
           }
         }
       }
+    },
+    "Your activity" : {
+
     }
   },
   "version" : "1.1"
