@@ -14,12 +14,10 @@ struct DashBoard: View {
     
     let icon: String
     
-    private let isDarked = false
-    
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
             Image(systemName: icon)
-                .fontModifier(size: 28, weight: .semibold, foregroundColor: isDarked ? .colorBlack : .colorWhite)
+                .fontModifier(size: 28, weight: .semibold, foregroundColor: .primary)
             
             Text(title)
                 .font(.headline)
