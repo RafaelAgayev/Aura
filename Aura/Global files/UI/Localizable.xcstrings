@@ -183,6 +183,9 @@
         }
       }
     },
+    "Edit username" : {
+
+    },
     "Enable notification" : {
       "localizations" : {
         "az" : {
@@ -243,6 +246,9 @@
         }
       }
     },
+    "Enter new username" : {
+
+    },
     "Enter your email" : {
       "localizations" : {
         "az" : {
@@ -282,9 +288,6 @@
           }
         }
       }
-    },
-    "hello liked 👍🏻" : {
-
     },
     "hello reels" : {
 
@@ -334,6 +337,9 @@
           }
         }
       }
+    },
+    "Likes" : {
+
     },
     "link history screen" : {
 
@@ -651,6 +657,9 @@
           }
         }
       }
+    },
+    "You can edit your name" : {
+
     },
     "You can edit your password" : {
       "localizations" : {
