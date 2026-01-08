@@ -39,8 +39,8 @@ struct LikesRow: View {
             
             Image(systemName: isLiked ? "heart.fill" : "heart")
                 .fontModifier(size: 18, weight: .medium, foregroundColor: isLiked ? .red : .colorBlack)
+                .scaleEffect(isLiked ? 1.8 : 1.5)
                 .animation(.spring(duration: 0.14), value: isLiked)
-                 
                 .onTapGesture {
                     onLiked()
                 }
