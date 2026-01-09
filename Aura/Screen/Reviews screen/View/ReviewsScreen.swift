@@ -8,8 +8,42 @@
 import SwiftUI
 
 struct ReviewsScreen: View {
+    
+    @StateObject private var vm = ReviewsViewModel()
+    
+    @Environment(\.dismiss) private var dismiss
+    
     var body: some View {
-        Text("Reviews screen")
+        ScrollView(.vertical, showsIndicators: false){
+            VStack(alignment: .center, spacing: 12){
+                Image(.hand)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 150, height: 150)
+                
+                Text(vm.title)
+                    .fontModifier(size: 25, weight: .semibold, foregroundColor: .colorBlack)
+                
+                Text(vm.subtitle)
+                    .fontModifier(size: 18, weight: .medium, foregroundColor: .colorGray)
+            }
+            .padding(.top, 20)
+        }
+        .navigationBarBackButtonHidden()
+        .toolbar {
+            toolbar
+        }
+    }
+    @ToolbarContentBuilder
+    private var toolbar: some ToolbarContent{
+        ToolbarItem(placement: .topBarLeading) {
+            Button{
+                dismiss()
+            }label: {
+                Image(systemName: "chevron.left")
+                    .foregroundStyle(.primary)
+            }
+        }
     }
 }
 

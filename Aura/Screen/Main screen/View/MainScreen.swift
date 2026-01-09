@@ -66,8 +66,10 @@ struct MainScreen: View {
             Button{
                 loginVM.logoutUser()
             }label: {
-                Image(systemName: "arrowshape.turn.up.backward.2")
-                    .fontModifier(size: 17, weight: .semibold, foregroundColor: .colorBlack)
+                Image(.logout)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 40, height: 40)
             }
         }
     }
