@@ -84,8 +84,6 @@ struct ActionsScreen: View {
                         
                     }
                 }
-                
-                
             }
             .navigationBarBackButtonHidden()
             .toolbar {
