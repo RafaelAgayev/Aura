@@ -25,7 +25,14 @@
       }
     },
     "Account history screen" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hesab tarixçəsi ekranı"
+          }
+        }
+      }
     },
     "AI Health Insight" : {
       "localizations" : {
@@ -48,7 +55,14 @@
       }
     },
     "Archived" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arxivlənmişlər"
+          }
+        }
+      }
     },
     "Back" : {
       "extractionState" : "manual",
@@ -85,6 +99,9 @@
 
     },
     "Content you shared" : {
+
+    },
+    "Cristiano" : {
 
     },
     "Daily" : {
@@ -181,7 +198,14 @@
       }
     },
     "Edit username" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İstifadəçi adınıza düzəliş edin"
+          }
+        }
+      }
     },
     "Enable notification" : {
       "localizations" : {
@@ -244,7 +268,14 @@
       }
     },
     "Enter new username" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yeni adınızı əlavə edin"
+          }
+        }
+      }
     },
     "Enter your email" : {
       "localizations" : {
@@ -293,13 +324,34 @@
 
     },
     "How to use Aura" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aura’nı necə istifadə edirsən"
+          }
+        }
+      }
     },
     "Interactions" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Interaksiyalar"
+          }
+        }
+      }
     },
     "Interested screen" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Maraqlandıqların ekranı"
+          }
+        }
+      }
     },
     "Key" : {
       "extractionState" : "manual",
@@ -313,7 +365,14 @@
       }
     },
     "Learn more" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Haqqında öyrən"
+          }
+        }
+      }
     },
     "Let’s check how you’re doing today" : {
       "localizations" : {
@@ -336,10 +395,25 @@
       }
     },
     "Likes" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bəyəndiklərin"
+          }
+        }
+      }
     },
     "link history screen" : {
-
+      "extractionState" : "stale",
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Link tarixçəsi ekranı"
+          }
+        }
+      }
     },
     "Loading..." : {
       "localizations" : {
@@ -350,6 +424,12 @@
           }
         }
       }
+    },
+    "Mark Zuckerberg" : {
+
+    },
+    "Meetra" : {
+
     },
     "Mood History" : {
       "localizations" : {
@@ -382,7 +462,14 @@
       }
     },
     "not interested aura" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aura’da maraqlanmadıqların"
+          }
+        }
+      }
     },
     "One place to manage\nyour activity" : {
 
@@ -406,6 +493,9 @@
           }
         }
       }
+    },
+    "Rafael Agayev" : {
+
     },
     "recent searches screen" : {
 
@@ -491,7 +581,7 @@
         "az" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Temani seç"
+            "value" : "Temanı seç"
           }
         }
       }
@@ -555,6 +645,9 @@
         }
       }
     },
+    "The Rock" : {
+
+    },
     "This action is undone" : {
       "localizations" : {
         "az" : {
@@ -576,7 +669,14 @@
       }
     },
     "time spent screen" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vaxt xərclədiyin ekran"
+          }
+        }
+      }
     },
     "Tired" : {
       "extractionState" : "manual",
@@ -620,7 +720,14 @@
       }
     },
     "Watch history screen" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Baxılanlar tarixçəsi ekranı"
+          }
+        }
+      }
     },
     "We'll your analyze with camera" : {
       "localizations" : {
@@ -653,7 +760,14 @@
       }
     },
     "You can edit your name" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siz adınızı düzəldə bilərsiniz"
+          }
+        }
+      }
     },
     "You can edit your password" : {
       "localizations" : {
@@ -686,7 +800,14 @@
       }
     },
     "Your activity" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sənin aktivliyin"
+          }
+        }
+      }
     }
   },
   "version" : "1.1"
