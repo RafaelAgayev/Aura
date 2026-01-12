@@ -2,7 +2,14 @@
   "sourceLanguage" : "en",
   "strings" : {
     "     View and manage your interactions, content\nand account activity. " : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "     İstifadəçi əlaqələrinizi, məzmununuzu və hesab fəaliyyətinizi\nnəzarətdə saxlayın və idarə edin."
+          }
+        }
+      }
     },
     "%@" : {
       "localizations" : {
@@ -99,10 +106,24 @@
 
     },
     "Content you shared" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Olduğun yeri paylaşmaq"
+          }
+        }
+      }
     },
     "Cristiano" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cristiano"
+          }
+        }
+      }
     },
     "Daily" : {
       "localizations" : {
@@ -321,7 +342,14 @@
 
     },
     "hightlights" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Önə çıxanlar"
+          }
+        }
+      }
     },
     "How to use Aura" : {
       "localizations" : {
@@ -426,10 +454,24 @@
       }
     },
     "Mark Zuckerberg" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mark Zuckerberg"
+          }
+        }
+      }
     },
     "Meetra" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meetra"
+          }
+        }
+      }
     },
     "Mood History" : {
       "localizations" : {
@@ -461,6 +503,9 @@
         }
       }
     },
+    "No result" : {
+
+    },
     "not interested aura" : {
       "localizations" : {
         "az" : {
@@ -472,7 +517,14 @@
       }
     },
     "One place to manage\nyour activity" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fəaliyyətlər üçün vahid mərkəz"
+          }
+        }
+      }
     },
     "Password" : {
       "localizations" : {
@@ -495,10 +547,24 @@
       }
     },
     "Rafael Agayev" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rafael Ağayev"
+          }
+        }
+      }
     },
-    "recent searches screen" : {
-
+    "Recent searches" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ən son axtarışlar"
+          }
+        }
+      }
     },
     "Register" : {
       "localizations" : {
@@ -521,7 +587,14 @@
       }
     },
     "Removed and archived content" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Silinmiş qeydlər"
+          }
+        }
+      }
     },
     "Repeat" : {
       "localizations" : {
@@ -576,6 +649,16 @@
         }
       }
     },
+    "Search" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Axtarış"
+          }
+        }
+      }
+    },
     "Selection theme" : {
       "localizations" : {
         "az" : {
@@ -610,7 +693,14 @@
 
     },
     "Suggested content" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sizə uyğun məzmun"
+          }
+        }
+      }
     },
     "Support" : {
       "localizations" : {
@@ -646,7 +736,14 @@
       }
     },
     "The Rock" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Qaya"
+          }
+        }
+      }
     },
     "This action is undone" : {
       "localizations" : {
