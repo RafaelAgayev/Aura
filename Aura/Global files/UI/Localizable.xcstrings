@@ -506,7 +506,11 @@
     "No result" : {
 
     },
+    "Not found yet " : {
+
+    },
     "not interested aura" : {
+      "extractionState" : "stale",
       "localizations" : {
         "az" : {
           "stringUnit" : {
