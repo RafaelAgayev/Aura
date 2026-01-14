@@ -338,7 +338,27 @@
         }
       }
     },
+    "hello books" : {
+
+    },
     "hello reels" : {
+
+    },
+    "Hello, World!" : {
+
+    },
+    "Here you can see the most relevant info about your interests." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Burada maraqlarınıza uyğun ən vacib məlumatları görə bilərsiniz."
+          }
+        }
+      }
+    },
+    "hi music" : {
 
     },
     "hightlights" : {
@@ -503,11 +523,35 @@
         }
       }
     },
+    "No content available" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Məlumat yoxdur."
+          }
+        }
+      }
+    },
     "No result" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nəticə yoxdur."
+          }
+        }
+      }
     },
     "Not found yet " : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hələ tapılmadı."
+          }
+        }
+      }
     },
     "not interested aura" : {
       "extractionState" : "stale",
@@ -612,6 +656,16 @@
     },
     "Repostandito" : {
 
+    },
+    "Retry" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yenidən cəhd et"
+          }
+        }
+      }
     },
     "Save" : {
       "localizations" : {
@@ -856,6 +910,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aura’ya xoş gəlmişsiniz"
+          }
+        }
+      }
+    },
+    "Welcome to interested screen" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Maraqlandıqların səhifəsinə xoş gəlmisiniz"
           }
         }
       }
