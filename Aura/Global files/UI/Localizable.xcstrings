@@ -11,6 +11,9 @@
         }
       }
     },
+    "- %@" : {
+
+    },
     "%@" : {
       "localizations" : {
         "az" : {
@@ -70,6 +73,9 @@
           }
         }
       }
+    },
+    "Author: %@" : {
+
     },
     "Back" : {
       "extractionState" : "manual",
@@ -164,6 +170,9 @@
           }
         }
       }
+    },
+    "Description: %@" : {
+
     },
     "dldmmdmd" : {
 
@@ -337,9 +346,6 @@
           }
         }
       }
-    },
-    "hello books" : {
-
     },
     "hello reels" : {
 
@@ -844,6 +850,9 @@
         }
       }
     },
+    "Title: %@" : {
+
+    },
     "Today's insight" : {
       "localizations" : {
         "az" : {
@@ -924,6 +933,9 @@
           }
         }
       }
+    },
+    "Year: %@" : {
+
     },
     "You can edit your name" : {
       "localizations" : {
