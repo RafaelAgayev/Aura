@@ -16,11 +16,13 @@ struct BooksScreen: View {
     var body: some View {
        
             ScrollView {
+                
                 ForEach(vm.books, id: \.id) { book in
                     BooksScreenSection(books: book)
                         .onTapGesture {
                             vm.selectedBook = book
                         }
+                    Divider()
                 }
             .navigationDestination(item: $vm.selectedBook) { book in
                 BookDetailsScreen(books: book)

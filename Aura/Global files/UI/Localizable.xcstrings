@@ -34,6 +34,9 @@
         }
       }
     },
+    "★ %lld" : {
+
+    },
     "Account history screen" : {
       "localizations" : {
         "az" : {
@@ -350,9 +353,6 @@
     "hello reels" : {
 
     },
-    "Hello, World!" : {
-
-    },
     "Here you can see the most relevant info about your interests." : {
       "extractionState" : "stale",
       "localizations" : {
@@ -609,6 +609,9 @@
           }
         }
       }
+    },
+    "Rank: ⭐️ %lld" : {
+
     },
     "Recent searches" : {
       "localizations" : {
