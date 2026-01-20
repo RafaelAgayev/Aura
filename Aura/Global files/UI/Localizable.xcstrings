@@ -37,6 +37,9 @@
     "★ %lld" : {
 
     },
+    "About: %@" : {
+
+    },
     "Account history screen" : {
       "localizations" : {
         "az" : {
@@ -90,6 +93,9 @@
           }
         }
       }
+    },
+    "Books" : {
+
     },
     "Cancel" : {
       "localizations" : {
@@ -175,6 +181,9 @@
       }
     },
     "Description: %@" : {
+
+    },
+    "Details" : {
 
     },
     "dldmmdmd" : {
@@ -364,9 +373,6 @@
         }
       }
     },
-    "hi music" : {
-
-    },
     "hightlights" : {
       "localizations" : {
         "az" : {
@@ -376,6 +382,9 @@
           }
         }
       }
+    },
+    "Hotels" : {
+
     },
     "How to use Aura" : {
       "localizations" : {
@@ -518,6 +527,9 @@
           }
         }
       }
+    },
+    "Music" : {
+
     },
     "Name: %@" : {
       "localizations" : {

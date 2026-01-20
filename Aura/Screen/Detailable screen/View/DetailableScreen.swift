@@ -1,41 +1,41 @@
 //
-//  MusicScreen.swift
+//  DetailableScreen.swift
 //  Aura
 //
-//  Created by Rafael Agayev on 15.01.26.
+//  Created by Rafael Agayev on 20.01.26.
 //
 
 import SwiftUI
 
-struct MusicScreen: View {
+struct DetailableScreen: View {
     
-    @StateObject private var vm = MusicViewModel()
+    let content: ContentType
     
     @Environment(\.dismiss) private var dismiss
     
+    @State private var fullScreenContent: FullScreenComponents? = nil
+    
     var body: some View {
         ScrollView{
-            ForEach(vm.music, id: \.id){ music in
-                NavigationLink{
-                    DetailableScreen(content: .music(music))
-                }label: {
-                    MusicSection(music: music)
-                }
-                Divider()
-            }
+            DetailableScreenSection(
+                content: content,
+                fullScreenContent: $fullScreenContent
+            )
         }
-        .onAppear{
-            vm.musicData()
-        }
-        
         .navigationBarBackButtonHidden()
         .toolbar {
             toolbar
         }
+        .fullScreenCover(item: $fullScreenContent) { item in
+            switch item{
+            case .book(let img), .music(let img), .travel(let img):
+                FullScreenImageView(image: img)
+            }
+        }
     }
 }
 
-extension MusicScreen{
+extension DetailableScreen{
     @ToolbarContentBuilder
     private var toolbar: some ToolbarContent{
         ToolbarItem(placement: .topBarLeading) {
@@ -47,12 +47,8 @@ extension MusicScreen{
             }
         }
         ToolbarItem(placement: .principal) {
-            Text("Music")
+            Text("Details")
                 .fontModifier(size: 20, weight: .semibold, foregroundColor: .colorBlack)
         }
     }
-}
-
-#Preview {
-    MusicScreen()
 }
