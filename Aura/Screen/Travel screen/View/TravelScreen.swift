@@ -17,18 +17,18 @@ struct TravelScreen: View {
         ScrollView{
             
             ForEach(vm.model, id: \.id) { travel in
-                TravelScreenSection(travel: travel)
-                    .onTapGesture {
-                        vm.selectedModel = travel
-                    }
+                NavigationLink{
+                    DetailableScreen(content: .travel(travel))
+                }label: {
+                    TravelScreenSection(travel: travel)
+                }
+                Divider()
             }
         }
         .onAppear{
             vm.loadTravel()
         }
-        .navigationDestination(item: $vm.selectedModel){ travel in
-            TravelDetailsScreen(travel: travel)
-        }
+        
         .navigationBarBackButtonHidden()
         .toolbar{
             toolbar
@@ -46,6 +46,11 @@ extension TravelScreen{
                 Image(systemName: "chevron.left")
                     .foregroundStyle(.primary)
             }
+        }
+        
+        ToolbarItem(placement: .principal) {
+            Text("Hotels")
+                .fontModifier(size: 20, weight: .semibold, foregroundColor: .colorBlack)
         }
     }
 }

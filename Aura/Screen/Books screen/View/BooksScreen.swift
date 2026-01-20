@@ -18,15 +18,14 @@ struct BooksScreen: View {
             ScrollView {
                 
                 ForEach(vm.books, id: \.id) { book in
-                    BooksScreenSection(books: book)
-                        .onTapGesture {
-                            vm.selectedBook = book
-                        }
+                    NavigationLink{
+                        DetailableScreen(content: .book(book))
+                    }label: {
+                        BooksScreenSection(books: book)
+                    }
                     Divider()
                 }
-            .navigationDestination(item: $vm.selectedBook) { book in
-                BookDetailsScreen(books: book)
-            }
+           
             .navigationBarBackButtonHidden()
             .toolbar {
                 toolbar
@@ -48,6 +47,11 @@ extension BooksScreen{
                 Image(systemName: "chevron.left")
                     .foregroundStyle(.primary)
             }
+        }
+        
+        ToolbarItem(placement: .principal) {
+            Text("Books")
+                .fontModifier(size: 20, weight: .semibold, foregroundColor: .colorBlack)
         }
     }
 }
