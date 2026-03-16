@@ -15,16 +15,5 @@ struct RecentSearchesSection: View {
         TextField("Search", text: $searchText)
             .padding()
             .roundedRectangleStyle(cornerRadius: 12, backgroundColor: .colorGray, borderColor: .colorBlack.opacity(0.55), borderWidth: 1.5)
-//            .overlay(alignment: .trailing) {
-//                if !searchText.isEmpty{
-//                    Button{
-//                        searchText = ""
-//                    }label: {
-//                        Image(systemName: "xmark.circle.fill")
-//                            .foregroundStyle(.colorGray)
-//                    }
-//                    .padding(.trailing, 8)
-//                }
-//            }
     }
 }

@@ -19,7 +19,7 @@ struct RecentSearchesScreen: View {
             
             RecentSearchesSection(searchText: $vm.searchText)
                
-            FilteredNamesSection(filteredNames: $vm.filteredNames, searchText: $vm.searchText)
+            FilteredNamesSection(model: $vm.model, searchText: $vm.searchText)
             
         }
         .scrollDismissesKeyboard(.interactively)
@@ -27,6 +27,9 @@ struct RecentSearchesScreen: View {
         .navigationBarBackButtonHidden()
         .toolbar {
             toolbar
+        }
+        .onAppear{
+            vm.recentVIP()
         }
     }
 }
@@ -49,8 +52,4 @@ extension RecentSearchesScreen{
                 .fontModifier(size: 15, weight: .semibold, foregroundColor: .primary)
         }
     }
-}
-
-#Preview {
-    RecentSearchesScreen()
 }
