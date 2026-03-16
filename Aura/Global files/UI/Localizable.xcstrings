@@ -35,10 +35,24 @@
       }
     },
     "★ %lld" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "★ %lld"
+          }
+        }
+      }
     },
     "About: %@" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Haqqında: %@"
+          }
+        }
+      }
     },
     "Account history screen" : {
       "localizations" : {
@@ -81,7 +95,14 @@
       }
     },
     "Author: %@" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Müəllif: %@"
+          }
+        }
+      }
     },
     "Back" : {
       "extractionState" : "manual",
@@ -95,7 +116,14 @@
       }
     },
     "Books" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kitablar"
+          }
+        }
+      }
     },
     "Cancel" : {
       "localizations" : {
@@ -184,10 +212,27 @@
 
     },
     "Details" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Detallar səhifəsi"
+          }
+        }
+      }
     },
     "dldmmdmd" : {
 
+    },
+    "Do you want logout ? If you logout and delete your token." : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Çıxış etmək istəyirsən? əgər sən çıxış etsən, məlumatların  silinəcəkdir."
+          }
+        }
+      }
     },
     "E-mail:\n %@" : {
       "localizations" : {
@@ -384,7 +429,14 @@
       }
     },
     "Hotels" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Otellər"
+          }
+        }
+      }
     },
     "How to use Aura" : {
       "localizations" : {
@@ -488,6 +540,16 @@
         }
       }
     },
+    "Logout" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Çıxış"
+          }
+        }
+      }
+    },
     "Mark Zuckerberg" : {
       "localizations" : {
         "az" : {
@@ -529,7 +591,14 @@
       }
     },
     "Music" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Musiqi"
+          }
+        }
+      }
     },
     "Name: %@" : {
       "localizations" : {
@@ -572,7 +641,7 @@
       }
     },
     "not interested aura" : {
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "az" : {
           "stringUnit" : {
@@ -623,7 +692,14 @@
       }
     },
     "Rank: ⭐️ %lld" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Qiymət: ⭐️ %lld"
+          }
+        }
+      }
     },
     "Recent searches" : {
       "localizations" : {
@@ -866,7 +942,14 @@
       }
     },
     "Title: %@" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Başlıq: %@"
+          }
+        }
+      }
     },
     "Today's insight" : {
       "localizations" : {
@@ -939,7 +1022,7 @@
       }
     },
     "Welcome to interested screen" : {
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "az" : {
           "stringUnit" : {
@@ -950,7 +1033,14 @@
       }
     },
     "Year: %@" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İl: %@"
+          }
+        }
+      }
     },
     "You can edit your name" : {
       "localizations" : {

@@ -93,7 +93,7 @@ class LoginScreenViewModel: BaseViewModel{
         }
     }
     
-    func logoutUser(){
+    func logoutUser () async {
         Task{
             
             do{

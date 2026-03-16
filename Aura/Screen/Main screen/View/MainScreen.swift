@@ -23,6 +23,8 @@ struct MainScreen: View {
         self.loginVM = loginVM
     }
     
+    @Environment(\.dismiss) private var dismiss
+    
     @Environment(\.showLoading) private var showLoading
     
     @Environment(\.hideLoading) private var hideLoading
@@ -47,6 +49,21 @@ struct MainScreen: View {
         .onChange(of: vm.isLoading) { _, isLoading in
             isLoading ? showLoading() : hideLoading()
         }
+        .overlay{
+            if vm.showLogoutDialog{
+                Color.colorBlack.opacity(0.4)
+                    .ignoresSafeArea()
+                    .onTapGesture {
+                        withAnimation{
+                            vm.showLogoutDialog = false
+                        }
+                    }
+                LogoutSettings(
+                    showDialog: $vm.showLogoutDialog,
+                    onLogout: { await loginVM.logoutUser()}
+                )
+            }
+        }
         
     }
     
@@ -60,11 +77,15 @@ struct MainScreen: View {
         .padding()
     }
     
+   
+    
     @ToolbarContentBuilder
     private var toolbar: some ToolbarContent{
         ToolbarItem(placement: .topBarTrailing) {
             Button{
-                loginVM.logoutUser()
+                withAnimation {
+                    vm.showLogoutDialog = true
+                }
             }label: {
                 Image(.logout)
                     .resizable()
