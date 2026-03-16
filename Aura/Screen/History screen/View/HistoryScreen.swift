@@ -23,7 +23,7 @@ struct HistoryScreen: View {
             ForEach(vm.items, id: \.objectID){ items in
                 
                 NavigationLink{
-                    DetailsScreen(
+                    HistoryDetailScreen(
                         onDelete: { vm.delete(items)
                         }, item: items)
                 
@@ -41,8 +41,8 @@ struct HistoryScreen: View {
                 }
             }
         }
-        .onAppear{
-            vm.fetch()
+        .task{
+           await vm.fetch()
         }
         .navigationBarBackButtonHidden()
         .toolbar {
@@ -65,6 +65,11 @@ struct HistoryScreen: View {
             }label: {
                 Image(systemName: "chevron.left")
             }
+        }
+        
+        ToolbarItem(placement: .principal) {
+            Text("History")
+                .fontModifier(size: 24, weight: .bold, foregroundColor: .colorBlack)
         }
     }
 }

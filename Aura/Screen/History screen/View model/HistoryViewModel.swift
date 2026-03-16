@@ -22,7 +22,7 @@ class HistoryViewModel: BaseViewModel {
         super.init()
     }
     
-    func fetch(){
+    func fetch() async {
         Task{
             do {
                 try await withLoading {
@@ -60,7 +60,7 @@ class HistoryViewModel: BaseViewModel {
             do {
                 try await withLoading {
                     try context.save()
-                    fetch()
+                   await fetch()
                 }
             } catch {
                 print("Save error -->", error.localizedDescription)

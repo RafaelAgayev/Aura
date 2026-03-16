@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct DetailsScreen: View {
+struct HistoryDetailScreen: View {
     
     @Environment(\.dismiss) private var dismiss
     
@@ -15,6 +15,7 @@ struct DetailsScreen: View {
     
     @Environment(\.hideLoading) private var hideLoading
     
+    @StateObject private var vm = HistoryDetailsViewModel()
     
     @State private var showDelete = false
     
@@ -43,17 +44,21 @@ struct DetailsScreen: View {
     }
     
     private var content: some View{
-        VStack(alignment: .leading, spacing: 12){
-            DetailsScreenSection(
+        VStack(alignment: .leading, spacing: 0){
+            HistoryDetailsScreenSection(
                 title: item.title,
                 subtitle: item.subtitle,
                 date: item.date)
         }
-        .padding()
+        .padding(.vertical, 8)
+        
+        .frame(maxWidth: .infinity)
+        
         .background(
             RoundedRectangle(cornerRadius: 12)
                 .fill(Color(.systemGray5))
         )
+        .padding(.horizontal, 12)
     }
     
     @ToolbarContentBuilder
@@ -69,7 +74,7 @@ struct DetailsScreen: View {
         
         ToolbarItem(placement: .topBarTrailing) {
             Button(role: .destructive){
-               showDelete = true
+                vm.showDelete = true
             }label: {
                 Image(systemName: "trash")
                     .fontModifier(size: 15, weight: .medium, foregroundColor: .red)
