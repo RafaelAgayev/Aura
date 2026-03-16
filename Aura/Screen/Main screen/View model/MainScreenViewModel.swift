@@ -13,5 +13,5 @@ class MainScreenViewModel: BaseViewModel {
    
     @AppStorage("language") private var language = "az"
     
-    
+    @Published var showLogoutDialog = false
 }
