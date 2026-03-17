@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HealthHeader: View {
     
-    @Binding var showCamera: Bool
+    @Binding var navigation: HealthScreen.Screen?
     
     let vm: HealthScreenViewModel
     
@@ -29,14 +29,13 @@ struct HealthHeader: View {
                 .font(.subheadline)
             
             Button{
-                showCamera = true
+                navigation = .camera
             }label: {
                 HStack{
                     Image(systemName: "camera.fill")
                         .foregroundStyle(.colorBlack)
                     Text("Scan now")
-                        .foregroundStyle(.colorBlack)
-                        .bold()
+                        .fontModifier(size: 14, weight: .bold, foregroundColor: .colorBlack)
                 }
                 .frame(maxWidth: .infinity)
                 .padding()

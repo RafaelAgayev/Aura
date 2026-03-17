@@ -21,6 +21,11 @@ struct HealthScreen: View {
     @Environment(\.showLoading) private var showLoading
     
     @Environment(\.hideLoading) private var hideLoading
+    
+    @State private var screen: Screen? = nil
+    
+    @State private var emoji: HealthScreenViewModel.Emoji?
+    
 
     init() {
         let context = PersistenceController.shared.container.viewContext
@@ -37,31 +42,20 @@ struct HealthScreen: View {
             
         }
         
-        NavigationLink{
-            HistoryScreen(vm: historyVM)
-        } label: {
-            Text("View History")
-                .fontModifier(size: 17, weight: .semibold, foregroundColor: .colorWhite)
-                
-                .frame(width: 200, height: 30)
-                .padding()
-                .background(
-                    Color.colorAccent
-                        .roundedCorners(cornerRadius: 15)
-                        .shadow(radius: 2.33)
-                )
-               
-        }
-        .padding(.top, 12)
-        .padding(.leading, 18)
-
-        .navigationDestination(isPresented: $vm.showCamera) {
-            CameraPicker { image in
-                Task{
-                    await vm.analyzeFace(image)
+        historyButton
+        .navigationDestination(item: $screen){ change in
+            switch change{
+            case .camera:
+                CameraPicker { image in
+                    Task{
+                        await vm.analyzeFace(image)
+                    }
                 }
+                .ignoresSafeArea()
+            case .history:
+                
+                HistoryScreen(vm: historyVM)
             }
-            .ignoresSafeArea()
         }
         .onChange(of: vm.isLoading) { _, isLoading in
             if isLoading{
@@ -76,9 +70,28 @@ struct HealthScreen: View {
         }
     }
     
+    private var historyButton: some View{
+        Text("View History")
+            .fontModifier(size: 17, weight: .semibold, foregroundColor: .colorWhite)
+            .frame(maxWidth: .infinity)
+            .frame(height: 36)
+            .padding()
+            .background(
+                Color.colorBlue
+                    .opacity(0.68)
+                    .roundedCorners(cornerRadius: 12)
+                    .shadow(radius: 1.33)
+            )
+            .onTapGesture {
+                screen = .history
+            }
+            .padding(.vertical, 12)
+            .padding(.horizontal, 16)
+    }
+    
     private var content: some View{
         VStack(alignment: .leading, spacing: 24) {
-            HealthHeader(showCamera: $vm.showCamera, vm: vm)
+            HealthHeader(navigation: $screen, vm: vm)
             
             TodayInsightCard(text: vm.todayInsight)
             
@@ -86,7 +99,7 @@ struct HealthScreen: View {
             
             AISuggestionsSection()
             
-            MoodHistorySection(healthVM: vm)
+            MoodHistorySection(healthVM: vm, emoji: $emoji)
         }
     }
     @ToolbarContentBuilder
@@ -99,6 +112,12 @@ struct HealthScreen: View {
                     .foregroundStyle(.primary)
             }
         }
+    }
+}
+
+extension HealthScreen{
+    enum Screen{
+        case camera, history
     }
 }
 
