@@ -7,6 +7,7 @@
 
 import Foundation
 internal import Combine
+import SwiftUI
 import Vision
 import UIKit
 import CoreData

@@ -60,7 +60,9 @@ struct MainScreen: View {
                     }
                 LogoutSettings(
                     showDialog: $vm.showLogoutDialog,
-                    onLogout: { await loginVM.logoutUser()}
+                    onLogout: {
+                        await loginVM.logoutUser()
+                    }
                 )
             }
         }
@@ -73,11 +75,8 @@ struct MainScreen: View {
             
             DashboardSection(historyVM: historyVM, loginVM: loginVM)
         }
-
         .padding()
     }
-    
-   
     
     @ToolbarContentBuilder
     private var toolbar: some ToolbarContent{

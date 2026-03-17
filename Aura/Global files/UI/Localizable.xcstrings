@@ -64,6 +64,16 @@
         }
       }
     },
+    "Actions" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aktivliklər"
+          }
+        }
+      }
+    },
     "AI Health Insight" : {
       "localizations" : {
         "az" : {
@@ -125,6 +135,9 @@
         }
       }
     },
+    "Calm" : {
+
+    },
     "Cancel" : {
       "localizations" : {
         "az" : {
@@ -174,6 +187,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gündəlik"
+          }
+        }
+      }
+    },
+    "Daily status" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gündəlik status"
           }
         }
       }
@@ -314,6 +337,9 @@
         }
       }
     },
+    "Energy" : {
+
+    },
     "Enter email" : {
       "localizations" : {
         "az" : {
@@ -404,11 +430,24 @@
         }
       }
     },
+    "Grateful" : {
+
+    },
+    "Health" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sağlamlıq"
+          }
+        }
+      }
+    },
     "hello reels" : {
 
     },
     "Here you can see the most relevant info about your interests." : {
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "az" : {
           "stringUnit" : {
@@ -417,6 +456,9 @@
           }
         }
       }
+    },
+    "High" : {
+
     },
     "hightlights" : {
       "localizations" : {
@@ -429,7 +471,14 @@
       }
     },
     "History" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tarixçə"
+          }
+        }
+      }
     },
     "Hotels" : {
       "localizations" : {
@@ -441,12 +490,22 @@
         }
       }
     },
+    "How do you feel?" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Necə hiss edirsən?"
+          }
+        }
+      }
+    },
     "How to use Aura" : {
       "localizations" : {
         "az" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Aura’nı necə istifadə edirsən"
+            "value" : "Aura’nı necə istifadə edirsən?"
           }
         }
       }
@@ -523,7 +582,7 @@
       }
     },
     "link history screen" : {
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "az" : {
           "stringUnit" : {
@@ -553,6 +612,9 @@
         }
       }
     },
+    "Low" : {
+
+    },
     "Mark Zuckerberg" : {
       "localizations" : {
         "az" : {
@@ -563,12 +625,25 @@
         }
       }
     },
+    "Medium" : {
+
+    },
     "Meetra" : {
       "localizations" : {
         "az" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Meetra"
+          }
+        }
+      }
+    },
+    "Mood" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Əhval"
           }
         }
       }
@@ -684,6 +759,19 @@
         }
       }
     },
+    "Positive mindset detected." : {
+
+    },
+    "Profile" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profil"
+          }
+        }
+      }
+    },
     "Rafael Agayev" : {
       "localizations" : {
         "az" : {
@@ -720,6 +808,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Qeydiyyat"
+          }
+        }
+      }
+    },
+    "Reminder" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xatırlatmalar"
           }
         }
       }
@@ -807,6 +905,16 @@
         }
       }
     },
+    "Scan your today mood" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bugünki əhvalını skan elə"
+          }
+        }
+      }
+    },
     "Search" : {
       "localizations" : {
         "az" : {
@@ -848,6 +956,12 @@
       }
     },
     "sticker response screen" : {
+
+    },
+    "Stress" : {
+
+    },
+    "Stress level is manageable today." : {
 
     },
     "Suggested content" : {
@@ -1035,6 +1149,9 @@
         }
       }
     },
+    "Wonderful" : {
+
+    },
     "Year: %@" : {
       "localizations" : {
         "az" : {
@@ -1085,6 +1202,19 @@
         }
       }
     },
+    "You can watch actions" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sən aktivliyinə baxa bilərsən"
+          }
+        }
+      }
+    },
+    "You look more tired than usual. Try resting." : {
+
+    },
     "Your activity" : {
       "localizations" : {
         "az" : {
@@ -1094,6 +1224,22 @@
           }
         }
       }
+    },
+    "Your energy is low. Hydration recommended." : {
+
+    },
+    "Your info" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sənin məlumatların"
+          }
+        }
+      }
+    },
+    "Your mood is stable today. Keep balance." : {
+
     }
   },
   "version" : "1.1"

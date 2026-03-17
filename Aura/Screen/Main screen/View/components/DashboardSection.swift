@@ -9,9 +9,7 @@ import SwiftUI
 import CoreData
 
 struct DashboardSection: View {
-    
-    @State private var showCamera = false
-    
+        
     @State private var capturedImage: UIImage?
     
     @State private var showCameraAlert = false
@@ -19,6 +17,8 @@ struct DashboardSection: View {
     let loginVM: LoginScreenViewModel
     
     @StateObject private var historyVM: HistoryViewModel
+    
+    @State private var navigation: Navigation?
     
     init(historyVM: HistoryViewModel, loginVM: LoginScreenViewModel) {
         _historyVM = StateObject(wrappedValue: historyVM)
@@ -42,76 +42,60 @@ struct DashboardSection: View {
                 icon: "face.smiling"
             )
             .onTapGesture{
-                showLoading()
-                
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.4){
-                    showCamera = true
-                    
-                }
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.6){
-                    hideLoading()
-                }
+                navigation = .camera
             }
-           
-            
-            NavigationLink{
-                HealthScreen()
-                    
-            }label:{
                 DashBoard(
                     title: "Health",
                     subtitle: "Daily status",
                     icon: "heart.text.square"
                 )
+                .onTapGesture {
+                    navigation = .health
+                }
                 .onChange(of: historyVM.isLoading) { _, newValue in
                     if newValue{
                         showLoading()
                     }else{
                         hideLoading()
                     }
-                }
             }
             
-            NavigationLink{
-                HistoryScreen(vm: historyVM)
-            }label:{
+          
                 DashBoard(
                     title: "History",
                     subtitle: "Your activity",
                     icon: "clock.arrow.circlepath"
                 )
-            }
-            NavigationLink{
-                ProfileScreen(loginVM: loginVM, historyVM: historyVM)
-            }label:{
+                .onTapGesture {
+                    navigation = .history
+                }
+           
                 DashBoard(
                     title: "Profile",
                     subtitle: "Your info",
                     icon: "person.crop.circle"
                 )
-            }
-            
-            NavigationLink{
-                if #available(iOS 18.0, *) {
-                    ReminderScreen(historyVM: historyVM)
-                } 
-            }label:{
-              
+                .onTapGesture {
+                    navigation = .profile
+                }
                 DashBoard(
                     title: "Reminder",
                     subtitle: "Scan your today mood",
                     icon: "bell"
                 )
-            }
+                .onTapGesture {
+                    navigation = .reminder
+                }
             
-            NavigationLink{
-                ActionsScreen()
-            }label:{
+          
                 DashBoard(
                     title: "Actions",
                     subtitle: "You can watch actions",
                     icon: "waveform.path.ecg"
-                )
+                    )
+                .onTapGesture {
+                    navigation = .actions
+                }
                 .onChange(of: historyVM.isLoading) { _, newValue in
                     if newValue{
                         showLoading()
@@ -120,24 +104,48 @@ struct DashboardSection: View {
                     }
                 }
             }
-            .navigationDestination(isPresented: $showCamera) {
+        .navigationDestination(item: $navigation) { navigate in
+            switch navigate{
+            case .actions:
+                ActionsScreen()
+            case .camera:
+                CameraPicker { image in
+                    capturedImage = image
+                }
+                .ignoresSafeArea()
+            case .health:
+                HealthScreen()
+            case .profile:
+                ProfileScreen(loginVM: loginVM, historyVM: historyVM)
+                
+            case .history:
+                HistoryScreen(vm: historyVM)
+            case .reminder:
+                if #available(iOS 18.0, *) {
+                    ReminderScreen(historyVM: historyVM)
+                } else {
+                    
+                }
+            case .mood:
                 CameraPicker { image in
                     capturedImage = image
                 }
                 .ignoresSafeArea()
             }
-            .alert("Mood scan", isPresented: $showCameraAlert) {
-                Button("Start") {
-                    showCamera = true
-                }
-                Button("Cancel", role: .cancel) {}
-            }message:{
-                Text("We'll your analyze with camera")
-            }
         }
+        .alert("Mood scan", isPresented: $showCameraAlert ) {
+            Button("Start") {
+                navigation = .camera
+        }
+        Button("Cancel", role: .cancel) {}
+    }message:{
+        Text("We'll your analyze with camera")
+    }
     }
 }
 
-//#Preview {
-//    DashboardSection()
-//}
+extension DashboardSection{
+    enum Navigation{
+        case mood, health, history, profile, reminder, actions, camera
+    }
+}
