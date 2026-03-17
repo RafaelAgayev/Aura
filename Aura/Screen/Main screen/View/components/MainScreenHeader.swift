@@ -14,7 +14,7 @@ struct MainScreenHeader: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 6){
             Text("Welcome back \(loginVM.name) 👋")
-                .fontModifier(size: 10, weight: .medium, foregroundColor: .primary)
+                .fontModifier(size: 16, weight: .medium, foregroundColor: .primary)
             
             Text("Let’s check how you’re doing today")
                 .foregroundStyle(.primary)

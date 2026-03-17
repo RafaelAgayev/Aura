@@ -6,11 +6,12 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct HealthStat: Identifiable, Equatable{
     let id = UUID()
-    let title: String
-    let value: String
+    let title: LocalizedStringKey
+    let value: LocalizedStringKey
     let emoji: String
-    let detail: String
+    let detail: LocalizedStringKey
 }

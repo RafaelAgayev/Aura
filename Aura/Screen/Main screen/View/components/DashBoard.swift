@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct DashBoard: View {
-    let title: String
+    let title: LocalizedStringKey
     
-    let subtitle: String
+    let subtitle: LocalizedStringKey
     
     let icon: String
     
