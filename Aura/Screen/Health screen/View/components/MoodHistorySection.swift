@@ -13,6 +13,8 @@ struct MoodHistorySection: View {
     
     let healthVM: HealthScreenViewModel
     
+    @Binding var emoji: HealthScreenViewModel.Emoji?
+    
     var body: some View {
         
         VStack(alignment: .leading, spacing: 12){
@@ -20,26 +22,34 @@ struct MoodHistorySection: View {
                 .font(.headline)
             
             HStack(spacing: 12){
-                ForEach(healthVM.moods, id: \.description){ mood in
+                ForEach(Array(HealthScreenViewModel.Emoji.allCases.enumerated()), id: \.element){ index, mood in
                     Button{
                         withAnimation(.spring){
+                            emoji = mood
                             selectedMood = mood.description
                         }
                     }label: {
-                        Text(mood.emoji)
+                        
+                        Text(mood.rawValue)
                             .font(.largeTitle)
                             .padding(8)
                             .background(selectedMood == mood.description ? Color.blue.opacity(0.3) : Color.clear)
                             .clipShape(Circle())
                             .rotationEffect(.degrees(healthVM.isAnimate ? 10 : -10))
-                            .animation(.easeInOut(duration: 2).repeatForever(autoreverses: true), value: healthVM.isAnimate)
+                            .animation(
+                                .easeInOut(duration: 1.5)
+                                    .delay(Double(index) * 0.2)
+                                    .repeatForever(autoreverses: true),
+                                value: healthVM.isAnimate
+                            )
+
                             .onAppear {
                                 healthVM.isAnimate = true
                             }
                     }
                     .buttonStyle(.plain)
                 }
-              
+                
             }
             if !selectedMood.isEmpty{
                 Text("\(selectedMood)")
@@ -56,10 +66,5 @@ struct MoodHistorySection: View {
         }
         .transition(.move(edge: .bottom))
         .padding()
-        
     }
 }
-
-//#Preview {
-//    MoodHistorySection()
-//}

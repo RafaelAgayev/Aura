@@ -81,8 +81,8 @@ class HealthScreenViewModel: BaseViewModel{
     
     func analyzeFace(_ image: UIImage) async {
         await withLoading{
-        scan = .scanning
-        
+            scan = .scanning
+            
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
                 let insights = [
                     "You look energetic today 💪",
@@ -91,16 +91,20 @@ class HealthScreenViewModel: BaseViewModel{
                     "You look very and very beautiful 🤩"
                 ]
                 
-                let result = insights.randomElement()!
+                let result = insights.randomElement()
                 
-                self.scan = .result(result)
-                self.todayInsight = result
-                
-                self.historyVM.add(
-                    type: "Health Scan",
-                    title: "Face Analysis",
-                    subtitle: result
-                )
+                if let result = result{
+                    
+                    self.scan = .result(result)
+                    self.todayInsight = result
+                    
+                    
+                    self.historyVM.add(
+                        type: "Health Scan",
+                        title: "Face Analysis",
+                        subtitle: result
+                    )
+                }
             }
         }
     }
@@ -130,23 +134,49 @@ class HealthScreenViewModel: BaseViewModel{
 
     func generateInsight(score: Int) {
         Task{
-           
-                 await withLoading{
-                    
-                    
-                    let insight: String
-                    
-                    switch score {
-                    case 0:
-                        insight = "You look energetic today 💪"
-                    case 1:
-                        insight = "You seem a bit tired today 😌"
-                    default:
-                        insight = "You look more tired than yesterday 😴"
-                    }
-                    
-                    todayInsight = insight
+            
+            await withLoading{
+                let insight: String
+                
+                switch score {
+                case 0:
+                    insight = "You look energetic today 💪"
+                case 1:
+                    insight = "You seem a bit tired today 😌"
+                default:
+                    insight = "You look more tired than yesterday 😴"
                 }
+                
+                todayInsight = insight
             }
         }
+    }
+}
+
+extension HealthScreenViewModel{
+    enum Emoji: String, CaseIterable{
+        case happy = "😄"
+        case content = "🙂‍↔️"
+        case sad = "😔"
+        case sick = "🤒"
+        case getParty = "🥳"
+        case rich = "🤑"
+        
+        var description: String{
+            switch self {
+            case .happy:
+                return "Happy"
+            case .content:
+                return "Content"
+            case .sad:
+                return "Sad"
+            case .sick:
+                return "Sick"
+            case .getParty:
+                return "Get party"
+            case .rich:
+                return "Rich"
+            }
+        }
+    }
 }
