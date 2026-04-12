@@ -19,6 +19,8 @@ struct PreferencesSection: View {
         
         VStack(alignment: .leading, spacing: 18) {
             Toggle("Enable notification", isOn: $notificationEnabled)
+                .tint(notificationEnabled ? .colorGreenWhatsapp : .colorWhite)
+            
             
             Picker("Selection theme", selection: $theme){
                 
@@ -39,7 +41,7 @@ struct PreferencesSection: View {
                 
                      onChange?("New theme is:", theme.description)
             }
-            .foregroundStyle(.colorBlack)
+            .foregroundStyle(.primary)
             .pickerStyle(.navigationLink)
         }
         .padding()

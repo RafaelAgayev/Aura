@@ -37,8 +37,8 @@ struct ProfileScreenHeader: View {
             }
             .foregroundStyle(.colorWhite)
             .background(
-                Color.colorPink
-
+                Color.colorGreenWhatsapp
+                
                     .frame(width: 90,height: 30)
                     .blur(radius: 2)
                     .roundedCorners(cornerRadius: 12)
@@ -54,7 +54,8 @@ struct ProfileScreenHeader: View {
                     onChange?("New name is updated", newName)
             }
             Button("Cancel", role: .cancel){ }
-        }, message: { Text("You can update your display name")
+        }, message: {
+            Text("You can update your display name")
         })
     }
 }
