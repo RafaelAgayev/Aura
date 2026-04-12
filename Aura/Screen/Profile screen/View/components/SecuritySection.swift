@@ -36,7 +36,7 @@ struct SecuritySection: View {
               
                 .foregroundStyle(.colorWhite)
                 .background(
-                    Color.colorPink
+                    Color.colorGreenWhatsapp
     
                         .frame(width: 90,height: 30)
                         .blur(radius: 2)
@@ -60,6 +60,7 @@ struct SecuritySection: View {
             })
             
             Toggle("Face ID", isOn: $useFaceID)
+                .tint(useFaceID ? .colorGreenWhatsapp : .colorWhite)
                 .onChange(of: useFaceID) { oldValue, newValue in
                     
                     onChange?("FaceID: \(newValue ? "enabled" : "disabled")")

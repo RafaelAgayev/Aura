@@ -38,8 +38,8 @@ struct ProfileScreen: View {
                     
                     content
                 }
+                .roundedRectangleStyle(cornerRadius: 16, backgroundColor: .colorWhite, borderColor: .colorGreenWhatsapp, borderWidth: 1)
             }
-           
             .padding(.vertical, 10)
             .padding(.horizontal, 12)
             .navigationBarBackButtonHidden()
@@ -49,6 +49,8 @@ struct ProfileScreen: View {
             .onChange(of: profileVM.isLoading) { _, isLoading in
                 isLoading ? showLoading() : hideLoading()
             }
+            
+            AboutSection()
         }
     }
     private var content: some View{
@@ -85,9 +87,9 @@ struct ProfileScreen: View {
                     subtitle: "Password updated: \(change)"
                 )
             })
-            
-            AboutSection()
         }
+//        .padding()
+//        .roundedRectangleStyle(cornerRadius: 16, backgroundColor: .colorWhite, borderColor: .colorGreenWhatsapp, borderWidth: 1)
     }
     
     @ToolbarContentBuilder

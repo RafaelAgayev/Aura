@@ -31,7 +31,7 @@ struct ProfileInfoSection: View {
             }
             .foregroundStyle(.colorWhite)
             .background(
-                Color.colorPink
+                Color.colorGreenWhatsapp
                 
                     .frame(width: 90,height: 30)
                     .blur(radius: 2)

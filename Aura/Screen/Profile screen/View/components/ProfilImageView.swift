@@ -10,6 +10,7 @@ import PhotosUI
 
 struct ProfilImageView: View {
     @State private var profilImage: UIImage? = nil
+    
     @State private var showImagePicker = false
     
     let userID: String

@@ -9,12 +9,15 @@ import SwiftUI
 
 struct AboutSection: View {
     var body: some View {
-        VStack(alignment: .leading, spacing: 16) {
+        VStack(alignment: .center, spacing: 16) {
+            Spacer()
             
-            Text("Version: 1.0.1")
+            Text("Version: 1.2.4")
             
-            Link("Terms and Conditions", destination: URL(string: "https://www.google.com")!)
-                .foregroundStyle(.primary)
+            if let url = URL(string: "https://www.google.com"){
+                Link("Terms and Conditions", destination: url)
+                    .foregroundStyle(.primary)
+            }
             
             Button{
                 if let url = URL(string: "https://www.linkedin.com/in/rafaelagayev"){
