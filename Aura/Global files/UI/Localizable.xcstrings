@@ -1079,6 +1079,7 @@
       }
     },
     "Version: 1.0.1" : {
+      "extractionState" : "stale",
       "localizations" : {
         "az" : {
           "stringUnit" : {
@@ -1087,6 +1088,9 @@
           }
         }
       }
+    },
+    "Version: 1.2.4" : {
+
     },
     "View History" : {
       "localizations" : {

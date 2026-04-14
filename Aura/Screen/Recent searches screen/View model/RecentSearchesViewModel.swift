@@ -12,21 +12,19 @@ internal import Combine
 @Observable
 class RecentSearchesViewModel: BaseViewModel{
     
-     var searchText: String = "" {
-        didSet{
-            search()
-        }
-    }
+    var searchText: String = ""
     
     var model: [RecentSearchesModel] = []
     
-    func recentVIP(){
-        model = [
+    var allModels: [RecentSearchesModel] = []
+    
+   private func recentVIP(){
+        let data = [
             RecentSearchesModel(
                 id: UUID(uuidString: "00000000-0000-0000-0000-000000000001") ?? UUID(),
                 name: "Mark Zuckerberg",
                 image: .markZuckerberg,
-                founder: "Facebook",
+                founder: "Meta",
                 years: "1984 - ♾️ "
             ),
             
@@ -42,7 +40,7 @@ class RecentSearchesViewModel: BaseViewModel{
                 id: UUID(uuidString: "00000000-0000-0000-0000-000000000003") ?? UUID(),
                 name: "Marcus Rashford",
                 image: .marcusRashford,
-                founder: "Football in Man U",
+                founder: "Footballer in Barcelona",
                 years: "1996 - ♾️"
             ),
             
@@ -50,7 +48,7 @@ class RecentSearchesViewModel: BaseViewModel{
                 id: UUID(uuidString: "00000000-0000-0000-0000-000000000004") ?? UUID(),
                 name: "Alexander Isak",
                 image: .alexanderIsak,
-                founder: "Football in Newcastle U",
+                founder: "Footballer in Liverpool",
                 years: "2002 - ♾️"
             ),
             
@@ -58,58 +56,30 @@ class RecentSearchesViewModel: BaseViewModel{
                 id: UUID(uuidString: "00000000-0000-0000-0000-000000000005") ?? UUID(),
                 name: "Cristiano Ronaldo",
                 image: .ronaldo,
-                founder: "Footbal in Al Nassr",
+                founder: "Footballer in Al Nassr",
                 years: "1985 - ♾️"
             )
             
         ]
+        model = data
+        allModels = data
     }
-    
-    var allNames: [String] = [
-        "Mark Zuckerberg",
-        "Rafael Agayev",
-        "Ronaldo",
-        "Sami Nasri",
-        "Marcus Rashford",
-        "Surat Huseinov",
-        "Azad Agayev",
-        "Luka Modric",
-        "Ousmane Dembele",
-        "Alexander Graham Bell",
-        "Thomas Edison",
-        "Nicola Tesla",
-        "Dwayne Johnson",
-        "Rey Misterio",
-        "Brock Lesnar",
-        "Goldberg",
-        "Vladimir Putin",
-        "Maduro",
-        "Alexander Isak",
-        "Vinicius jr.",
-        "Roque Jr.",
-        "David Silva",
-        "Rafael Benitez",
-        "Rafael Nadal"
-    ]
-    
-    var filteredNames: [String] = []
-    
+        
     override init(){
         super.init()
-        search()
+        recentVIP()
     }
 
-    private func search() {
-        
+    func search() {
         let query = searchText.trimmingCharacters(in: .whitespacesAndNewlines)
-        
+
         guard !query.isEmpty else {
-            filteredNames = allNames
+            model = allModels
             return
         }
 
-        filteredNames = allNames.filter {
-            $0.localizedCaseInsensitiveContains(query)
+        model = allModels.filter {
+            $0.name.localizedCaseInsensitiveContains(query)
         }
     }
 }
