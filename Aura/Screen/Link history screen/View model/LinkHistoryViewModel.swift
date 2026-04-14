@@ -9,17 +9,18 @@ import Foundation
 import SwiftUI
 internal import Combine
 
+@Observable
 class LinkHistoryViewModel: BaseViewModel{
     
-    @Published var marksProfile = "https://wwww.instagram.com/mark"
+    var marksProfile = "https://wwww.instagram.com/mark"
     
-    @Published var rafaelProfile = "https://wwww.instagram.com/r.a_rus"
+    var rafaelProfile = "https://wwww.instagram.com/r.a_rus"
     
-    @Published var ronaldoProfile = "https://wwww.instagram.com/ronaldo"
+    var ronaldoProfile = "https://wwww.instagram.com/ronaldo"
     
-    @Published var rockProfile = "https://wwww.instagram.com/rock"
+    var rockProfile = "https://wwww.instagram.com/rock"
     
-    @Published var meetraProfile = "https://wwww.instagram.com/meetra"
+    var meetraProfile = "https://wwww.instagram.com/meetra"
     
     
 }

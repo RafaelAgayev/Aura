@@ -17,9 +17,15 @@ struct RecentSearchesScreen: View {
         
         ScrollView{
             
-            RecentSearchesSection(searchText: $vm.searchText)
+            RecentSearchesSection(
+                searchText: $vm.searchText,
+                onUpdate: { vm.search()}
+            )
                
-            FilteredNamesSection(model: $vm.model, searchText: $vm.searchText)
+            FilteredNamesSection(
+                model: $vm.model,
+                searchText: $vm.searchText
+            )
             
         }
         .scrollDismissesKeyboard(.interactively)
@@ -28,9 +34,7 @@ struct RecentSearchesScreen: View {
         .toolbar {
             toolbar
         }
-        .onAppear{
-            vm.recentVIP()
-        }
+        
     }
 }
 

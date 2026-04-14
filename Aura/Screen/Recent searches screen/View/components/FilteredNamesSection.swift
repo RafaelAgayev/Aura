@@ -47,7 +47,7 @@ struct FilteredNamesSection: View {
                         if item.id == UUID(uuidString: "00000000-0000-0000-0000-000000000004") ?? UUID() {
                             
                             Text(item.founder)
-                                .fontModifier(size: 6, weight: .semibold, foregroundColor: .colorBlack)
+                                .fontModifier(size: 12, weight: .semibold, foregroundColor: .colorBlack)
                         }else {
                             Text(item.founder)
                                 .fontModifier(size: 12, weight: .semibold, foregroundColor: .colorBlack)
