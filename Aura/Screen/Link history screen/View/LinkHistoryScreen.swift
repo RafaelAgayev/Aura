@@ -39,6 +39,11 @@ struct LinkHistoryScreen: View {
                     .foregroundStyle(.primary)
             }
         }
+        
+        ToolbarItem(placement: .principal) {
+            Text("Link screen")
+                .fontModifier(size: 14, weight: .bold, foregroundColor: .colorBlack)
+        }
     }
 }
 

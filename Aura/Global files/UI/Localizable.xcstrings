@@ -1,6 +1,9 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "" : {
+
+    },
     "     View and manage your interactions, content\nand account activity. " : {
       "localizations" : {
         "az" : {
@@ -93,6 +96,12 @@
           }
         }
       }
+    },
+    "All dates" : {
+
+    },
+    "Apply" : {
+
     },
     "Archived" : {
       "localizations" : {
@@ -211,6 +220,9 @@
         }
       }
     },
+    "Date range" : {
+
+    },
     "Delete" : {
       "localizations" : {
         "az" : {
@@ -256,6 +268,9 @@
           }
         }
       }
+    },
+    "Done" : {
+
     },
     "E-mail:\n %@" : {
       "localizations" : {
@@ -409,6 +424,9 @@
           }
         }
       }
+    },
+    "Filter by date" : {
+
     },
     "Get daily" : {
       "localizations" : {
@@ -592,6 +610,9 @@
         }
       }
     },
+    "Link screen" : {
+
+    },
     "Loading..." : {
       "localizations" : {
         "az" : {
@@ -688,6 +709,9 @@
         }
       }
     },
+    "Newest to oldest" : {
+
+    },
     "No content available" : {
       "localizations" : {
         "az" : {
@@ -729,6 +753,9 @@
         }
       }
     },
+    "Oldest to newest" : {
+
+    },
     "One place to manage\nyour activity" : {
       "localizations" : {
         "az" : {
@@ -748,6 +775,12 @@
           }
         }
       }
+    },
+    "Past month" : {
+
+    },
+    "Past week" : {
+
     },
     "Please sign in" : {
       "localizations" : {
@@ -925,6 +958,9 @@
         }
       }
     },
+    "Select" : {
+
+    },
     "Selection theme" : {
       "localizations" : {
         "az" : {
@@ -944,6 +980,9 @@
           }
         }
       }
+    },
+    "Sort by" : {
+
     },
     "Start" : {
       "localizations" : {
@@ -1102,7 +1141,11 @@
         }
       }
     },
+    "Watch history" : {
+
+    },
     "Watch history screen" : {
+      "extractionState" : "stale",
       "localizations" : {
         "az" : {
           "stringUnit" : {
