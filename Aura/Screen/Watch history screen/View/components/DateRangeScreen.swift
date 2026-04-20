@@ -125,15 +125,16 @@ struct DateRangeScreen: View {
                 .padding(.horizontal)
                 .frame(maxWidth: .infinity)
                 .roundedRectangleStyle(cornerRadius: 8, backgroundColor: .colorBlue, borderColor: .clear, borderWidth: 0)
-                .disabled(
-                    tempStartDate == nil ||
-                    tempEndDate == nil ||
-                    (tempStartDate! > tempEndDate!)
-                )
-                .opacity(
-                    (tempStartDate == nil || tempEndDate == nil || tempStartDate! > tempEndDate!) ? 0.5 : 1
-                )
+                
         }
+        .disabled(
+            tempStartDate == nil ||
+            tempEndDate == nil ||
+            (tempStartDate! > tempEndDate!)
+        )
+        .opacity(
+            (tempStartDate == nil || tempEndDate == nil || tempStartDate! > tempEndDate!) ? 0.5 : 1
+        )
         .contentShape(Rectangle())
         
     }
