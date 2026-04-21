@@ -10,7 +10,7 @@ import SwiftUI
 struct ActionsViewer: View {
     let icon: String
     
-    let title: String
+    let title: LocalizedStringResource
     
     var body: some View {
         HStack{

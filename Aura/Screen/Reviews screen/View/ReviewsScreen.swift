@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ReviewsScreen: View {
     
-    @StateObject private var vm = ReviewsViewModel()
+    @StateObject private var vm: ReviewsViewModel = .init()
     
     @Environment(\.dismiss) private var dismiss
     
@@ -22,13 +22,13 @@ struct ReviewsScreen: View {
                     .frame(width: 150, height: 150)
                 
                 Text(vm.title)
-                    .fontModifier(size: 25, weight: .semibold, foregroundColor: .colorBlack)
+                    .fontModifier(size: 25, weight: .semibold, foregroundColor: .primary)
                 
                 Text(vm.subtitle)
                     .fontModifier(size: 18, weight: .medium, foregroundColor: .colorGray)
             }
-            .padding(.top, 20)
         }
+        .padding(.vertical, 20)
         .navigationBarBackButtonHidden()
         .toolbar {
             toolbar

@@ -112,6 +112,10 @@ struct InteractionsSection: View {
                         .onTapGesture {
                             onSelect(.interested)
                         }
+                    ActionsViewer(icon: "crown", title: "Creator subscriptions")
+                        .onTapGesture {
+                            onSelect(.creator)
+                        }
                 }
                 
                 .listRowSeparator(.hidden)
@@ -171,7 +175,7 @@ extension InteractionsSection{
    
     
     enum NavigateLink: Hashable {
-        case likes, comments, reposts, tags, stickerResponse, reviews, delete, archived, posts, reels, highlights, notInterested, interested, timeSpent, watchHistory, accountHistory, recentSearches, linkHistory
+        case likes, comments, reposts, tags, stickerResponse, reviews, delete, archived, posts, reels, highlights, notInterested, interested, timeSpent, watchHistory, accountHistory, recentSearches, linkHistory, creator
     }
 }
 

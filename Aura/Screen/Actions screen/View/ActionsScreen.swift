@@ -82,6 +82,8 @@ struct ActionsScreen: View {
                     case .linkHistory:
                         LinkHistoryScreen()
                         
+                    case .creator:
+                        CreatorScreen()
                     }
                 }
             }
