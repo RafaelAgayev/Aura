@@ -57,6 +57,16 @@
         }
       }
     },
+    "Account history" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Akkaunt tarixçəsi"
+          }
+        }
+      }
+    },
     "Account history screen" : {
       "localizations" : {
         "az" : {
@@ -98,10 +108,24 @@
       }
     },
     "All dates" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bütün tarixlər"
+          }
+        }
+      }
     },
     "Apply" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Təsdiqlə"
+          }
+        }
+      }
     },
     "Archived" : {
       "localizations" : {
@@ -145,7 +169,14 @@
       }
     },
     "Calm" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sakitlik"
+          }
+        }
+      }
     },
     "Cancel" : {
       "localizations" : {
@@ -170,12 +201,32 @@
     "Commentario smndmn" : {
 
     },
+    "Comments" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şərhlər"
+          }
+        }
+      }
+    },
     "Content you shared" : {
       "localizations" : {
         "az" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Olduğun yeri paylaşmaq"
+          }
+        }
+      }
+    },
+    "Creator subscriptions" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yaradıcı abunəlikləri"
           }
         }
       }
@@ -221,7 +272,14 @@
       }
     },
     "Date range" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zaman aralığı"
+          }
+        }
+      }
     },
     "Delete" : {
       "localizations" : {
@@ -244,7 +302,14 @@
       }
     },
     "Description: %@" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Təsvir: %@"
+          }
+        }
+      }
     },
     "Details" : {
       "localizations" : {
@@ -270,7 +335,14 @@
       }
     },
     "Done" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hazırdır"
+          }
+        }
+      }
     },
     "E-mail:\n %@" : {
       "localizations" : {
@@ -353,7 +425,14 @@
       }
     },
     "Energy" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enerji"
+          }
+        }
+      }
     },
     "Enter email" : {
       "localizations" : {
@@ -426,7 +505,14 @@
       }
     },
     "Filter by date" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tarixə görə filtrlə"
+          }
+        }
+      }
     },
     "Get daily" : {
       "localizations" : {
@@ -449,7 +535,14 @@
       }
     },
     "Grateful" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Minnətdarlıq"
+          }
+        }
+      }
     },
     "Health" : {
       "localizations" : {
@@ -476,7 +569,24 @@
       }
     },
     "High" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yüksək"
+          }
+        }
+      }
+    },
+    "Highlights" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seçilmişlər"
+          }
+        }
+      }
     },
     "hightlights" : {
       "localizations" : {
@@ -534,6 +644,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Interaksiyalar"
+          }
+        }
+      }
+    },
+    "Interested" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Maraqlıdır"
           }
         }
       }
@@ -599,6 +719,16 @@
         }
       }
     },
+    "Link History" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Link Tarixçəsi"
+          }
+        }
+      }
+    },
     "link history screen" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -611,7 +741,14 @@
       }
     },
     "Link screen" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Link səhifəsi"
+          }
+        }
+      }
     },
     "Loading..." : {
       "localizations" : {
@@ -634,7 +771,14 @@
       }
     },
     "Low" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aşağı"
+          }
+        }
+      }
     },
     "Mark Zuckerberg" : {
       "localizations" : {
@@ -647,7 +791,14 @@
       }
     },
     "Medium" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orta"
+          }
+        }
+      }
     },
     "Meetra" : {
       "localizations" : {
@@ -710,7 +861,14 @@
       }
     },
     "Newest to oldest" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yenidən köhnəyə"
+          }
+        }
+      }
     },
     "No content available" : {
       "localizations" : {
@@ -742,6 +900,16 @@
         }
       }
     },
+    "Not interested" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Maraqlanmadıqlarım"
+          }
+        }
+      }
+    },
     "not interested aura" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -754,7 +922,14 @@
       }
     },
     "Oldest to newest" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Köhnədən yeniyə"
+          }
+        }
+      }
     },
     "One place to manage\nyour activity" : {
       "localizations" : {
@@ -777,10 +952,24 @@
       }
     },
     "Past month" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keçən ay"
+          }
+        }
+      }
     },
     "Past week" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keçən həftə"
+          }
+        }
+      }
     },
     "Please sign in" : {
       "localizations" : {
@@ -794,6 +983,16 @@
     },
     "Positive mindset detected." : {
 
+    },
+    "Posts" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Postlarım"
+          }
+        }
+      }
     },
     "Profile" : {
       "localizations" : {
@@ -831,6 +1030,26 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ən son axtarışlar"
+          }
+        }
+      }
+    },
+    "Recently deleted" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu yaxınlarda silinənlər"
+          }
+        }
+      }
+    },
+    "Reels" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Videolar"
           }
         }
       }
@@ -888,12 +1107,32 @@
     "Repostandito" : {
 
     },
+    "Reposts" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Təkrar paylaşımlar"
+          }
+        }
+      }
+    },
     "Retry" : {
       "localizations" : {
         "az" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Yenidən cəhd et"
+          }
+        }
+      }
+    },
+    "Reviews" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İcmallar"
           }
         }
       }
@@ -959,7 +1198,14 @@
       }
     },
     "Select" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seç"
+          }
+        }
+      }
     },
     "Selection theme" : {
       "localizations" : {
@@ -994,11 +1240,35 @@
         }
       }
     },
+    "Sticker response" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stiker reaksiyası"
+          }
+        }
+      }
+    },
     "sticker response screen" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stiker reaksiyası səhifəsi"
+          }
+        }
+      }
     },
     "Stress" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stress"
+          }
+        }
+      }
     },
     "Stress level is manageable today." : {
 
@@ -1029,6 +1299,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sistem"
+          }
+        }
+      }
+    },
+    "Tags" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Etiketləndiklərin"
           }
         }
       }
@@ -1072,6 +1352,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vaxt"
+          }
+        }
+      }
+    },
+    "Time spent" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vaxt xərclədiyim"
           }
         }
       }
@@ -1129,7 +1419,14 @@
       }
     },
     "Version: 1.2.4" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Versiya: 1.2.4"
+          }
+        }
+      }
     },
     "View History" : {
       "localizations" : {
@@ -1142,7 +1439,14 @@
       }
     },
     "Watch history" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tarixçəyə bax"
+          }
+        }
+      }
     },
     "Watch history screen" : {
       "extractionState" : "stale",
@@ -1259,8 +1563,21 @@
         }
       }
     },
-    "You look more tired than usual. Try resting." : {
+    "You don't have any active\nsubscriptions." : {
 
+    },
+    "You haven't subscribed to anyone yet. If\n you subscribe to a creator, your \nsubscription can be managed here" : {
+
+    },
+    "You look more tired than usual. Try resting." : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sən adətən yorğun görünürsən. Dincəl biraz"
+          }
+        }
+      }
     },
     "Your activity" : {
       "localizations" : {
@@ -1273,7 +1590,14 @@
       }
     },
     "Your energy is low. Hydration recommended." : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sənin enerjin aşağıdır"
+          }
+        }
+      }
     },
     "Your info" : {
       "localizations" : {

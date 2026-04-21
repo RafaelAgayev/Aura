@@ -9,9 +9,10 @@ import Foundation
 import SwiftUI
 internal import Combine
 
+@Observable
 class ReviewsViewModel: BaseViewModel{
     
-    @Published var title: String = "No review activity"
+     var title: String = "No review activity"
     
-    @Published var subtitle: String = "When you submit reviews on Aura they will\n appear here."
+     var subtitle: String = "When you submit reviews on Aura they will\n appear here."
 }
