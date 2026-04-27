@@ -17,13 +17,16 @@ struct SecuritySection: View {
     
     @State private var newPassword = ""
     
+    @Environment(\.colorScheme) private var colorScheme
+
+    
     var onChange: ((String) -> Void)? = nil
     
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
             HStack{
                 Text("Change password")
-                    .foregroundStyle(.primary)
+                    .foregroundStyle(colorScheme == .dark ? .colorWhite : .colorBlack)
                 
                 Spacer()
                 Button{

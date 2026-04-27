@@ -15,6 +15,8 @@ struct ProfileInfoSection: View {
     
     @State private var newEmail: String = ""
     
+    @Environment(\.colorScheme) private var colorScheme
+    
     var onChange: ((String, String) ->  Void)? = nil
     
     var body: some View {

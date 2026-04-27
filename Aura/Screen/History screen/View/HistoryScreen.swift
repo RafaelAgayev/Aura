@@ -17,6 +17,8 @@ struct HistoryScreen: View {
     @Environment(\.showLoading) private var showLoading
     
     @Environment(\.hideLoading) private var hideLoading
+    
+    @Environment(\.colorScheme) private var colorScheme
 
     var body: some View {
         List{
@@ -69,7 +71,7 @@ struct HistoryScreen: View {
         
         ToolbarItem(placement: .principal) {
             Text("History")
-                .fontModifier(size: 24, weight: .bold, foregroundColor: .colorBlack)
+                .fontModifier(size: 24, weight: .bold, foregroundColor: colorScheme == .dark ? .colorWhite : .colorBlack)
         }
     }
 }

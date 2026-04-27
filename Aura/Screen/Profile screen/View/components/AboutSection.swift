@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct AboutSection: View {
+    
+    @Environment(\.colorScheme) private var colorScheme
+
     var body: some View {
         VStack(alignment: .center, spacing: 16) {
             Spacer()
@@ -16,7 +19,7 @@ struct AboutSection: View {
             
             if let url = URL(string: "https://www.google.com"){
                 Link("Terms and Conditions", destination: url)
-                    .foregroundStyle(.primary)
+                    .foregroundStyle(colorScheme == .dark ? .colorWhite : .colorBlack)
             }
             
             Button{
@@ -26,7 +29,7 @@ struct AboutSection: View {
             }label:{
                 Text("Support")
             }
-            .foregroundStyle(.primary)
+            .foregroundStyle(colorScheme == .dark ? .colorWhite : .colorBlack)
         }
         .padding()
     }

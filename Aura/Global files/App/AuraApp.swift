@@ -56,7 +56,6 @@ struct AuraApp: App {
                     MainScreen(historyVM: historyVM, loginVM: loginVM)
                         .preferredColorScheme(colorScheme)
                         .environment(\.managedObjectContext, persistence.container.viewContext)
-                    
                 }else {
                     LoginScreen()
                         .preferredColorScheme(colorScheme)

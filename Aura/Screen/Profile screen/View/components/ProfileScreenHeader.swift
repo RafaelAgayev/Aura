@@ -16,6 +16,9 @@ struct ProfileScreenHeader: View {
     
     var onChange: ((String, String) -> Void)? = nil
     
+    @Environment(\.colorScheme) private var colorScheme
+
+    
     @State private var newName: String = ""
     var body: some View {
         HStack{
@@ -25,7 +28,7 @@ struct ProfileScreenHeader: View {
             }
             VStack(alignment: .leading){
                 Text("Name: \(loginVM.name)")
-                    .fontModifier(size: 15, weight: .semibold, foregroundColor: .primary)
+                    .fontModifier(size: 15, weight: .semibold, foregroundColor: colorScheme == .dark ? .colorWhite : .colorBlack)
             }
             Spacer()
             Button{

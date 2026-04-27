@@ -9,6 +9,9 @@ import SwiftUI
 
 struct LoadingView: View {
     
+    @Environment(\.colorScheme) private var colorScheme
+
+    
     var body: some View {
         
         ZStack{
@@ -21,12 +24,12 @@ struct LoadingView: View {
                 
                 Text("Loading...")
                     .font(.footnote)
-                    .foregroundStyle(.colorBlack)
+                    .foregroundStyle(colorScheme == .dark ? .colorWhite : .colorBlack)
             }
             .padding(24)
             .background(
                 RoundedRectangle(cornerRadius: 16)
-                    .fill(Color(.systemBackground))
+                    .fill(Color(.systemGroupedBackground))
             )
         }
         .transition(.opacity)
