@@ -17,6 +17,8 @@ struct CreatorScreen: View {
     
     @Environment(\.colorScheme) private var colorScheme
     
+    @StateObject private var vm: CreatorViewModel = .init()
+    
     private var icon: some View{
         Circle()
             .fill(colorScheme == .dark ? .colorWhite : .colorBlack.opacity(0.3))
@@ -60,6 +62,9 @@ struct CreatorScreen: View {
             
             learnMoreButton
             
+        }
+        .onChange(of: vm.isLoading) { _, isLoading in
+            isLoading ? showLoading() : hideLoading()
         }
         .navigationBarBackButtonHidden()
         .toolbar {

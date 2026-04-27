@@ -28,6 +28,8 @@ struct ProfileScreen: View {
     
     @Environment(\.hideLoading) private var hideLoading
     
+    @Environment(\.colorScheme) private var colorScheme
+    
     var body: some View {
         ZStack{
             RoundedRectangle(cornerRadius: 12)
@@ -38,7 +40,7 @@ struct ProfileScreen: View {
                     
                     content
                 }
-                .roundedRectangleStyle(cornerRadius: 16, backgroundColor: .colorWhite, borderColor: .colorGreenWhatsapp, borderWidth: 1)
+                .roundedRectangleStyle(cornerRadius: 16, backgroundColor: colorScheme == .dark ? .colorBlack.opacity(0.2) : .colorWhite, borderColor: .colorGreenWhatsapp, borderWidth: 1)
             }
             .padding(.vertical, 10)
             .padding(.horizontal, 12)
@@ -100,7 +102,7 @@ struct ProfileScreen: View {
                 dismiss()
             }label:{
                 Image(systemName: "chevron.left")
-                    .foregroundStyle(.primary)
+                    .foregroundStyle(colorScheme == .dark ? .colorWhite : .colorBlack)
             }
             
         }

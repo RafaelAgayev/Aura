@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct ReminderHeader: View {
+    
+    @Environment(\.colorScheme) private var colorScheme
+
     var body: some View {
         Section("Get daily"){
             Text("Get daily reminders to check your mood and health.")
                 .font(.subheadline)
-                .foregroundStyle(.colorBlack)
+                .foregroundStyle(colorScheme == .dark ? .colorWhite : .colorBlack)
         }
     }
 }

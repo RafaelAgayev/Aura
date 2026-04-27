@@ -22,6 +22,9 @@ struct ReminderScreen: View {
     
     @Environment(\.hideLoading) private var hideLoading
     
+    @Environment(\.colorScheme) private var colorScheme
+
+    
     var body: some View {
         content
     }
@@ -73,7 +76,7 @@ struct ReminderScreen: View {
                 dismiss()
             }label: {
                 Image(systemName: "chevron.left")
-                    .foregroundStyle(.colorBlack)
+                    .foregroundStyle(colorScheme == .dark ? .colorWhite : .colorBlack)
             }
         }
     }

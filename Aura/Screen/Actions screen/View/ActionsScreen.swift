@@ -84,6 +84,8 @@ struct ActionsScreen: View {
                         
                     case .creator:
                         CreatorScreen()
+                    case .orders:
+                        OrdersScreen()
                     }
                 }
             }

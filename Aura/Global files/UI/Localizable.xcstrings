@@ -147,6 +147,9 @@
         }
       }
     },
+    "Auto detection screen" : {
+
+    },
     "Back" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -557,6 +560,12 @@
     "hello reels" : {
 
     },
+    "Hello subscriptions" : {
+
+    },
+    "Help support screen" : {
+
+    },
     "Here you can see the most relevant info about your interests." : {
       "extractionState" : "manual",
       "localizations" : {
@@ -810,6 +819,12 @@
         }
       }
     },
+    "Meta pay screen" : {
+
+    },
+    "MetaPay" : {
+
+    },
     "Mood" : {
       "localizations" : {
         "az" : {
@@ -941,6 +956,9 @@
         }
       }
     },
+    "Orders and payments" : {
+
+    },
     "Password" : {
       "localizations" : {
         "az" : {
@@ -970,6 +988,9 @@
           }
         }
       }
+    },
+    "Payment information" : {
+
     },
     "Please sign in" : {
       "localizations" : {
@@ -1197,6 +1218,9 @@
         }
       }
     },
+    "Security screen" : {
+
+    },
     "Select" : {
       "localizations" : {
         "az" : {
@@ -1216,6 +1240,12 @@
           }
         }
       }
+    },
+    "Settings" : {
+
+    },
+    "Shop account" : {
+
     },
     "Sign in" : {
       "localizations" : {
@@ -1406,6 +1436,9 @@
           }
         }
       }
+    },
+    "Transactions, credit cards, debit cards,\n shipping info, PayPal" : {
+
     },
     "Version: 1.0.1" : {
       "extractionState" : "stale",

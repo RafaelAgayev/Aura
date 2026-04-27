@@ -11,40 +11,47 @@ struct InteractionsSection: View {
     
     let onSelect: (NavigateLink) -> Void
     
+    @Environment(\.colorScheme) private var colorScheme
+    
     var body: some View {
         
             
             List{
                 
                 Section("Interactions"){
-                    ActionsViewer(icon: "heart", title: "Likes")
+                    ActionsViewer(title: "Likes", image: .icon("heart"))
                         .onTapGesture {
                             onSelect(.likes)
                         }
                     
-                    ActionsViewer(icon: "message", title: "Comments")
+                    ActionsViewer(title: "Comments", image: .icon("message"))
                         .onTapGesture {
                             onSelect(.comments)
                         }
                     
-                    ActionsViewer(icon: "repeat", title: "Reposts")
+                    ActionsViewer(title: "Reposts", image: .icon("repeat"))
                         .onTapGesture {
                             onSelect(.reposts)
                         }
                     
-                    ActionsViewer(icon: "person.text.rectangle", title: "Tags")
+                    ActionsViewer(title: "Tags", image: .icon("person.text.rectangle"))
                         .onTapGesture {
                             onSelect(.tags)
                         }
                     
-                    ActionsViewer(icon: "face.smiling", title: "Sticker response")
+                    ActionsViewer(title: "Sticker response", image: .icon("face.smiling"))
                         .onTapGesture {
                             onSelect(.stickerResponse)
                         }
                     
-                    ActionsViewer(icon: "tag", title: "Reviews")
+                    ActionsViewer(title: "Reviews", image: .icon("tag"))
                         .onTapGesture {
                             onSelect(.reviews)
+                        }
+                    
+                    ActionsViewer(title: "Orders and payments", image: colorScheme == .dark ? .image(.iconCreditCardBlack) : .image(.iconCreditCard))
+                        .onTapGesture {
+                            onSelect(.orders)
                         }
                 }
                 
@@ -58,13 +65,13 @@ struct InteractionsSection: View {
                 
                 Section("Removed and archived content"){
                     
-                    ActionsViewer(icon: "trash", title: "Recently deleted")
+                    ActionsViewer(title: "Recently deleted", image: .icon("trash"))
                         .onTapGesture {
                             onSelect(.delete)
                         }
                     
                     
-                    ActionsViewer(icon: "clock.arrow.trianglehead.counterclockwise.rotate.90", title: "Archived")
+                    ActionsViewer(title: "Archived", image: .icon("clock.arrow.trianglehead.counterclockwise.rotate.90"))
                         .onTapGesture {
                             onSelect(.archived)
                         }
@@ -78,17 +85,17 @@ struct InteractionsSection: View {
                     .listSectionSeparator(.hidden)
                 
                 Section("Content you shared"){
-                    ActionsViewer(icon: "square.grid.3x3.square", title: "Posts")
+                    ActionsViewer(title: "Posts", image: .icon("square.grid.3x3.square"))
                         .onTapGesture {
                             onSelect(.posts)
                         }
                     
-                    ActionsViewer(icon: "play.square.stack.fill", title: "Reels")
+                    ActionsViewer(title: "Reels", image: .icon("play.square.stack.fill"))
                         .onTapGesture {
                             onSelect(.reels)
                         }
                     
-                    ActionsViewer(icon: "bolt.heart", title: "Highlights")
+                    ActionsViewer( title: "Highlights", image: .icon("bolt.heart"))
                         .onTapGesture {
                             onSelect(.highlights)
                         }
@@ -103,16 +110,16 @@ struct InteractionsSection: View {
                     .listSectionSeparator(.hidden)
                 
                 Section("Suggested content") {
-                    ActionsViewer(icon: "eye.slash", title: "Not interested")
+                    ActionsViewer(title: "Not interested", image: .icon("eye.slash"))
                         .onTapGesture {
                             onSelect(.notInterested)
                         }
                     
-                    ActionsViewer(icon: "eye", title: "Interested")
+                    ActionsViewer(title: "Interested", image: .icon("eye"))
                         .onTapGesture {
                             onSelect(.interested)
                         }
-                    ActionsViewer(icon: "crown", title: "Creator subscriptions")
+                    ActionsViewer(title: "Creator subscriptions", image: .icon("crown"))
                         .onTapGesture {
                             onSelect(.creator)
                         }
@@ -128,27 +135,27 @@ struct InteractionsSection: View {
                 
                 Section("How to use Aura") {
                     
-                    ActionsViewer(icon: "clock", title: "Time spent")
+                    ActionsViewer(title: "Time spent", image: .icon("clock"))
                         .onTapGesture {
                             onSelect(.timeSpent)
                         }
                     
-                    ActionsViewer(icon: "photo.badge.arrow.down.fill", title: "Watch history")
+                    ActionsViewer(title: "Watch history", image: .icon("photo.badge.arrow.down.fill"))
                         .onTapGesture {
                             onSelect(.watchHistory)
                         }
                     
-                    ActionsViewer(icon: "calendar", title: "Account history")
+                    ActionsViewer(title: "Account history", image: .icon("calendar"))
                         .onTapGesture {
                             onSelect(.accountHistory)
                         }
                     
-                    ActionsViewer(icon: "magnifyingglass", title: "Recent searches")
+                    ActionsViewer(title: "Recent searches", image: .icon("magnifyingglass"))
                         .onTapGesture {
                             onSelect(.recentSearches)
                         }
                     
-                    ActionsViewer(icon: "link", title: "Link History")
+                    ActionsViewer(title: "Link History", image: .icon("link"))
                         .onTapGesture {
                             onSelect(.linkHistory)
                         }
@@ -175,7 +182,7 @@ extension InteractionsSection{
    
     
     enum NavigateLink: Hashable {
-        case likes, comments, reposts, tags, stickerResponse, reviews, delete, archived, posts, reels, highlights, notInterested, interested, timeSpent, watchHistory, accountHistory, recentSearches, linkHistory, creator
+        case likes, comments, reposts, tags, stickerResponse, reviews, delete, archived, posts, reels, highlights, notInterested, interested, timeSpent, watchHistory, accountHistory, recentSearches, linkHistory, creator, orders
     }
 }
 
