@@ -116,7 +116,11 @@ struct OrdersScreen: View {
         .sheet(item: $sheetNav){ nav in
             switch nav{
             case .metaPay:
-                MetaPayScreen()
+                NavigationStack{
+                    MetaPayScreen()
+                        
+                }
+                .interactiveDismissDisabled(true)
             case .threeLine:
                 ShopAccountScreen()
                     .presentationDetents([.fraction(0.3)])

@@ -47,6 +47,9 @@
         }
       }
     },
+    "3 profiles" : {
+
+    },
     "About: %@" : {
       "localizations" : {
         "az" : {
@@ -77,6 +80,9 @@
         }
       }
     },
+    "Accounts Center" : {
+
+    },
     "Actions" : {
       "localizations" : {
         "az" : {
@@ -86,6 +92,12 @@
           }
         }
       }
+    },
+    "addsssss" : {
+
+    },
+    "AI Glasses" : {
+
     },
     "AI Health Insight" : {
       "localizations" : {
@@ -213,6 +225,9 @@
           }
         }
       }
+    },
+    "connected" : {
+
     },
     "Content you shared" : {
       "localizations" : {
@@ -557,6 +572,9 @@
         }
       }
     },
+    "hello permissions" : {
+
+    },
     "hello reels" : {
 
     },
@@ -789,6 +807,12 @@
         }
       }
     },
+    "Manage accounts" : {
+
+    },
+    "Manage your connected experiences and \naccount settings across Meta tehcnologies like \nFacebook, Instagram and Meta Horizon" : {
+
+    },
     "Mark Zuckerberg" : {
       "localizations" : {
         "az" : {
@@ -819,7 +843,19 @@
         }
       }
     },
-    "Meta pay screen" : {
+    "Meta" : {
+
+    },
+    "meta pay in list" : {
+
+    },
+    "meta pay subscriptions" : {
+
+    },
+    "meta verified" : {
+
+    },
+    "Meta Verified" : {
 
     },
     "MetaPay" : {
@@ -854,6 +890,9 @@
           }
         }
       }
+    },
+    "More from Meta" : {
+
     },
     "Music" : {
       "localizations" : {
@@ -969,6 +1008,9 @@
         }
       }
     },
+    "Password and security" : {
+
+    },
     "Past month" : {
       "localizations" : {
         "az" : {
@@ -990,6 +1032,9 @@
       }
     },
     "Payment information" : {
+
+    },
+    "Personality" : {
 
     },
     "Please sign in" : {
@@ -1024,6 +1069,9 @@
           }
         }
       }
+    },
+    "Profiles and personal details" : {
+
     },
     "Rafael Agayev" : {
       "localizations" : {
