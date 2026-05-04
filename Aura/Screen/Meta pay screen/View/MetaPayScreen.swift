@@ -319,7 +319,15 @@ struct MetaPayScreen: View {
 
 extension MetaPayScreen{
     enum Navigation{
-        case personal, passwordAndSecurity, connected, yourInformation, adPreferences, metaPay, subscriptions, manageAccounts, metaVerified
+        case personal,
+             passwordAndSecurity,
+             connected,
+             yourInformation,
+             adPreferences,
+             metaPay,
+             subscriptions,
+             manageAccounts,
+             metaVerified
     }
 }
 

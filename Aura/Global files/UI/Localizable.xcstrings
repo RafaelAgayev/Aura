@@ -27,6 +27,9 @@
         }
       }
     },
+    "%@ • " : {
+
+    },
     "• Try getting 30 minutes of fresh air\n• Consider a short meditation\n• Drink more water today" : {
       "localizations" : {
         "az" : {
@@ -213,6 +216,9 @@
         }
       }
     },
+    "Changing your username will also change your Instagram profile address." : {
+
+    },
     "Commentario smndmn" : {
 
     },
@@ -382,6 +388,9 @@
         }
       }
     },
+    "edit avatar" : {
+
+    },
     "Edit email" : {
       "localizations" : {
         "az" : {
@@ -411,6 +420,9 @@
           }
         }
       }
+    },
+    "edit profile image" : {
+
     },
     "Edit username" : {
       "localizations" : {
@@ -904,6 +916,9 @@
         }
       }
     },
+    "Name" : {
+
+    },
     "Name: %@" : {
       "localizations" : {
         "az" : {
@@ -1034,7 +1049,7 @@
     "Payment information" : {
 
     },
-    "Personality" : {
+    "Personal details" : {
 
     },
     "Please sign in" : {
@@ -1069,6 +1084,9 @@
           }
         }
       }
+    },
+    "Profiles" : {
+
     },
     "Profiles and personal details" : {
 
@@ -1195,6 +1213,9 @@
           }
         }
       }
+    },
+    "Review the profile and personal details you've\n added to this Accounts Center. Add more\n profiles by adding your accounts" : {
+
     },
     "Reviews" : {
       "localizations" : {
@@ -1488,6 +1509,12 @@
     "Transactions, credit cards, debit cards,\n shipping info, PayPal" : {
 
     },
+    "Username" : {
+
+    },
+    "Username is not available" : {
+
+    },
     "Version: 1.0.1" : {
       "extractionState" : "stale",
       "localizations" : {
@@ -1614,6 +1641,9 @@
         }
       }
     },
+    "You can only change your name twice within 14 days" : {
+
+    },
     "You can update your display name" : {
       "localizations" : {
         "az" : {
@@ -1669,6 +1699,9 @@
           }
         }
       }
+    },
+    "Your current Instagram username %@ is available" : {
+
     },
     "Your energy is low. Hydration recommended." : {
       "localizations" : {
