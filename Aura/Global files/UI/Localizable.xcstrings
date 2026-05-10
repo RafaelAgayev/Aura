@@ -584,6 +584,9 @@
         }
       }
     },
+    "Hello change password" : {
+
+    },
     "hello permissions" : {
 
     },
@@ -799,6 +802,9 @@
         }
       }
     },
+    "Login & recovery" : {
+
+    },
     "Logout" : {
       "localizations" : {
         "az" : {
@@ -823,6 +829,9 @@
 
     },
     "Manage your connected experiences and \naccount settings across Meta tehcnologies like \nFacebook, Instagram and Meta Horizon" : {
+
+    },
+    "Manage your passwords, login preferences and recovery methods." : {
 
     },
     "Mark Zuckerberg" : {
@@ -1214,6 +1223,9 @@
         }
       }
     },
+    "Review security issues by running checks across apps, devices and emils sent." : {
+
+    },
     "Review the profile and personal details you've\n added to this Accounts Center. Add more\n profiles by adding your accounts" : {
 
     },
@@ -1286,6 +1298,9 @@
           }
         }
       }
+    },
+    "Security checks" : {
+
     },
     "Security screen" : {
 
