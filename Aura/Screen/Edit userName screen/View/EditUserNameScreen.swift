@@ -17,8 +17,10 @@ struct EditUserNameScreen: View {
     
     @State private var tempUserName: String = ""
     
-    var isValidUsername: Bool{
-        tempUserName.trimmingCharacters(in: .whitespaces).isEmpty || tempUserName.count <= 6
+    var isInvalidUsername: Bool{
+        let trimmer = tempUserName.trimmingCharacters(in: .whitespaces)
+        
+        return trimmer.isEmpty || tempUserName.count <= 6
     }
     private var editUsername: some View{
         Text("Edit username")
@@ -36,7 +38,7 @@ struct EditUserNameScreen: View {
         HStack{
             VStack(alignment: .leading, spacing: 4){
                 Text("Username")
-                    .fontModifier(size: 14, weight: .medium, foregroundColor: isValidUsername ? .red : .colorGray)
+                    .fontModifier(size: 14, weight: .medium, foregroundColor: isInvalidUsername ? .red : .colorGray)
                 
                 TextField("", text: $tempUserName)
                 
@@ -45,7 +47,7 @@ struct EditUserNameScreen: View {
             Spacer()
             
           
-                Image(isValidUsername ? .iconErrorUsername : .iconSuccessUsername)
+                Image(isInvalidUsername ? .iconErrorUsername : .iconSuccessUsername)
                     .resizable()
                     .scaledToFit()
                     .frame(width: 14, height: 14)
@@ -53,7 +55,7 @@ struct EditUserNameScreen: View {
         .padding(.vertical, 10)
         .padding(.horizontal, 12)
         .frame(maxWidth: .infinity, alignment: .leading)
-        .roundedRectangleStyle(cornerRadius: 10, backgroundColor: colorScheme == .dark ? .colorBlack.opacity(0.1): .colorWhite.opacity(0.1), borderColor: isValidUsername ? .red : .colorGray, borderWidth: 1.5)
+        .roundedRectangleStyle(cornerRadius: 10, backgroundColor: colorScheme == .dark ? .colorBlack.opacity(0.1): .colorWhite.opacity(0.1), borderColor: isInvalidUsername ? .red : .colorGray, borderWidth: 1.5)
     }
     
     private var usernameText: some View{
@@ -62,19 +64,24 @@ struct EditUserNameScreen: View {
     
     private var doneButton: some View{
         
-        Text("Done")
-            .fontModifier(size: 14, weight: .semibold, foregroundColor: .colorWhite)
-            .padding(.vertical, 16)
-            .frame(maxWidth: .infinity, alignment: .center)
-            .roundedRectangleStyle(cornerRadius: 12, backgroundColor: .colorBlue, borderColor: .clear, borderWidth: 0)
-            .contentShape(Rectangle())
-            .onTapGesture {
-                userName = tempUserName
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.2){
-                    dismiss()
-                }
+        Button{
+            userName = tempUserName
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2){
+                dismiss()
             }
+        }label: {
+            Text("Done")
+                .fontModifier(size: 14, weight: .semibold, foregroundColor: .colorWhite)
+                .padding(.vertical, 16)
+                .frame(maxWidth: .infinity, alignment: .center)
+                .contentShape(Rectangle())
+                .roundedRectangleStyle(cornerRadius: 12, backgroundColor: .colorBlue, borderColor: .clear, borderWidth: 0)
+        }
+      
+        .disabled(isInvalidUsername)
+        .opacity(!isInvalidUsername ? 1 : 0.5)
         
+       
     }
     
     private var notAvailable: some View{
@@ -89,7 +96,7 @@ struct EditUserNameScreen: View {
             
             userNameTextfield
             
-            if isValidUsername{
+            if isInvalidUsername{
                 notAvailable
             }
             
