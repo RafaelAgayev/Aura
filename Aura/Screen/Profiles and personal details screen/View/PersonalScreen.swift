@@ -139,7 +139,7 @@ struct PersonalScreen: View {
             case .birthday:
                 EmptyView()
             case .contactInfo:
-                EmptyView()
+                ContactInfoScreen()
             }
         }
     }
