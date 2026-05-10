@@ -15,7 +15,14 @@
       }
     },
     "- %@" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "- %@"
+          }
+        }
+      }
     },
     "%@" : {
       "localizations" : {
@@ -28,7 +35,14 @@
       }
     },
     "%@ • " : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ •"
+          }
+        }
+      }
     },
     "• Try getting 30 minutes of fresh air\n• Consider a short meditation\n• Drink more water today" : {
       "localizations" : {
@@ -51,7 +65,14 @@
       }
     },
     "3 profiles" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3 Profil"
+          }
+        }
+      }
     },
     "About: %@" : {
       "localizations" : {
@@ -68,7 +89,7 @@
         "az" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Akkaunt tarixçəsi"
+            "value" : "Hesab tarixçəsi"
           }
         }
       }
@@ -84,7 +105,14 @@
       }
     },
     "Accounts Center" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hesab Mərkəzi"
+          }
+        }
+      }
     },
     "Actions" : {
       "localizations" : {
@@ -97,10 +125,24 @@
       }
     },
     "addsssss" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "addsssss"
+          }
+        }
+      }
     },
     "AI Glasses" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AI Eynəkləri"
+          }
+        }
+      }
     },
     "AI Health Insight" : {
       "localizations" : {
@@ -163,7 +205,14 @@
       }
     },
     "Auto detection screen" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avtomatik aşkarlama ekranı"
+          }
+        }
+      }
     },
     "Back" : {
       "extractionState" : "manual",
@@ -217,7 +266,14 @@
       }
     },
     "Changing your username will also change your Instagram profile address." : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "stifadəçi adınızı dəyişdirmək Instagram profil ünvanınızı da dəyişəcək."
+          }
+        }
+      }
     },
     "Commentario smndmn" : {
 
@@ -233,7 +289,14 @@
       }
     },
     "connected" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "bağlandı"
+          }
+        }
+      }
     },
     "Content you shared" : {
       "localizations" : {
@@ -346,7 +409,14 @@
       }
     },
     "dldmmdmd" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "dldmmmmd"
+          }
+        }
+      }
     },
     "Do you want logout ? If you logout and delete your token." : {
       "localizations" : {
@@ -389,7 +459,14 @@
       }
     },
     "edit avatar" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "avatarı düzəltmək"
+          }
+        }
+      }
     },
     "Edit email" : {
       "localizations" : {
@@ -422,7 +499,14 @@
       }
     },
     "edit profile image" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profil şəklini düzəltmək"
+          }
+        }
+      }
     },
     "Edit username" : {
       "localizations" : {
@@ -803,7 +887,14 @@
       }
     },
     "Login & recovery" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giriş və hesabın bərpası"
+          }
+        }
+      }
     },
     "Logout" : {
       "localizations" : {
@@ -826,13 +917,34 @@
       }
     },
     "Manage accounts" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hesabları idarə et"
+          }
+        }
+      }
     },
     "Manage your connected experiences and \naccount settings across Meta tehcnologies like \nFacebook, Instagram and Meta Horizon" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Facebook, Instagram və Meta Horizon kimi Meta texnologiyalarında bağlantılı təcrübələrinizi və hesab ayarlarınızı idarə edin."
+          }
+        }
+      }
     },
     "Manage your passwords, login preferences and recovery methods." : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şifrələrinizi, giriş seçimlərinizi və hesabın bərpası üsullarınızı idarə edin."
+          }
+        }
+      }
     },
     "Mark Zuckerberg" : {
       "localizations" : {
@@ -865,22 +977,64 @@
       }
     },
     "Meta" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meta"
+          }
+        }
+      }
     },
     "meta pay in list" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meta Pay siyahıda"
+          }
+        }
+      }
     },
     "meta pay subscriptions" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meta Pay abunəlikləri"
+          }
+        }
+      }
     },
     "meta verified" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meta Verified"
+          }
+        }
+      }
     },
     "Meta Verified" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meta Verified"
+          }
+        }
+      }
     },
     "MetaPay" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meta Pay"
+          }
+        }
+      }
     },
     "Mood" : {
       "localizations" : {
@@ -913,7 +1067,14 @@
       }
     },
     "More from Meta" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meta-dan daha çox"
+          }
+        }
+      }
     },
     "Music" : {
       "localizations" : {
@@ -926,7 +1087,14 @@
       }
     },
     "Name" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ad"
+          }
+        }
+      }
     },
     "Name: %@" : {
       "localizations" : {
@@ -1020,7 +1188,14 @@
       }
     },
     "Orders and payments" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sifarişlər və ödənişlər"
+          }
+        }
+      }
     },
     "Password" : {
       "localizations" : {
@@ -1033,7 +1208,14 @@
       }
     },
     "Password and security" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şifrə və təhlükəsizlik"
+          }
+        }
+      }
     },
     "Past month" : {
       "localizations" : {
@@ -1056,10 +1238,24 @@
       }
     },
     "Payment information" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ödəniş məlumatları"
+          }
+        }
+      }
     },
     "Personal details" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şəxsi məlumatlar"
+          }
+        }
+      }
     },
     "Please sign in" : {
       "localizations" : {
@@ -1072,7 +1268,14 @@
       }
     },
     "Positive mindset detected." : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Müsbət düşüncə tərzi aşkar edildi."
+          }
+        }
+      }
     },
     "Posts" : {
       "localizations" : {
@@ -1095,10 +1298,24 @@
       }
     },
     "Profiles" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profillər"
+          }
+        }
+      }
     },
     "Profiles and personal details" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profillər və şəxsi məlumatlar"
+          }
+        }
+      }
     },
     "Rafael Agayev" : {
       "localizations" : {
@@ -1201,7 +1418,14 @@
       }
     },
     "Repostandito" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Repostandito"
+          }
+        }
+      }
     },
     "Reposts" : {
       "localizations" : {
@@ -1224,10 +1448,24 @@
       }
     },
     "Review security issues by running checks across apps, devices and emils sent." : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tətbiqlər, cihazlar və göndərilmiş e-poçtlar üzrə yoxlamalar apararaq təhlükəsizlik problemlərini nəzərdən keçirin."
+          }
+        }
+      }
     },
     "Review the profile and personal details you've\n added to this Accounts Center. Add more\n profiles by adding your accounts" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu Hesab Mərkəzinə əlavə etdiyiniz profil və şəxsi məlumatları nəzərdən keçirin. Hesablarınızı əlavə edərək daha çox profil əlavə edin."
+          }
+        }
+      }
     },
     "Reviews" : {
       "localizations" : {
@@ -1300,10 +1538,24 @@
       }
     },
     "Security checks" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Təhlükəsizlik yoxlamaları"
+          }
+        }
+      }
     },
     "Security screen" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Təhlükəsizlik ekranı"
+          }
+        }
+      }
     },
     "Select" : {
       "localizations" : {
@@ -1326,10 +1578,24 @@
       }
     },
     "Settings" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ayarlar"
+          }
+        }
+      }
     },
     "Shop account" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mağaza hesabı"
+          }
+        }
+      }
     },
     "Sign in" : {
       "localizations" : {
@@ -1342,7 +1608,14 @@
       }
     },
     "Sort by" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sırala"
+          }
+        }
+      }
     },
     "Start" : {
       "localizations" : {
@@ -1385,7 +1658,14 @@
       }
     },
     "Stress level is manageable today." : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu gün stress səviyyəsi idarə oluna biləndir."
+          }
+        }
+      }
     },
     "Suggested content" : {
       "localizations" : {
@@ -1522,16 +1802,37 @@
       }
     },
     "Transactions, credit cards, debit cards,\n shipping info, PayPal" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Əməliyyatlar, kredit kartları, debet kartları, çatdırılma məlumatları, PayPal"
+          }
+        }
+      }
     },
     "Username" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İstifadəçi adı"
+          }
+        }
+      }
     },
     "Username is not available" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İstifadəçi adı mövcud deyil"
+          }
+        }
+      }
     },
     "Version: 1.0.1" : {
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "az" : {
           "stringUnit" : {
@@ -1572,7 +1873,7 @@
       }
     },
     "Watch history screen" : {
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "az" : {
           "stringUnit" : {
@@ -1657,7 +1958,14 @@
       }
     },
     "You can only change your name twice within 14 days" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adınızı 14 gün ərzində yalnız iki dəfə dəyişə bilərsiniz."
+          }
+        }
+      }
     },
     "You can update your display name" : {
       "localizations" : {
@@ -1690,10 +1998,24 @@
       }
     },
     "You don't have any active\nsubscriptions." : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hazırda aktiv abunəliyiniz yoxdur."
+          }
+        }
+      }
     },
     "You haven't subscribed to anyone yet. If\n you subscribe to a creator, your \nsubscription can be managed here" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hələ heç kimə abunə olmamısınız. Əgər bir yaradıcıya abunə olsanız, abunəliyinizi burada idarə edə bilərsiniz."
+          }
+        }
+      }
     },
     "You look more tired than usual. Try resting." : {
       "localizations" : {
@@ -1716,7 +2038,14 @@
       }
     },
     "Your current Instagram username %@ is available" : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cari Instagram istifadəçi adınız %@ mövcuddur."
+          }
+        }
+      }
     },
     "Your energy is low. Hydration recommended." : {
       "localizations" : {
@@ -1739,7 +2068,14 @@
       }
     },
     "Your mood is stable today. Keep balance." : {
-
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu gün əhvalınız sabitdir. Balansı qoruyun."
+          }
+        }
+      }
     }
   },
   "version" : "1.1"
