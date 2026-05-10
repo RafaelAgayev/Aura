@@ -44,6 +44,16 @@
         }
       }
     },
+    "%@(%@)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@(%2$@)"
+          }
+        }
+      }
+    },
     "• Try getting 30 minutes of fresh air\n• Consider a short meditation\n• Drink more water today" : {
       "localizations" : {
         "az" : {
@@ -123,6 +133,18 @@
           }
         }
       }
+    },
+    "Add a mobile number" : {
+
+    },
+    "Add email" : {
+
+    },
+    "Add mobile number" : {
+
+    },
+    "Add new contact" : {
+
     },
     "addsssss" : {
       "localizations" : {
@@ -255,6 +277,9 @@
         }
       }
     },
+    "Change" : {
+
+    },
     "Change password" : {
       "localizations" : {
         "az" : {
@@ -297,6 +322,9 @@
           }
         }
       }
+    },
+    "Contact Information" : {
+
     },
     "Content you shared" : {
       "localizations" : {
@@ -557,6 +585,9 @@
           }
         }
       }
+    },
+    "Enter mobile number" : {
+
     },
     "Enter name" : {
       "localizations" : {
@@ -935,6 +966,9 @@
           }
         }
       }
+    },
+    "Manage your mobile numbers and emails, and who can see your contact info. Use any of them to access any profiles or devices in this Accounts Center." : {
+
     },
     "Manage your passwords, login preferences and recovery methods." : {
       "localizations" : {
@@ -1567,6 +1601,9 @@
         }
       }
     },
+    "Select Country" : {
+
+    },
     "Selection theme" : {
       "localizations" : {
         "az" : {
@@ -1923,6 +1960,9 @@
           }
         }
       }
+    },
+    "Which would you like to add?" : {
+
     },
     "Wonderful" : {
 
