@@ -124,6 +124,9 @@
         }
       }
     },
+    "Accounts you choose to add this number to will use it to help you log in and receive notifications from us" : {
+
+    },
     "Actions" : {
       "localizations" : {
         "az" : {
@@ -144,6 +147,9 @@
 
     },
     "Add new contact" : {
+
+    },
+    "Adding this number will replace +994559562020 on this Instagram account." : {
 
     },
     "addsssss" : {
@@ -299,6 +305,9 @@
           }
         }
       }
+    },
+    "Choose accounts for this number" : {
+
     },
     "Commentario smndmn" : {
 
@@ -1149,6 +1158,9 @@
           }
         }
       }
+    },
+    "Next" : {
+
     },
     "No content available" : {
       "localizations" : {
@@ -2066,6 +2078,9 @@
           }
         }
       }
+    },
+    "You may receive Whatsapp and SMS notifications from us." : {
+
     },
     "Your activity" : {
       "localizations" : {
