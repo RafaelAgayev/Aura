@@ -355,6 +355,9 @@
         }
       }
     },
+    "Creators" : {
+
+    },
     "Cristiano" : {
       "localizations" : {
         "az" : {
@@ -444,6 +447,9 @@
           }
         }
       }
+    },
+    "Discover Instagram Creators" : {
+
     },
     "dldmmdmd" : {
       "localizations" : {
@@ -667,6 +673,27 @@
           }
         }
       }
+    },
+    "Find and follow popular accounts" : {
+
+    },
+    "Find and manage your subscriptions all in one place." : {
+
+    },
+    "Find instagram creators" : {
+
+    },
+    "Follow" : {
+
+    },
+    "followers" : {
+
+    },
+    "following" : {
+
+    },
+    "Following" : {
+
     },
     "Get daily" : {
       "localizations" : {
@@ -1019,6 +1046,9 @@
         }
       }
     },
+    "Message" : {
+
+    },
     "Meta" : {
       "localizations" : {
         "az" : {
@@ -1040,6 +1070,7 @@
       }
     },
     "meta pay subscriptions" : {
+      "extractionState" : "stale",
       "localizations" : {
         "az" : {
           "stringUnit" : {
@@ -1322,6 +1353,9 @@
           }
         }
       }
+    },
+    "posts" : {
+
     },
     "Posts" : {
       "localizations" : {
@@ -1716,6 +1750,9 @@
         }
       }
     },
+    "Subscriptions" : {
+
+    },
     "Suggested content" : {
       "localizations" : {
         "az" : {
@@ -1735,6 +1772,9 @@
           }
         }
       }
+    },
+    "Support your favorite creators" : {
+
     },
     "System" : {
       "localizations" : {
@@ -1859,6 +1899,9 @@
           }
         }
       }
+    },
+    "Unlock access to exclusive benefits creators may offer" : {
+
     },
     "Username" : {
       "localizations" : {
