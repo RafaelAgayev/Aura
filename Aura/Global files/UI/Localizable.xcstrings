@@ -44,6 +44,9 @@
         }
       }
     },
+    "%@ followers •" : {
+
+    },
     "%@(%@)" : {
       "localizations" : {
         "en" : {
@@ -871,6 +874,9 @@
           }
         }
       }
+    },
+    "Learn about business chats" : {
+
     },
     "Learn more" : {
       "localizations" : {
@@ -1750,6 +1756,9 @@
         }
       }
     },
+    "Subscribe" : {
+
+    },
     "Subscriptions" : {
 
     },
@@ -1954,6 +1963,9 @@
         }
       }
     },
+    "View profile" : {
+
+    },
     "Watch history" : {
       "localizations" : {
         "az" : {
@@ -2032,6 +2044,9 @@
         }
       }
     },
+    "You both follow zuck" : {
+
+    },
     "You can edit your name" : {
       "localizations" : {
         "az" : {
@@ -2091,6 +2106,12 @@
           }
         }
       }
+    },
+    "You can't message this account unless they follow you. To conntect, it may help to follow them." : {
+
+    },
+    "You don't follow each other on Instagram" : {
+
     },
     "You don't have any active\nsubscriptions." : {
       "localizations" : {

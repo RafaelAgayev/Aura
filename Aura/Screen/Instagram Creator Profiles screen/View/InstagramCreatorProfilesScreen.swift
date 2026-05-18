@@ -20,6 +20,9 @@ struct InstagramCreatorProfilesScreen: View {
     
     @State private var index = 0
     
+    @State private var route: RouteField? = nil
+    
+    
     private var name: some View{
         VStack{
             if let name = model?.name{
@@ -87,27 +90,61 @@ struct InstagramCreatorProfilesScreen: View {
             followChange.toggle()
         }label: {
             Text(followChange ? "Following" : "Follow")
-                .fontModifier(size: 16, weight: .semibold, foregroundColor: followChange ? .colorBlack : .colorWhite)
+                .fontModifier(size: 14, weight: .semibold, foregroundColor: followChange ? .colorBlack : .colorWhite)
                 .padding(.vertical, 8)
-                .padding(.horizontal, 12)
-                .frame(maxWidth: .infinity, alignment: .center)
-                .roundedRectangleStyle(cornerRadius: 12, backgroundColor: followChange ? .colorWhite : .backgroundBlue, borderColor: followChange ? .colorGray : .clear, borderWidth: 1.5)
-                
+                .padding(.horizontal, 18)
         }
+        .frame(maxWidth: .infinity, alignment: .center)
+        .contentShape(Rectangle())
+        .roundedRectangleStyle(cornerRadius: 10, backgroundColor: followChange ? .colorWhite : .backgroundBlue, borderColor: followChange ? .colorGray : .clear, borderWidth: 1.5)
+        
     }
     
     private var messageButton: some View{
         Button{
-            
+            route = .message
         }label: {
             Text("Message")
-                .fontModifier(size: 16, weight: .semibold, foregroundColor: colorScheme == .dark ? .colorWhite : .colorBlack)
+                .fontModifier(size: 14, weight: .semibold, foregroundColor: colorScheme == .dark ? .colorWhite : .colorBlack)
                 .padding(.vertical, 8)
-                .padding(.horizontal, 12)
-                .frame(maxWidth: .infinity, alignment: .center)
-                .roundedRectangleStyle(cornerRadius: 12, backgroundColor: colorScheme == .dark ? .colorBlack.opacity(0.05) : .colorWhite.opacity(0.03), borderColor: .colorGray, borderWidth: 1.5)
+                .padding(.horizontal, 18)
                 
         }
+        .frame(maxWidth: .infinity, alignment: .center)
+        .contentShape(Rectangle())
+        .roundedRectangleStyle(cornerRadius: 10, backgroundColor: colorScheme == .dark ? .colorBlack.opacity(0.05) : .colorWhite.opacity(0.03), borderColor: .colorGray, borderWidth: 1.5)
+    }
+    
+    private var subscribeButton: some View{
+        Button{
+            
+        }label: {
+            Text("Subscribe")
+                .fontModifier(size: 12, weight: .semibold, foregroundColor: colorScheme == .dark ? .colorWhite : .colorBlack)
+                .padding(.vertical, 8)
+                .padding(.horizontal, 18)
+        }
+       
+        .frame(maxWidth: .infinity, alignment: .center)
+        .contentShape(Rectangle())
+        .roundedRectangleStyle(cornerRadius: 10, backgroundColor: colorScheme == .dark ? .colorBlack.opacity(0.05) : .colorWhite.opacity(0.03), borderColor: .colorGray, borderWidth: 1.5)
+    }
+    
+    private var personPlus: some View{
+        Button{
+            
+        }label: {
+            Image(colorScheme == .dark ? .personPlusColored : .personPlusBlack)
+                .resizable()
+                .scaledToFit()
+                .frame(width: 18, height: 18)
+                .padding(.vertical, 8)
+                .padding(.horizontal, 18)
+        }
+        .frame(width: 40, height: 30)
+        .contentShape(Rectangle())
+        .roundedRectangleStyle(cornerRadius: 10, backgroundColor: colorScheme == .dark ? .colorBlack.opacity(0.05) : .colorWhite.opacity(0.03), borderColor: .colorGray, borderWidth: 1.5)
+        
     }
     
     private var header: some View{
@@ -131,21 +168,34 @@ struct InstagramCreatorProfilesScreen: View {
                 }
                 .padding(.horizontal, 4)
                 
-                HStack(spacing: 4) {
-                    
-                    followButton
-                    
-                    messageButton
-                }
             }
+        }
+    }
+    
+    
+    
+    private var buttons: some View{
+        HStack(spacing: 6) {
+          
+            followButton
+            
+            messageButton
+            
+            subscribeButton
+            
+            personPlus
+            
+            Spacer()
         }
     }
     
   
     var body: some View {
         ScrollView{
-            VStack(alignment: .leading, spacing: 12){
+            VStack(alignment: .leading, spacing: 20){
                 header
+                
+                buttons
             }
         }
         .frame(maxWidth: .infinity, alignment: .leading)
@@ -153,6 +203,16 @@ struct InstagramCreatorProfilesScreen: View {
         .navigationBarBackButtonHidden()
         .toolbar {
             toolbar
+        }
+        .navigationDestination(item: $route){ navigation in
+            switch navigation{
+            case .message:
+                MessageScreen(model: $model)
+            case .person:
+                EmptyView()
+            case .subscribe:
+                EmptyView()
+            }
         }
     }
     
@@ -180,5 +240,13 @@ struct InstagramCreatorProfilesScreen: View {
                 .frame(width: 22, height: 22)
                 
         }
+    }
+}
+
+extension InstagramCreatorProfilesScreen{
+    enum RouteField: Hashable, Identifiable{
+        
+        var id: Self { self}
+        case message, subscribe, person
     }
 }
