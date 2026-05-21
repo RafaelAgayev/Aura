@@ -6,3 +6,15 @@
 //
 
 import Foundation
+
+class MetaVerifiedSubscriptionsViewModel: BaseViewModel{
+    
+    var model: [ProfileModel] = [
+        ProfileModel(
+            profilImg: .thomasShelby,
+            name: "Rafael Agayev",
+            socialWebIcon: .iconInstagramColored,
+            userName: "r.a_rus",
+            socialWebName: "Instagram")
+        ]
+}

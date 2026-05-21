@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct MetaVerifiedScreen: View {
-    var body: some View {
-        Text("meta verified")
+    
+    var body: some View{
+        Text("Hello verified")
     }
+    
 }
 
-#Preview {
-    MetaVerifiedScreen()
-}
+

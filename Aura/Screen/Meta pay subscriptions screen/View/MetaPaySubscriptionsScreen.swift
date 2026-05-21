@@ -73,7 +73,7 @@ struct MetaPaySubscriptionsScreen: View {
         .navigationDestination(item: $navigation) { route in
             switch route{
             case .metaVerified:
-                EmptyView()
+                MetaVerifiedInSubscriptionsScreen()
             case .creators:
                 CreatorScreenSubscriptions()
             }
