@@ -19,6 +19,8 @@ struct MetaVerifiedInSubscriptionsScreen: View {
     
     @StateObject private var vm: MetaVerifiedSubscriptionsViewModel = .init()
     
+    @State private var route: Route? = nil
+    
     private var linear: some View{
         HStack(spacing: 0) {
             ForEach(0..<5){ index in
@@ -69,7 +71,33 @@ struct MetaVerifiedInSubscriptionsScreen: View {
     }
     
     private var standartPackage: some View{
-       StandartTab()
+        StandartTab(onTap: { route = .standart})
+    }
+    
+    private var plusPackage: some View{
+        PlusTab(onTap: { route = .plus })
+    }
+    
+    private var premiumPackage: some View{
+        PremiumTab()
+    }
+    
+    private var scrollHorizontalContent: some View{
+        ScrollView(.horizontal, showsIndicators: false) {
+            
+            HStack(spacing: 12){
+                
+                standartPackage
+                
+                plusPackage
+                
+                premiumPackage
+                
+            }
+            .scrollTargetLayout()
+            .frame(maxWidth: .infinity, alignment: .leading)
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
     }
     
     private var verifiedBadge: some View{
@@ -103,6 +131,24 @@ struct MetaVerifiedInSubscriptionsScreen: View {
         .frame(maxWidth: .infinity, alignment: .leading)
     }
     
+    private var unlockBenefits: some View{
+        VStack(alignment: .center, spacing: 8){
+            Text("Meta Verified is available for people age +18.")
+                .fontModifier(size: 14, weight: .medium, foregroundColor: .colorGray)
+            
+            
+            Text("Unlock benefits")
+                .fontModifier(size: 18, weight: .medium, foregroundColor: .colorWhite)
+                .padding(.vertical, 12)
+                .padding(.horizontal, 8)
+                .frame(maxWidth: .infinity, alignment: .center)
+                .onTapGesture {
+                    
+                }
+                .roundedRectangleStyle(cornerRadius: 18, backgroundColor: .backgroundBlue, borderColor: .clear, borderWidth: 0)
+        }
+    }
+    
     var body: some View {
         VStack(spacing: 12){
             
@@ -116,8 +162,30 @@ struct MetaVerifiedInSubscriptionsScreen: View {
                     
                     verifiedBadge
                     
-                    standartPackage
+                    scrollHorizontalContent
+                    
+                    
                 }
+            }
+            unlockBenefits
+        }
+        .sheet(item: $route) { navigation in
+            switch navigation{
+            case .standart:
+                StandartTabDetailsScreen()
+                    .presentationDragIndicator(.visible)
+                    .presentationCornerRadius(24)
+                    .presentationDetents([.fraction(0.87)])
+                
+            case .plus:
+                PlusTabDetailsScreen()
+                    .presentationDragIndicator(.visible)
+                    .presentationCornerRadius(24)
+                    .presentationDetents([.fraction(0.87)])
+                
+                
+            case .premium:
+                EmptyView()
             }
         }
         .frame(maxWidth: .infinity, alignment: .leading)
@@ -151,6 +219,14 @@ struct MetaVerifiedInSubscriptionsScreen: View {
                     .fontModifier(size: 16, weight: .semibold, foregroundColor: colorScheme == .dark ? .colorWhite : .colorBlack)
             }
         }
+    }
+}
+
+extension MetaVerifiedInSubscriptionsScreen{
+    enum Route: Identifiable{
+        
+        var id: Self { self }
+        case standart, premium, plus
     }
 }
 
