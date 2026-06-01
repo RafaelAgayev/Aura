@@ -12,6 +12,9 @@ struct StandartTab: View {
     @Environment(\.colorScheme) private var colorScheme
     
     @State private var animateBorder = false
+    
+    var onTap: () -> Void
+    
     var body: some View {
         
         VStack(alignment: .leading, spacing: 12){
@@ -152,6 +155,17 @@ struct StandartTab: View {
                     .fontModifier(size: 14, weight: .medium, foregroundColor: .colorGray)
 
             }
+            
+            Button{
+                withAnimation{
+                    onTap()
+                }
+            }label: {
+                Text("See benefit details")
+                    .fontModifier(size: 16, weight: .medium, foregroundColor: .backgroundBlue)
+            }
+            
+            .padding(.horizontal, 10)
         }
         .padding(.vertical, 12)
         .padding(.horizontal, 14)
