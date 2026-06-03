@@ -21,6 +21,8 @@ struct MetaVerifiedInSubscriptionsScreen: View {
     
     @State private var route: Route? = nil
     
+    @State private var showBenefits = false
+    
     private var linear: some View{
         HStack(spacing: 0) {
             ForEach(0..<5){ index in
@@ -39,13 +41,12 @@ struct MetaVerifiedInSubscriptionsScreen: View {
             Image(.thomasShelby)
                 .resizable()
                 .scaledToFill()
-                
                 .frame(width: 60, height: 60)
                 .clipShape(Circle())
                 .overlay(alignment: .bottomTrailing) {
                     Image(.iconInstagramColored)
                         .resizable()
-                        .scaledToFit()
+                        .scaledToFill()
                         .frame(width: 15, height: 15)
                         .padding(2)
                         
@@ -136,16 +137,17 @@ struct MetaVerifiedInSubscriptionsScreen: View {
             Text("Meta Verified is available for people age +18.")
                 .fontModifier(size: 14, weight: .medium, foregroundColor: .colorGray)
             
-            
-            Text("Unlock benefits")
-                .fontModifier(size: 18, weight: .medium, foregroundColor: .colorWhite)
-                .padding(.vertical, 12)
-                .padding(.horizontal, 8)
-                .frame(maxWidth: .infinity, alignment: .center)
-                .onTapGesture {
-                    
-                }
-                .roundedRectangleStyle(cornerRadius: 18, backgroundColor: .backgroundBlue, borderColor: .clear, borderWidth: 0)
+            Button{
+                showBenefits = true
+            }label: {
+                Text("Unlock benefits")
+                    .fontModifier(size: 18, weight: .medium, foregroundColor: .colorWhite)
+                    .padding(.vertical, 12)
+                    .padding(.horizontal, 8)
+                    .frame(maxWidth: .infinity, alignment: .center)
+            }
+            .roundedRectangleStyle(cornerRadius: 18, backgroundColor: .backgroundBlue, borderColor: .clear, borderWidth: 0)
+               
         }
     }
     
@@ -168,6 +170,9 @@ struct MetaVerifiedInSubscriptionsScreen: View {
                 }
             }
             unlockBenefits
+        }
+        .navigationDestination(isPresented: $showBenefits) {
+            UnlockBenefitsScreen()
         }
         .sheet(item: $route) { navigation in
             switch navigation{
