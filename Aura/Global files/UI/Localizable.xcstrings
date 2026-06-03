@@ -24,6 +24,9 @@
         }
       }
     },
+    "." : {
+
+    },
     "%@" : {
       "localizations" : {
         "az" : {
@@ -387,6 +390,9 @@
         }
       }
     },
+    "Continue with one profile" : {
+
+    },
     "Creator subscriptions" : {
       "localizations" : {
         "az" : {
@@ -639,6 +645,9 @@
         }
       }
     },
+    "engagement on average." : {
+
+    },
     "Enhanced support" : {
 
     },
@@ -704,6 +713,9 @@
           }
         }
       }
+    },
+    "everywhere" : {
+
     },
     "Exclusive stickers" : {
 
@@ -898,6 +910,9 @@
       }
     },
     "Impersonation protection" : {
+
+    },
+    "Instagram and connected Facebook" : {
 
     },
     "Interactions" : {
@@ -1177,6 +1192,9 @@
       }
     },
     "Meta Verified is available for people age +18." : {
+
+    },
+    "Meta Verified is only available for" : {
 
     },
     "Meta Verified Standart" : {
@@ -1485,10 +1503,16 @@
         }
       }
     },
+    "Profiles that are Meta Verified get more" : {
+
+    },
     "Protect your brand" : {
 
     },
     "r.a_rus" : {
+
+    },
+    "r.a_rus & Rafa El" : {
 
     },
     "Rafael Agayev" : {
@@ -1667,6 +1691,9 @@
         }
       }
     },
+    "Save 20% on profiles" : {
+
+    },
     "Save reminder" : {
       "localizations" : {
         "az" : {
@@ -1786,6 +1813,9 @@
         }
       }
     },
+    "Show you're verified" : {
+
+    },
     "Sign in" : {
       "localizations" : {
         "az" : {
@@ -1795,6 +1825,9 @@
           }
         }
       }
+    },
+    "some profiles" : {
+
     },
     "Sort by" : {
       "localizations" : {
