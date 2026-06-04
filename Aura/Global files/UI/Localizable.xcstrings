@@ -14,6 +14,18 @@
         }
       }
     },
+    " Advanced Protection" : {
+
+    },
+    " apply to your Meta Verified subscriptions. You'll be enrolled in " : {
+
+    },
+    " Learn more" : {
+
+    },
+    " Terms of Service" : {
+
+    },
     "- %@" : {
       "localizations" : {
         "az" : {
@@ -24,7 +36,16 @@
         }
       }
     },
+    "-$2.89" : {
+
+    },
+    "-$14.59" : {
+
+    },
     "." : {
+
+    },
+    ". Cancel 24 hours before your next payment date to avoid charges." : {
 
     },
     "%@" : {
@@ -83,6 +104,18 @@
     "$0.49 for your first month" : {
 
     },
+    "$0.79" : {
+
+    },
+    "$0.79 for your first month" : {
+
+    },
+    "$0.79 welcome offer" : {
+
+    },
+    "$0.79 welcome offer applied" : {
+
+    },
     "$1.49 for your first month" : {
 
     },
@@ -92,6 +125,12 @@
     "$7.69/month per profile" : {
 
     },
+    "$12.49/month" : {
+
+    },
+    "$15.38" : {
+
+    },
     "$21.90/month per profile" : {
 
     },
@@ -99,6 +138,9 @@
 
     },
     "2 per month" : {
+
+    },
+    "2 profiles" : {
 
     },
     "3 profiles" : {
@@ -296,6 +338,12 @@
         }
       }
     },
+    "Bundle discount" : {
+
+    },
+    "By tapping Continue, you agree the" : {
+
+    },
     "Calm" : {
       "localizations" : {
         "az" : {
@@ -389,6 +437,9 @@
           }
         }
       }
+    },
+    "Continue" : {
+
     },
     "Continue with one profile" : {
 
@@ -1473,6 +1524,9 @@
     "Premium" : {
 
     },
+    "Price breakdown" : {
+
+    },
     "Profile" : {
       "localizations" : {
         "az" : {
@@ -1770,6 +1824,9 @@
     "See benefit details" : {
 
     },
+    "See price breakdown" : {
+
+    },
     "Select" : {
       "localizations" : {
         "az" : {
@@ -1967,6 +2024,9 @@
         }
       }
     },
+    "Then $12.49/month until you cancel. Price may include taxes when applicable." : {
+
+    },
     "This action is undone" : {
       "localizations" : {
         "az" : {
@@ -2039,6 +2099,9 @@
       }
     },
     "Tomiris, Adam and Figma already have a verified badge" : {
+
+    },
+    "Total" : {
 
     },
     "Transactions, credit cards, debit cards,\n shipping info, PayPal" : {
@@ -2184,6 +2247,12 @@
           }
         }
       }
+    },
+    "What you get with your subscription" : {
+
+    },
+    "When you have a verified badge on your profile, people may be more likely to follow you." : {
+
     },
     "Which would you like to add?" : {
 
