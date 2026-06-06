@@ -293,7 +293,9 @@ struct SaveProfilesScreen: View {
                     .presentationDetents([.fraction(0.4)])
                     .presentationDragIndicator(.visible)
             case .bottomContinue:
-                EmptyView()
+                MetaVerifiedStandartBundle()
+                    .presentationCornerRadius(24)
+                    .presentationDetents([.fraction(0.8)])
             }
         }
         .navigationBarBackButtonHidden()
