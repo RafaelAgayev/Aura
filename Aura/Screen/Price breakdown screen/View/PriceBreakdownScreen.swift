@@ -151,6 +151,18 @@ struct PriceBreakdownScreen: View {
         }
         .padding(.horizontal, 22)
     }
+    
+    private var selectSegmentIndex: some View{
+        VStack(spacing: 0){
+            switch selectSegment {
+            case .today:
+                todayComponent
+            case .after1Month:
+                after1Month
+            }
+        }
+    }
+    
     var body: some View {
         HStack{
             VStack(alignment: .leading, spacing: 18){
@@ -160,12 +172,7 @@ struct PriceBreakdownScreen: View {
                 
                 segment
                 
-                switch selectSegment {
-                case .today:
-                    todayComponent
-                case .after1Month:
-                    after1Month
-                }
+                selectSegmentIndex
                 
                 Spacer()
                 

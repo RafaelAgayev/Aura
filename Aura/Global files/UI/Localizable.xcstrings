@@ -166,6 +166,9 @@
         }
       }
     },
+    "Accept" : {
+
+    },
     "Account history" : {
       "localizations" : {
         "az" : {
@@ -185,6 +188,9 @@
           }
         }
       }
+    },
+    "Account: rafael.agayev141@gmail.com" : {
+
     },
     "Accounts Center" : {
       "localizations" : {
@@ -277,6 +283,9 @@
         }
       }
     },
+    "App Store" : {
+
+    },
     "Apply" : {
       "localizations" : {
         "az" : {
@@ -363,6 +372,9 @@
           }
         }
       }
+    },
+    "Cancel at any time in Settings > Apple Account at least one day before each renewal date. Plan automatically renews until cancelled." : {
+
     },
     "Change" : {
 
@@ -1251,6 +1263,9 @@
     "Meta Verified Standart" : {
 
     },
+    "Meta Verified Standart Bundle" : {
+
+    },
     "MetaPay" : {
       "localizations" : {
         "az" : {
@@ -1525,6 +1540,9 @@
 
     },
     "Price breakdown" : {
+
+    },
+    "Pro-rata charges may apply until 5 Jul 2026" : {
 
     },
     "Profile" : {
@@ -1909,7 +1927,16 @@
         }
       }
     },
+    "Starting 5 Jul 2026" : {
+
+    },
     "Starting at just $0.49 for your first month" : {
+
+    },
+    "Starting on 5 Jul 2026" : {
+
+    },
+    "Starting on 5 Jun 2026" : {
 
     },
     "Sticker response" : {
@@ -2127,6 +2154,15 @@
 
     },
     "Upgrade profile links" : {
+
+    },
+    "USD 0.79 for 1 month" : {
+
+    },
+    "USD 12.49 every month" : {
+
+    },
+    "USD 12.49/month" : {
 
     },
     "Username" : {
