@@ -215,6 +215,12 @@
         }
       }
     },
+    "Activity information from ad partners" : {
+
+    },
+    "Ad preferences" : {
+
+    },
     "Add a mobile number" : {
 
     },
@@ -234,6 +240,7 @@
 
     },
     "addsssss" : {
+      "extractionState" : "stale",
       "localizations" : {
         "az" : {
           "stringUnit" : {
@@ -242,6 +249,18 @@
           }
         }
       }
+    },
+    "Ads About Meta" : {
+
+    },
+    "Ads in other apss" : {
+
+    },
+    "Ads shown outside of Meta" : {
+
+    },
+    "Advertisers whose audiences you've been included in based on your activity or information" : {
+
     },
     "AI Glasses" : {
       "localizations" : {
@@ -305,6 +324,9 @@
           }
         }
       }
+    },
+    "Audience-based advertising" : {
+
     },
     "Author: %@" : {
       "localizations" : {
@@ -376,6 +398,9 @@
     "Cancel at any time in Settings > Apple Account at least one day before each renewal date. Plan automatically renews until cancelled." : {
 
     },
+    "Categories used to reach you" : {
+
+    },
     "Change" : {
 
     },
@@ -409,6 +434,18 @@
 
     },
     "Choose accounts for this number" : {
+
+    },
+    "Choose whether we use this " : {
+
+    },
+    "Choose whether we use your activity to show you ads about Meta on other platforms." : {
+
+    },
+    "Choose whether you see ads from Meta Audience Network in other apps." : {
+
+    },
+    "Choose who can see your social interactions alongside ads." : {
 
     },
     "Commentario smndmn" : {
@@ -584,6 +621,12 @@
           }
         }
       }
+    },
+    "does meta sell" : {
+
+    },
+    "Does Meta sell my information?" : {
+
     },
     "Done" : {
       "localizations" : {
@@ -815,6 +858,9 @@
     "Find instagram creators" : {
 
     },
+    "Find out more about what information is used to show you ads, and how you can control your privacy." : {
+
+    },
     "Follow" : {
 
     },
@@ -870,6 +916,21 @@
         }
       }
     },
+    "Hello activity screen" : {
+
+    },
+    "Hello ads about meta da bled" : {
+
+    },
+    "hello ads in other apps" : {
+
+    },
+    "Hello audience based" : {
+
+    },
+    "Hello categories" : {
+
+    },
     "Hello change password" : {
 
     },
@@ -880,6 +941,9 @@
 
     },
     "hello reels" : {
+
+    },
+    "Hello spcils didlekrmems" : {
 
     },
     "Hello subscriptions" : {
@@ -975,6 +1039,15 @@
     "Impersonation protection" : {
 
     },
+    "information to show you ads that are " : {
+
+    },
+    "Information used to show you ads" : {
+
+    },
+    "Information you share on your profile or " : {
+
+    },
     "Instagram and connected Facebook" : {
 
     },
@@ -1031,6 +1104,15 @@
           }
         }
       }
+    },
+    "Learn more about ads privacy" : {
+
+    },
+    "Learn more about Instagram ads" : {
+
+    },
+    "Learn more in Privacy Center" : {
+
     },
     "Let’s check how you’re doing today" : {
       "localizations" : {
@@ -1306,6 +1388,9 @@
         }
       }
     },
+    "More details" : {
+
+    },
     "More from Meta" : {
       "localizations" : {
         "az" : {
@@ -1315,6 +1400,9 @@
           }
         }
       }
+    },
+    "more relevant to you" : {
+
     },
     "Music" : {
       "localizations" : {
@@ -1379,6 +1467,9 @@
         }
       }
     },
+    "No. We never sell your information" : {
+
+    },
     "Not found yet " : {
       "localizations" : {
         "az" : {
@@ -1439,6 +1530,12 @@
           }
         }
       }
+    },
+    "other categories used to reach you" : {
+
+    },
+    "Other settings" : {
+
     },
     "Password" : {
       "localizations" : {
@@ -1891,6 +1988,9 @@
     "Show you're verified" : {
 
     },
+    "Showing you ads in other apps" : {
+
+    },
     "Sign in" : {
       "localizations" : {
         "az" : {
@@ -1900,6 +2000,9 @@
           }
         }
       }
+    },
+    "Social interactions" : {
+
     },
     "some profiles" : {
 
@@ -2029,6 +2132,9 @@
       }
     },
     "tags commentitado" : {
+
+    },
+    "Take control of your ad experince and the information used to show you ads." : {
 
     },
     "Terms and Conditions" : {
@@ -2185,6 +2291,9 @@
         }
       }
     },
+    "Using this information" : {
+
+    },
     "Verified badge" : {
 
     },
@@ -2243,6 +2352,9 @@
         }
       }
     },
+    "We show you ads based on your information and activity. You get to control these settings." : {
+
+    },
     "We'll your analyze with camera" : {
       "localizations" : {
         "az" : {
@@ -2283,6 +2395,12 @@
           }
         }
       }
+    },
+    "What information is used to show me ads?" : {
+
+    },
+    "what information screen" : {
+
     },
     "What you get with your subscription" : {
 
