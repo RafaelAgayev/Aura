@@ -48,6 +48,12 @@
     ". Cancel 24 hours before your next payment date to avoid charges." : {
 
     },
+    "[Learn more](https://www.greenland.com)" : {
+
+    },
+    "[Learn more](https://www.meta.com)" : {
+
+    },
     "%@" : {
       "localizations" : {
         "az" : {
@@ -253,10 +259,19 @@
     "Ads About Meta" : {
 
     },
+    "Ads about Meta on other platforms" : {
+
+    },
+    "Ads in other apps." : {
+
+    },
     "Ads in other apss" : {
 
     },
     "Ads shown outside of Meta" : {
+
+    },
+    "Advertisers can reach you based on other categories that we associate with you. You can remove yourself from any of these categories." : {
 
     },
     "Advertisers whose audiences you've been included in based on your activity or information" : {
@@ -372,6 +387,9 @@
     "Bundle discount" : {
 
     },
+    "Business page admins" : {
+
+    },
     "By tapping Continue, you agree the" : {
 
     },
@@ -396,6 +414,9 @@
       }
     },
     "Cancel at any time in Settings > Apple Account at least one day before each renewal date. Plan automatically renews until cancelled." : {
+
+    },
+    "Categories associated with you" : {
 
     },
     "Categories used to reach you" : {
@@ -436,6 +457,12 @@
     "Choose accounts for this number" : {
 
     },
+    "Choose profile information" : {
+
+    },
+    "Choose what profile information is used to help personalize your ads." : {
+
+    },
     "Choose whether we use this " : {
 
     },
@@ -462,6 +489,9 @@
       }
     },
     "Competitive insights" : {
+
+    },
+    "Confirm" : {
 
     },
     "connected" : {
@@ -681,6 +711,9 @@
         }
       }
     },
+    "Edit facebook profile" : {
+
+    },
     "Edit name" : {
       "localizations" : {
         "az" : {
@@ -721,6 +754,12 @@
         }
       }
     },
+    "Education" : {
+
+    },
+    "Employer" : {
+
+    },
     "Enable notification" : {
       "localizations" : {
         "az" : {
@@ -750,6 +789,9 @@
           }
         }
       }
+    },
+    "Engaged shoppers" : {
+
     },
     "engagement on average." : {
 
@@ -836,6 +878,9 @@
         }
       }
     },
+    "Facebook access (mobile): Android devices" : {
+
+    },
     "Featured profile" : {
 
     },
@@ -871,6 +916,9 @@
 
     },
     "Following" : {
+
+    },
+    "For example, we can show you an ad from one of our ad partners in a different company's gaming app. " : {
 
     },
     "Get daily" : {
@@ -919,16 +967,7 @@
     "Hello activity screen" : {
 
     },
-    "Hello ads about meta da bled" : {
-
-    },
-    "hello ads in other apps" : {
-
-    },
     "Hello audience based" : {
-
-    },
-    "Hello categories" : {
 
     },
     "Hello change password" : {
@@ -941,9 +980,6 @@
 
     },
     "hello reels" : {
-
-    },
-    "Hello spcils didlekrmems" : {
 
     },
     "Hello subscriptions" : {
@@ -1036,6 +1072,12 @@
         }
       }
     },
+    "If you are under 18, your social interactions are not shown alongside any ads. Changing who can see your social interactions will not have an effect until you're 18 years old." : {
+
+    },
+    "If you choose not to let us use this activity, you may still see ads about Meta on other platforms, but they won't be shown to you by using this activity." : {
+
+    },
     "Impersonation protection" : {
 
     },
@@ -1080,6 +1122,9 @@
           }
         }
       }
+    },
+    "Job title" : {
+
     },
     "Key" : {
       "extractionState" : "manual",
@@ -1747,6 +1792,9 @@
         }
       }
     },
+    "Relationship status" : {
+
+    },
     "Reminder" : {
       "localizations" : {
         "az" : {
@@ -1766,6 +1814,9 @@
           }
         }
       }
+    },
+    "Remove" : {
+
     },
     "Removed and archived content" : {
       "localizations" : {
@@ -1952,6 +2003,9 @@
         }
       }
     },
+    "Select an account" : {
+
+    },
     "Select Country" : {
 
     },
@@ -2002,6 +2056,12 @@
       }
     },
     "Social interactions" : {
+
+    },
+    "Social Interactions" : {
+
+    },
+    "Social Interactions are not shown alongside ads about social issues, elections or politics that have a label showing who paid for the ad. " : {
 
     },
     "some profiles" : {
@@ -2170,6 +2230,9 @@
         }
       }
     },
+    "This does not include reactions to the ad itself. If you react to an ad, your friends will still be able to see that activity" : {
+
+    },
     "Time" : {
       "localizations" : {
         "az" : {
@@ -2259,6 +2322,9 @@
     "Unlock benefits" : {
 
     },
+    "Unspecified" : {
+
+    },
     "Upgrade profile links" : {
 
     },
@@ -2269,6 +2335,12 @@
 
     },
     "USD 12.49/month" : {
+
+    },
+    "Used" : {
+
+    },
+    "Used for 4 accounts comp " : {
 
     },
     "Username" : {
@@ -2318,6 +2390,12 @@
         }
       }
     },
+    "View" : {
+
+    },
+    "View all" : {
+
+    },
     "View History" : {
       "localizations" : {
         "az" : {
@@ -2351,6 +2429,9 @@
           }
         }
       }
+    },
+    "We may include your social interactions alongside ads that your friends see. Social interactions include Page likes, accounts tags, app usage, event responses and more. For example, if you like a Page that's running an ad, we might let your friends know that you liked the Page when they see the ad. You can decide whether your friends can see your social interactions alongside the ads they see." : {
+
     },
     "We show you ads based on your information and activity. You get to control these settings." : {
 
@@ -2411,6 +2492,9 @@
     "Which would you like to add?" : {
 
     },
+    "Why am I not seeing of all my accounts?" : {
+
+    },
     "Wonderful" : {
 
     },
@@ -2424,7 +2508,16 @@
         }
       }
     },
+    "Yelo Bank" : {
+
+    },
     "You both follow zuck" : {
+
+    },
+    "You can choose if we use your activity on Meta technologies to show you ads about Meta on other platforms" : {
+
+    },
+    "You can choose whether you see ads from Meta Audience Network in other apps." : {
 
     },
     "You can edit your name" : {
