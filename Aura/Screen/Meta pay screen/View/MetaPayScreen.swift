@@ -255,35 +255,7 @@ struct MetaPayScreen: View {
             .padding(.top, -10)
         }
         .navigationDestination(item: $navigation){ navigate in
-            switch navigate{
-            case .yourInformation:
-                YourPermissionsScreen()
-                
-            case .personal:
-                PersonalScreen()
-                
-            case .passwordAndSecurity:
-                PasswordAndSecurityScreen()
-                
-            case .connected:
-                ConnectedScreen()
-                
-            case .subscriptions:
-                MetaPaySubscriptionsScreen()
-                
-            case .adPreferences:
-                AdPrefencesScreen()
-                
-            case .manageAccounts:
-                ManageAccountsScreen()
-                
-            case .metaPay:
-                MetaPayInListScreen()
-                
-            case .metaVerified:
-                MetaVerifiedScreen()
-           
-            }
+           routeBody(navigation: navigate)
         }
         .navigationBarBackButtonHidden()
         .toolbar {
@@ -328,6 +300,38 @@ extension MetaPayScreen{
              subscriptions,
              manageAccounts,
              metaVerified
+    }
+    
+    @ViewBuilder
+    func routeBody(navigation: Navigation) -> some View {
+        switch navigation{
+        case .yourInformation:
+            YourPermissionsScreen()
+            
+        case .personal:
+            PersonalScreen()
+            
+        case .passwordAndSecurity:
+            PasswordAndSecurityScreen()
+            
+        case .connected:
+            ConnectedExperienceScreen()
+            
+        case .subscriptions:
+            MetaPaySubscriptionsScreen()
+            
+        case .adPreferences:
+            AdPrefencesScreen()
+            
+        case .manageAccounts:
+            ManageAccountsScreen()
+            
+        case .metaPay:
+            MetaPayInListScreen()
+            
+        case .metaVerified:
+            MetaVerifiedScreen()
+        }
     }
 }
 

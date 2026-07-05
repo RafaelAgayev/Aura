@@ -221,6 +221,9 @@
         }
       }
     },
+    "Activities and features that work across two or more accounts you've added to the same Accounts Center. Control how you use these experiences across your accounts." : {
+
+    },
     "Activity information from ad partners" : {
 
     },
@@ -228,6 +231,9 @@
 
     },
     "Add a mobile number" : {
+
+    },
+    "Add accounts" : {
 
     },
     "Add email" : {
@@ -495,6 +501,7 @@
 
     },
     "connected" : {
+      "extractionState" : "stale",
       "localizations" : {
         "az" : {
           "stringUnit" : {
@@ -504,7 +511,13 @@
         }
       }
     },
+    "Connected experiences" : {
+
+    },
     "Contact Information" : {
+
+    },
+    "Content" : {
 
     },
     "Content you shared" : {
@@ -919,6 +932,9 @@
 
     },
     "For example, we can show you an ad from one of our ad partners in a different company's gaming app. " : {
+
+    },
+    "Friends and followers" : {
 
     },
     "Get daily" : {
@@ -1697,6 +1713,9 @@
         }
       }
     },
+    "Profile info and access" : {
+
+    },
     "Profiles" : {
       "localizations" : {
         "az" : {
@@ -2028,6 +2047,15 @@
           }
         }
       }
+    },
+    "Share from" : {
+
+    },
+    "Share your content to more than one account at the same time" : {
+
+    },
+    "Sharing across profiles" : {
+
     },
     "Shop account" : {
       "localizations" : {
