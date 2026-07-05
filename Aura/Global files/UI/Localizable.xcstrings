@@ -1,0 +1,2702 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {
+
+    },
+    "     View and manage your interactions, content\nand account activity. " : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "     İstifadəçi əlaqələrinizi, məzmununuzu və hesab fəaliyyətinizi\nnəzarətdə saxlayın və idarə edin."
+          }
+        }
+      }
+    },
+    " Advanced Protection" : {
+
+    },
+    " apply to your Meta Verified subscriptions. You'll be enrolled in " : {
+
+    },
+    " Learn more" : {
+
+    },
+    " Terms of Service" : {
+
+    },
+    "- %@" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "- %@"
+          }
+        }
+      }
+    },
+    "-$2.89" : {
+
+    },
+    "-$14.59" : {
+
+    },
+    "." : {
+
+    },
+    ". Cancel 24 hours before your next payment date to avoid charges." : {
+
+    },
+    "[Learn more](https://www.greenland.com)" : {
+
+    },
+    "[Learn more](https://www.meta.com)" : {
+
+    },
+    "%@" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
+        }
+      }
+    },
+    "%@ • " : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ •"
+          }
+        }
+      }
+    },
+    "%@ followers •" : {
+
+    },
+    "%@(%@)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@(%2$@)"
+          }
+        }
+      }
+    },
+    "• Try getting 30 minutes of fresh air\n• Consider a short meditation\n• Drink more water today" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 30 dəqiqə təmiz havada vaxt keçirməyə çalış\n• Qısa bir meditasiya etməyi düşün\n• Bu gün daha çox su iç 💧"
+          }
+        }
+      }
+    },
+    "★ %lld" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "★ %lld"
+          }
+        }
+      }
+    },
+    "$0.49 for your first month" : {
+
+    },
+    "$0.79" : {
+
+    },
+    "$0.79 for your first month" : {
+
+    },
+    "$0.79 welcome offer" : {
+
+    },
+    "$0.79 welcome offer applied" : {
+
+    },
+    "$1.49 for your first month" : {
+
+    },
+    "$4.39 for your first month" : {
+
+    },
+    "$7.69/month per profile" : {
+
+    },
+    "$12.49/month" : {
+
+    },
+    "$15.38" : {
+
+    },
+    "$21.90/month per profile" : {
+
+    },
+    "$65.00/month per profile" : {
+
+    },
+    "2 per month" : {
+
+    },
+    "2 profiles" : {
+
+    },
+    "3 profiles" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3 Profil"
+          }
+        }
+      }
+    },
+    "4 per month" : {
+
+    },
+    "About: %@" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Haqqında: %@"
+          }
+        }
+      }
+    },
+    "Accept" : {
+
+    },
+    "Account history" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hesab tarixçəsi"
+          }
+        }
+      }
+    },
+    "Account history screen" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hesab tarixçəsi ekranı"
+          }
+        }
+      }
+    },
+    "Account: rafael.agayev141@gmail.com" : {
+
+    },
+    "Accounts Center" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hesab Mərkəzi"
+          }
+        }
+      }
+    },
+    "Accounts you choose to add this number to will use it to help you log in and receive notifications from us" : {
+
+    },
+    "Actions" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aktivliklər"
+          }
+        }
+      }
+    },
+    "Activities and features that work across two or more accounts you've added to the same Accounts Center. Control how you use these experiences across your accounts." : {
+
+    },
+    "Activity information from ad partners" : {
+
+    },
+    "Ad preferences" : {
+
+    },
+    "Add a mobile number" : {
+
+    },
+    "Add accounts" : {
+
+    },
+    "Add email" : {
+
+    },
+    "Add links to Reels" : {
+
+    },
+    "Add mobile number" : {
+
+    },
+    "Add new contact" : {
+
+    },
+    "Adding this number will replace +994559562020 on this Instagram account." : {
+
+    },
+    "addsssss" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "addsssss"
+          }
+        }
+      }
+    },
+    "Ads About Meta" : {
+
+    },
+    "Ads about Meta on other platforms" : {
+
+    },
+    "Ads in other apps." : {
+
+    },
+    "Ads in other apss" : {
+
+    },
+    "Ads shown outside of Meta" : {
+
+    },
+    "Advertisers can reach you based on other categories that we associate with you. You can remove yourself from any of these categories." : {
+
+    },
+    "Advertisers whose audiences you've been included in based on your activity or information" : {
+
+    },
+    "AI Glasses" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AI Eynəkləri"
+          }
+        }
+      }
+    },
+    "AI Health Insight" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AI Sağlamlıq Tövsiyəsi"
+          }
+        }
+      }
+    },
+    "AI Suggestions" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "süni intellekt tərəfindən verilən təkliflər"
+          }
+        }
+      }
+    },
+    "All dates" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bütün tarixlər"
+          }
+        }
+      }
+    },
+    "App Store" : {
+
+    },
+    "Apply" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Təsdiqlə"
+          }
+        }
+      }
+    },
+    "Archived" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arxivlənmişlər"
+          }
+        }
+      }
+    },
+    "Audience-based advertising" : {
+
+    },
+    "Author: %@" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Müəllif: %@"
+          }
+        }
+      }
+    },
+    "Auto detection screen" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avtomatik aşkarlama ekranı"
+          }
+        }
+      }
+    },
+    "Back" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geri"
+          }
+        }
+      }
+    },
+    "Books" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kitablar"
+          }
+        }
+      }
+    },
+    "Bundle discount" : {
+
+    },
+    "Business page admins" : {
+
+    },
+    "By tapping Continue, you agree the" : {
+
+    },
+    "Calm" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sakitlik"
+          }
+        }
+      }
+    },
+    "Cancel" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ləğv et"
+          }
+        }
+      }
+    },
+    "Cancel at any time in Settings > Apple Account at least one day before each renewal date. Plan automatically renews until cancelled." : {
+
+    },
+    "Categories associated with you" : {
+
+    },
+    "Categories used to reach you" : {
+
+    },
+    "Change" : {
+
+    },
+    "Change password" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şifrəni dəyiş"
+          }
+        }
+      }
+    },
+    "Changing your username will also change your Instagram profile address." : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "stifadəçi adınızı dəyişdirmək Instagram profil ünvanınızı da dəyişəcək."
+          }
+        }
+      }
+    },
+    "chat or email with agents" : {
+
+    },
+    "Chat or email with agents" : {
+
+    },
+    "Chat or email with agents Get issues resolved more quickly" : {
+
+    },
+    "Choose accounts for this number" : {
+
+    },
+    "Choose profile information" : {
+
+    },
+    "Choose what profile information is used to help personalize your ads." : {
+
+    },
+    "Choose whether we use this " : {
+
+    },
+    "Choose whether we use your activity to show you ads about Meta on other platforms." : {
+
+    },
+    "Choose whether you see ads from Meta Audience Network in other apps." : {
+
+    },
+    "Choose who can see your social interactions alongside ads." : {
+
+    },
+    "Commentario smndmn" : {
+
+    },
+    "Comments" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şərhlər"
+          }
+        }
+      }
+    },
+    "Competitive insights" : {
+
+    },
+    "Confirm" : {
+
+    },
+    "connected" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "bağlandı"
+          }
+        }
+      }
+    },
+    "Connected experiences" : {
+
+    },
+    "Contact Information" : {
+
+    },
+    "Content" : {
+
+    },
+    "Content you shared" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Olduğun yeri paylaşmaq"
+          }
+        }
+      }
+    },
+    "Continue" : {
+
+    },
+    "Continue with one profile" : {
+
+    },
+    "Creator subscriptions" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yaradıcı abunəlikləri"
+          }
+        }
+      }
+    },
+    "Creators" : {
+
+    },
+    "Cristiano" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cristiano"
+          }
+        }
+      }
+    },
+    "Custom chat themes" : {
+
+    },
+    "Daily" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gündəlik"
+          }
+        }
+      }
+    },
+    "Daily status" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gündəlik status"
+          }
+        }
+      }
+    },
+    "Dark" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Qaranlıq"
+          }
+        }
+      }
+    },
+    "Date range" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zaman aralığı"
+          }
+        }
+      }
+    },
+    "Delete" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Silmək"
+          }
+        }
+      }
+    },
+    "Delete history?" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tarixçədən silmək istədiyinə əminsən ?"
+          }
+        }
+      }
+    },
+    "Description: %@" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Təsvir: %@"
+          }
+        }
+      }
+    },
+    "Details" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Detallar səhifəsi"
+          }
+        }
+      }
+    },
+    "Discover Instagram Creators" : {
+
+    },
+    "dldmmdmd" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "dldmmmmd"
+          }
+        }
+      }
+    },
+    "Do you want logout ? If you logout and delete your token." : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Çıxış etmək istəyirsən? əgər sən çıxış etsən, məlumatların  silinəcəkdir."
+          }
+        }
+      }
+    },
+    "does meta sell" : {
+
+    },
+    "Does Meta sell my information?" : {
+
+    },
+    "Done" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hazırdır"
+          }
+        }
+      }
+    },
+    "Drive engagement" : {
+
+    },
+    "E-mail:\n %@" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "E-mail: %@"
+          }
+        }
+      }
+    },
+    "Edit" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Düzəltmək"
+          }
+        }
+      }
+    },
+    "edit avatar" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "avatarı düzəltmək"
+          }
+        }
+      }
+    },
+    "Edit email" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Email’i dəyiş"
+          }
+        }
+      }
+    },
+    "Edit facebook profile" : {
+
+    },
+    "Edit name" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adını dəyiş"
+          }
+        }
+      }
+    },
+    "Edit password" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şifrəni dəyiş"
+          }
+        }
+      }
+    },
+    "edit profile image" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profil şəklini düzəltmək"
+          }
+        }
+      }
+    },
+    "Edit username" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İstifadəçi adınıza düzəliş edin"
+          }
+        }
+      }
+    },
+    "Education" : {
+
+    },
+    "Employer" : {
+
+    },
+    "Enable notification" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bildirişləri aç"
+          }
+        }
+      }
+    },
+    "Enable reminder" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xatırlatmanı aç"
+          }
+        }
+      }
+    },
+    "Energy" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enerji"
+          }
+        }
+      }
+    },
+    "Engaged shoppers" : {
+
+    },
+    "engagement on average." : {
+
+    },
+    "Enhanced support" : {
+
+    },
+    "Enter email" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "email’i daxil edin"
+          }
+        }
+      }
+    },
+    "Enter mobile number" : {
+
+    },
+    "Enter name" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "adınızı daxil edin"
+          }
+        }
+      }
+    },
+    "Enter new name" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "yeni adınızı daxil edin"
+          }
+        }
+      }
+    },
+    "Enter new password " : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "yeni şifrə daxil edin"
+          }
+        }
+      }
+    },
+    "Enter new username" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yeni adınızı əlavə edin"
+          }
+        }
+      }
+    },
+    "Enter your email" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "e-mail’inizi daxil edin"
+          }
+        }
+      }
+    },
+    "everywhere" : {
+
+    },
+    "Exclusive stickers" : {
+
+    },
+    "Face ID" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Üz tanıma ilə giriş edin"
+          }
+        }
+      }
+    },
+    "Facebook access (mobile): Android devices" : {
+
+    },
+    "Featured profile" : {
+
+    },
+    "Filter by date" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tarixə görə filtrlə"
+          }
+        }
+      }
+    },
+    "Find and follow popular accounts" : {
+
+    },
+    "Find and manage your subscriptions all in one place." : {
+
+    },
+    "Find instagram creators" : {
+
+    },
+    "Find out more about what information is used to show you ads, and how you can control your privacy." : {
+
+    },
+    "Follow" : {
+
+    },
+    "followers" : {
+
+    },
+    "following" : {
+
+    },
+    "Following" : {
+
+    },
+    "For example, we can show you an ad from one of our ad partners in a different company's gaming app. " : {
+
+    },
+    "Friends and followers" : {
+
+    },
+    "Get daily" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gündəliyi əldə edin"
+          }
+        }
+      }
+    },
+    "Get daily reminders to check your mood and health." : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gündəlik olaraq əhvalını və sağlamlığını yoxlamaq üçün xatırlatmalar al."
+          }
+        }
+      }
+    },
+    "Get issues resolved more quickly" : {
+
+    },
+    "Grateful" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Minnətdarlıq"
+          }
+        }
+      }
+    },
+    "Health" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sağlamlıq"
+          }
+        }
+      }
+    },
+    "Hello activity screen" : {
+
+    },
+    "Hello audience based" : {
+
+    },
+    "Hello change password" : {
+
+    },
+    "hello permissions" : {
+
+    },
+    "Hello plus" : {
+
+    },
+    "hello reels" : {
+
+    },
+    "Hello subscriptions" : {
+
+    },
+    "Hello verified" : {
+
+    },
+    "Help support screen" : {
+
+    },
+    "Here you can see the most relevant info about your interests." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Burada maraqlarınıza uyğun ən vacib məlumatları görə bilərsiniz."
+          }
+        }
+      }
+    },
+    "High" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yüksək"
+          }
+        }
+      }
+    },
+    "Highlights" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seçilmişlər"
+          }
+        }
+      }
+    },
+    "hightlights" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Önə çıxanlar"
+          }
+        }
+      }
+    },
+    "History" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tarixçə"
+          }
+        }
+      }
+    },
+    "Hotels" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Otellər"
+          }
+        }
+      }
+    },
+    "How do you feel?" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Necə hiss edirsən?"
+          }
+        }
+      }
+    },
+    "How to use Aura" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aura’nı necə istifadə edirsən?"
+          }
+        }
+      }
+    },
+    "If you are under 18, your social interactions are not shown alongside any ads. Changing who can see your social interactions will not have an effect until you're 18 years old." : {
+
+    },
+    "If you choose not to let us use this activity, you may still see ads about Meta on other platforms, but they won't be shown to you by using this activity." : {
+
+    },
+    "Impersonation protection" : {
+
+    },
+    "information to show you ads that are " : {
+
+    },
+    "Information used to show you ads" : {
+
+    },
+    "Information you share on your profile or " : {
+
+    },
+    "Instagram and connected Facebook" : {
+
+    },
+    "Interactions" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Interaksiyalar"
+          }
+        }
+      }
+    },
+    "Interested" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Maraqlıdır"
+          }
+        }
+      }
+    },
+    "Interested screen" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Maraqlandıqların ekranı"
+          }
+        }
+      }
+    },
+    "Job title" : {
+
+    },
+    "Key" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Açar"
+          }
+        }
+      }
+    },
+    "Learn about business chats" : {
+
+    },
+    "Learn more" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Haqqında öyrən"
+          }
+        }
+      }
+    },
+    "Learn more about ads privacy" : {
+
+    },
+    "Learn more about Instagram ads" : {
+
+    },
+    "Learn more in Privacy Center" : {
+
+    },
+    "Let’s check how you’re doing today" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bugün nələr etdiyinizə baxın"
+          }
+        }
+      }
+    },
+    "Light" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İşıqlı"
+          }
+        }
+      }
+    },
+    "Likes" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bəyəndiklərin"
+          }
+        }
+      }
+    },
+    "Link History" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Link Tarixçəsi"
+          }
+        }
+      }
+    },
+    "link history screen" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Link tarixçəsi ekranı"
+          }
+        }
+      }
+    },
+    "Link screen" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Link səhifəsi"
+          }
+        }
+      }
+    },
+    "Loading..." : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yüklənir…"
+          }
+        }
+      }
+    },
+    "Login & recovery" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giriş və hesabın bərpası"
+          }
+        }
+      }
+    },
+    "Logout" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Çıxış"
+          }
+        }
+      }
+    },
+    "Low" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aşağı"
+          }
+        }
+      }
+    },
+    "Manage accounts" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hesabları idarə et"
+          }
+        }
+      }
+    },
+    "Manage your connected experiences and \naccount settings across Meta tehcnologies like \nFacebook, Instagram and Meta Horizon" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Facebook, Instagram və Meta Horizon kimi Meta texnologiyalarında bağlantılı təcrübələrinizi və hesab ayarlarınızı idarə edin."
+          }
+        }
+      }
+    },
+    "Manage your mobile numbers and emails, and who can see your contact info. Use any of them to access any profiles or devices in this Accounts Center." : {
+
+    },
+    "Manage your passwords, login preferences and recovery methods." : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şifrələrinizi, giriş seçimlərinizi və hesabın bərpası üsullarınızı idarə edin."
+          }
+        }
+      }
+    },
+    "Mark Zuckerberg" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mark Zuckerberg"
+          }
+        }
+      }
+    },
+    "Maximize discovery" : {
+
+    },
+    "Medium" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orta"
+          }
+        }
+      }
+    },
+    "Meetra" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meetra"
+          }
+        }
+      }
+    },
+    "Message" : {
+
+    },
+    "Meta" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meta"
+          }
+        }
+      }
+    },
+    "meta pay in list" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meta Pay siyahıda"
+          }
+        }
+      }
+    },
+    "meta pay subscriptions" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meta Pay abunəlikləri"
+          }
+        }
+      }
+    },
+    "meta verified" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meta Verified"
+          }
+        }
+      }
+    },
+    "Meta Verified" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meta Verified"
+          }
+        }
+      }
+    },
+    "Meta Verified is available for people age +18." : {
+
+    },
+    "Meta Verified is only available for" : {
+
+    },
+    "Meta Verified Standart" : {
+
+    },
+    "Meta Verified Standart Bundle" : {
+
+    },
+    "MetaPay" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meta Pay"
+          }
+        }
+      }
+    },
+    "Mood" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Əhval"
+          }
+        }
+      }
+    },
+    "Mood History" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Əhval tarixçəsi"
+          }
+        }
+      }
+    },
+    "Mood scan" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Əhval skan et"
+          }
+        }
+      }
+    },
+    "More details" : {
+
+    },
+    "More from Meta" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meta-dan daha çox"
+          }
+        }
+      }
+    },
+    "more relevant to you" : {
+
+    },
+    "Music" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Musiqi"
+          }
+        }
+      }
+    },
+    "Name" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ad"
+          }
+        }
+      }
+    },
+    "Name: %@" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ad: %@"
+          }
+        }
+      }
+    },
+    "Newest to oldest" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yenidən köhnəyə"
+          }
+        }
+      }
+    },
+    "Next" : {
+
+    },
+    "No content available" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Məlumat yoxdur."
+          }
+        }
+      }
+    },
+    "No result" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nəticə yoxdur."
+          }
+        }
+      }
+    },
+    "No. We never sell your information" : {
+
+    },
+    "Not found yet " : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hələ tapılmadı."
+          }
+        }
+      }
+    },
+    "Not interested" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Maraqlanmadıqlarım"
+          }
+        }
+      }
+    },
+    "not interested aura" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aura’da maraqlanmadıqların"
+          }
+        }
+      }
+    },
+    "Oldest to newest" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Köhnədən yeniyə"
+          }
+        }
+      }
+    },
+    "One place to manage\nyour activity" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fəaliyyətlər üçün vahid mərkəz"
+          }
+        }
+      }
+    },
+    "Orders and payments" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sifarişlər və ödənişlər"
+          }
+        }
+      }
+    },
+    "other categories used to reach you" : {
+
+    },
+    "Other settings" : {
+
+    },
+    "Password" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şifrə"
+          }
+        }
+      }
+    },
+    "Password and security" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şifrə və təhlükəsizlik"
+          }
+        }
+      }
+    },
+    "Past month" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keçən ay"
+          }
+        }
+      }
+    },
+    "Past week" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keçən həftə"
+          }
+        }
+      }
+    },
+    "Payment information" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ödəniş məlumatları"
+          }
+        }
+      }
+    },
+    "Personal details" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şəxsi məlumatlar"
+          }
+        }
+      }
+    },
+    "Please sign in" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lütfən giriş edin"
+          }
+        }
+      }
+    },
+    "Plus" : {
+
+    },
+    "Positive mindset detected." : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Müsbət düşüncə tərzi aşkar edildi."
+          }
+        }
+      }
+    },
+    "posts" : {
+
+    },
+    "Posts" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Postlarım"
+          }
+        }
+      }
+    },
+    "Premium" : {
+
+    },
+    "Price breakdown" : {
+
+    },
+    "Pro-rata charges may apply until 5 Jul 2026" : {
+
+    },
+    "Profile" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profil"
+          }
+        }
+      }
+    },
+    "Profile info and access" : {
+
+    },
+    "Profiles" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profillər"
+          }
+        }
+      }
+    },
+    "Profiles and personal details" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profillər və şəxsi məlumatlar"
+          }
+        }
+      }
+    },
+    "Profiles that are Meta Verified get more" : {
+
+    },
+    "Protect your brand" : {
+
+    },
+    "r.a_rus" : {
+
+    },
+    "r.a_rus & Rafa El" : {
+
+    },
+    "Rafael Agayev" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rafael Ağayev"
+          }
+        }
+      }
+    },
+    "Rank: ⭐️ %lld" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Qiymət: ⭐️ %lld"
+          }
+        }
+      }
+    },
+    "Recent searches" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ən son axtarışlar"
+          }
+        }
+      }
+    },
+    "Recently deleted" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu yaxınlarda silinənlər"
+          }
+        }
+      }
+    },
+    "Recommended" : {
+
+    },
+    "Reels" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Videolar"
+          }
+        }
+      }
+    },
+    "Register" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Qeydiyyat"
+          }
+        }
+      }
+    },
+    "Relationship status" : {
+
+    },
+    "Reminder" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xatırlatmalar"
+          }
+        }
+      }
+    },
+    "Reminder time" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xatırlatma vaxtı"
+          }
+        }
+      }
+    },
+    "Remove" : {
+
+    },
+    "Removed and archived content" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Silinmiş qeydlər"
+          }
+        }
+      }
+    },
+    "Repeat" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Təkrarlanma"
+          }
+        }
+      }
+    },
+    "Repostandito" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Repostandito"
+          }
+        }
+      }
+    },
+    "Reposts" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Təkrar paylaşımlar"
+          }
+        }
+      }
+    },
+    "Request a call from an agent" : {
+
+    },
+    "Retry" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yenidən cəhd et"
+          }
+        }
+      }
+    },
+    "Review security issues by running checks across apps, devices and emils sent." : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tətbiqlər, cihazlar və göndərilmiş e-poçtlar üzrə yoxlamalar apararaq təhlükəsizlik problemlərini nəzərdən keçirin."
+          }
+        }
+      }
+    },
+    "Review the profile and personal details you've\n added to this Accounts Center. Add more\n profiles by adding your accounts" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu Hesab Mərkəzinə əlavə etdiyiniz profil və şəxsi məlumatları nəzərdən keçirin. Hesablarınızı əlavə edərək daha çox profil əlavə edin."
+          }
+        }
+      }
+    },
+    "Reviews" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İcmallar"
+          }
+        }
+      }
+    },
+    "Save" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yazmaq"
+          }
+        }
+      }
+    },
+    "Save 20% on profiles" : {
+
+    },
+    "Save reminder" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xatırlatmanı qeydiyyata al"
+          }
+        }
+      }
+    },
+    "Scan now" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skan et indi"
+          }
+        }
+      }
+    },
+    "Scan your face and get insights about your mood and energy." : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Üzünü skan et və əhvalınla enerji səviyyən haqqında məlumat al."
+          }
+        }
+      }
+    },
+    "Scan your today mood" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bugünki əhvalını skan elə"
+          }
+        }
+      }
+    },
+    "Search" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Axtarış"
+          }
+        }
+      }
+    },
+    "Search optimization" : {
+
+    },
+    "Security checks" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Təhlükəsizlik yoxlamaları"
+          }
+        }
+      }
+    },
+    "Security screen" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Təhlükəsizlik ekranı"
+          }
+        }
+      }
+    },
+    "See benefit details" : {
+
+    },
+    "See price breakdown" : {
+
+    },
+    "Select" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seç"
+          }
+        }
+      }
+    },
+    "Select an account" : {
+
+    },
+    "Select Country" : {
+
+    },
+    "Selection theme" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Temanı seç"
+          }
+        }
+      }
+    },
+    "Settings" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ayarlar"
+          }
+        }
+      }
+    },
+    "Share from" : {
+
+    },
+    "Share your content to more than one account at the same time" : {
+
+    },
+    "Sharing across profiles" : {
+
+    },
+    "Shop account" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mağaza hesabı"
+          }
+        }
+      }
+    },
+    "Show you're verified" : {
+
+    },
+    "Showing you ads in other apps" : {
+
+    },
+    "Sign in" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giriş et"
+          }
+        }
+      }
+    },
+    "Social interactions" : {
+
+    },
+    "Social Interactions" : {
+
+    },
+    "Social Interactions are not shown alongside ads about social issues, elections or politics that have a label showing who paid for the ad. " : {
+
+    },
+    "some profiles" : {
+
+    },
+    "Sort by" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sırala"
+          }
+        }
+      }
+    },
+    "Standart" : {
+
+    },
+    "Start" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Başlamaq"
+          }
+        }
+      }
+    },
+    "Starting 5 Jul 2026" : {
+
+    },
+    "Starting at just $0.49 for your first month" : {
+
+    },
+    "Starting on 5 Jul 2026" : {
+
+    },
+    "Starting on 5 Jun 2026" : {
+
+    },
+    "Sticker response" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stiker reaksiyası"
+          }
+        }
+      }
+    },
+    "sticker response screen" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stiker reaksiyası səhifəsi"
+          }
+        }
+      }
+    },
+    "Stress" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stress"
+          }
+        }
+      }
+    },
+    "Stress level is manageable today." : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu gün stress səviyyəsi idarə oluna biləndir."
+          }
+        }
+      }
+    },
+    "Subscribe" : {
+
+    },
+    "Subscriptions" : {
+
+    },
+    "Suggested content" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sizə uyğun məzmun"
+          }
+        }
+      }
+    },
+    "Support" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dəstək"
+          }
+        }
+      }
+    },
+    "Support your favorite creators" : {
+
+    },
+    "System" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sistem"
+          }
+        }
+      }
+    },
+    "Tags" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Etiketləndiklərin"
+          }
+        }
+      }
+    },
+    "tags commentitado" : {
+
+    },
+    "Take control of your ad experince and the information used to show you ads." : {
+
+    },
+    "Terms and Conditions" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Qaydalar və Şərtlər"
+          }
+        }
+      }
+    },
+    "The Rock" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Qaya"
+          }
+        }
+      }
+    },
+    "Then $12.49/month until you cancel. Price may include taxes when applicable." : {
+
+    },
+    "This action is undone" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu hərəkət edilmədi."
+          }
+        }
+      }
+    },
+    "This does not include reactions to the ad itself. If you react to an ad, your friends will still be able to see that activity" : {
+
+    },
+    "Time" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vaxt"
+          }
+        }
+      }
+    },
+    "Time spent" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vaxt xərclədiyim"
+          }
+        }
+      }
+    },
+    "time spent screen" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vaxt xərclədiyin ekran"
+          }
+        }
+      }
+    },
+    "Tired" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yorğun"
+          }
+        }
+      }
+    },
+    "Title: %@" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Başlıq: %@"
+          }
+        }
+      }
+    },
+    "Today's insight" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bugünkü Tövsiyə"
+          }
+        }
+      }
+    },
+    "Tomiris, Adam and Figma already have a verified badge" : {
+
+    },
+    "Total" : {
+
+    },
+    "Transactions, credit cards, debit cards,\n shipping info, PayPal" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Əməliyyatlar, kredit kartları, debet kartları, çatdırılma məlumatları, PayPal"
+          }
+        }
+      }
+    },
+    "Trial benefit" : {
+
+    },
+    "Trial benefit." : {
+
+    },
+    "Unlock access to exclusive benefits creators may offer" : {
+
+    },
+    "Unlock benefits" : {
+
+    },
+    "Unspecified" : {
+
+    },
+    "Upgrade profile links" : {
+
+    },
+    "USD 0.79 for 1 month" : {
+
+    },
+    "USD 12.49 every month" : {
+
+    },
+    "USD 12.49/month" : {
+
+    },
+    "Used" : {
+
+    },
+    "Used for 4 accounts comp " : {
+
+    },
+    "Username" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İstifadəçi adı"
+          }
+        }
+      }
+    },
+    "Username is not available" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İstifadəçi adı mövcud deyil"
+          }
+        }
+      }
+    },
+    "Using this information" : {
+
+    },
+    "Verified badge" : {
+
+    },
+    "Version: 1.0.1" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Versiya 1.0.1"
+          }
+        }
+      }
+    },
+    "Version: 1.2.4" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Versiya: 1.2.4"
+          }
+        }
+      }
+    },
+    "View" : {
+
+    },
+    "View all" : {
+
+    },
+    "View History" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Görünüş tarixçəsi"
+          }
+        }
+      }
+    },
+    "View profile" : {
+
+    },
+    "Watch history" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tarixçəyə bax"
+          }
+        }
+      }
+    },
+    "Watch history screen" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Baxılanlar tarixçəsi ekranı"
+          }
+        }
+      }
+    },
+    "We may include your social interactions alongside ads that your friends see. Social interactions include Page likes, accounts tags, app usage, event responses and more. For example, if you like a Page that's running an ad, we might let your friends know that you liked the Page when they see the ad. You can decide whether your friends can see your social interactions alongside the ads they see." : {
+
+    },
+    "We show you ads based on your information and activity. You get to control these settings." : {
+
+    },
+    "We'll your analyze with camera" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Biz səni kamera ile analiz edəcəyik"
+          }
+        }
+      }
+    },
+    "Welcome back %@ 👋" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Təkrar xoş gəldiniz %@ 👋"
+          }
+        }
+      }
+    },
+    "Welcome to Aura" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aura’ya xoş gəlmişsiniz"
+          }
+        }
+      }
+    },
+    "Welcome to interested screen" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Maraqlandıqların səhifəsinə xoş gəlmisiniz"
+          }
+        }
+      }
+    },
+    "What information is used to show me ads?" : {
+
+    },
+    "what information screen" : {
+
+    },
+    "What you get with your subscription" : {
+
+    },
+    "When you have a verified badge on your profile, people may be more likely to follow you." : {
+
+    },
+    "Which would you like to add?" : {
+
+    },
+    "Why am I not seeing of all my accounts?" : {
+
+    },
+    "Wonderful" : {
+
+    },
+    "Year: %@" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İl: %@"
+          }
+        }
+      }
+    },
+    "Yelo Bank" : {
+
+    },
+    "You both follow zuck" : {
+
+    },
+    "You can choose if we use your activity on Meta technologies to show you ads about Meta on other platforms" : {
+
+    },
+    "You can choose whether you see ads from Meta Audience Network in other apps." : {
+
+    },
+    "You can edit your name" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siz adınızı düzəldə bilərsiniz"
+          }
+        }
+      }
+    },
+    "You can edit your password" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siz öz şifrənizi dəyişə bilərsiniz"
+          }
+        }
+      }
+    },
+    "You can only change your name twice within 14 days" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adınızı 14 gün ərzində yalnız iki dəfə dəyişə bilərsiniz."
+          }
+        }
+      }
+    },
+    "You can update your display name" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siz öz adınızı dəyişə bilərsiniz"
+          }
+        }
+      }
+    },
+    "You can update your email" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siz öz e-mailinizi dəyişə bilərsiniz"
+          }
+        }
+      }
+    },
+    "You can watch actions" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sən aktivliyinə baxa bilərsən"
+          }
+        }
+      }
+    },
+    "You can't message this account unless they follow you. To conntect, it may help to follow them." : {
+
+    },
+    "You don't follow each other on Instagram" : {
+
+    },
+    "You don't have any active\nsubscriptions." : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hazırda aktiv abunəliyiniz yoxdur."
+          }
+        }
+      }
+    },
+    "You haven't subscribed to anyone yet. If\n you subscribe to a creator, your \nsubscription can be managed here" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hələ heç kimə abunə olmamısınız. Əgər bir yaradıcıya abunə olsanız, abunəliyinizi burada idarə edə bilərsiniz."
+          }
+        }
+      }
+    },
+    "You look more tired than usual. Try resting." : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sən adətən yorğun görünürsən. Dincəl biraz"
+          }
+        }
+      }
+    },
+    "You may receive Whatsapp and SMS notifications from us." : {
+
+    },
+    "Your activity" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sənin aktivliyin"
+          }
+        }
+      }
+    },
+    "Your current Instagram username %@ is available" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cari Instagram istifadəçi adınız %@ mövcuddur."
+          }
+        }
+      }
+    },
+    "Your energy is low. Hydration recommended." : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sənin enerjin aşağıdır"
+          }
+        }
+      }
+    },
+    "Your info" : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sənin məlumatların"
+          }
+        }
+      }
+    },
+    "Your mood is stable today. Keep balance." : {
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu gün əhvalınız sabitdir. Balansı qoruyun."
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.1"
+}
